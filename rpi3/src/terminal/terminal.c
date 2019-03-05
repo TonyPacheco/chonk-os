@@ -1,25 +1,36 @@
 #include "terminal.h"
-#include <stdbool.h> // Needed for bool
+#include "known_cmds.h"
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
 
 char* buffer;
-uint8_t bpos;
+int bpos;
+cmds commands;
 
 void trm_init(){
     bpos = 0;
+    commands.n[0] = "ls";
+    commands.n[1] = "sysinfo";
+    commands.n[2] = "cd";
+    commands.p[0] = ls;
+    commands.p[1] = sysinfo;
+    commands.p[2] = cd;
 }
 
-uint8_t trm_capture(uint8_t ch){
+int trm_capture(char ch){
     switch(ch){
     case '\r':
     case '\n':
-    { 
-        if(trm_parse_buffer())
-            return trm_exec_run();
+    {
+        printf("\n");
+        int cmd_return_val = -1;
+        int cmd_index = trm_parse_buffer();
+        if(cmd_index != -1)
+            cmd_return_val = trm_exec_run(cmd_index);
 
-        clear_buffer();
+        buffer_clear();
+        return cmd_return_val;
     } break;
 
     case '\t':{           //replace tabs in the buffer with spaces 
@@ -33,33 +44,31 @@ uint8_t trm_capture(uint8_t ch){
 	return 0;
 }
 
-bool trm_parse_buffer() { //return true if program requested is recognized 
-	char *firstToken;
-	for (uint8_t i = 0; i <= bpos; ++i){
-		if(buffer[i] == ' ' || buffer[i] == '\0'){
-			strncpy(firstToken, buffer, i);
-			return true;
-		}
-	}
-    return false;
+int trm_parse_buffer() { //return index of command to call, or -1 if not found
+    for(int i = 0; i < NUM_CMDS; ++i)
+        if(!strcmp(buffer, commands.n[i])){
+            return i;
+        }
+    return -1;
 }
 
 char* buffer_out(){
     return buffer;
 }
 
-void buffer_add_c(uint8_t c){
+void buffer_add_c(char c){
     buffer[bpos++] = c;
     buffer[bpos] = '\0';
 }
 
-void clear_buffer(){
+void buffer_clear(){
     bpos = 0;
     buffer[0] = '\0';
 }
 
-uint8_t trm_exec_run (){
+int trm_exec_run (int i){
 	//call the appropriate command or program 
 	//and return the response code of it
-	return 1;
+    commands.p[i]();
+	return 0;
 }
