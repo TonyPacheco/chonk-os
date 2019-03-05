@@ -13,6 +13,7 @@
 #include "boot/rpi-smartstart.h"		// Needed for smart start API
 #include "drivers/sdcard/SDCard.h"
 #include "hal/hal.h"
+#include "terminal/terminal.h"
 
 char buffer[500];
 
@@ -55,18 +56,20 @@ int main (void) {
 
 	}*/
 
-	hal_io_video_init();
+	//hal_io_video_init();
 
-	hal_io_video_puts( "HELLO THERE ", 3, VIDEO_COLOR_WHITE );
+	//hal_io_video_puts( "HELLO THERE ", 3, VIDEO_COLOR_WHITE );
 
 	//Typewriter
-	hal_io_serial_init();
-	hal_io_serial_puts( SerialA, "Typewriter:" );
+	//hal_io_serial_init();
+	//hal_io_serial_puts( SerialA, "Typewriter:" );
 
 	uint8_t c;
+	trm_init();
 
 	while(1){
 		c = hal_io_serial_getc( SerialA );
+		trm_capture(c);
 		hal_io_serial_putc( SerialA, c );
 		printf( "%c", c );
 	}

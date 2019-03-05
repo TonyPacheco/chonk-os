@@ -635,18 +635,16 @@ void displaySmartStart (printhandler prn_handler) {
 .--------------------------------------------------------------------------*/
 void Embedded_Console_WriteChar(char Ch) {
 	switch (Ch) {
-	case '\r': {											// Carriage return character
-		console.cursor.x = 0;								// Cursor back to line start
+		//@Tony changed to make /r and /n both drop a line down
+	case '\r': 
+	case '\n': {											// Carriage return character
+		console.cursor.x = 0;
+		console.cursor.y++;								    // Cursor back to line start
 	}
 			   break;
 	case '\t': {											// Tab character character
 		console.cursor.x += 5;								// Cursor increment to by 5
 		console.cursor.x -= (console.cursor.x % 4);			// align it to 4
-	}
-			   break;
-	case '\n': {											// New line character
-		console.cursor.x = 0;								// Cursor back to line start
-		console.cursor.y++;									// Increment cursor down a line
 	}
 			   break;
 	default: {												// All other characters

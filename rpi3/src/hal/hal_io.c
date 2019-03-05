@@ -40,7 +40,8 @@ void hal_io_init( void ){
 uint32_t hal_io_video_init( void ){
 	//return _hal_io_video_init();   <<<---- This is defined in ARM assembly,
 	//																			 any 32-bit assembly will break
-	//																			 the build
+	//
+	fonts_init();
 	return 1;
 }
 
@@ -64,7 +65,8 @@ uint32_t curr_x=X_ORIGIN;
 uint32_t curr_y=Y_ORIGIN;
 void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  ){
 
-	if( c == '\n' ){
+	if (c == '\n')
+	{
 			curr_y = ( curr_y
 				 				+ VIDEO_CHARACTER_HEIGHT*size
 								+ VIDEO_CHARACTER_VERTICAL_SPACE ) %  (VIDEO_MAX_Y-VIDEO_CHARACTER_HEIGHT);
@@ -75,12 +77,13 @@ void hal_io_video_putc( uint8_t c, uint32_t size, VideoColor color  ){
 			return;
 	}
 
-	hal_io_video_putc_x_y( curr_x, curr_y, c, size, color );
-
+	//hal_io_video_putc_x_y( curr_x, curr_y, c, size, color );
+	hal_io_video_putc_x_y(curr_x, curr_y, curr_x, size, VIDEO_COLOR_RED);
 	//Move cursor
-	curr_x = ( curr_x
-						+ VIDEO_CHARACTER_WIDTH*size
-						+ VIDEO_CHARACTER_HORIZONTAL_SPACE*size )  % (VIDEO_MAX_X-VIDEO_CHARACTER_WIDTH);
+	if ((curr_x + VIDEO_CHARACTER_WIDTH) >= VIDEO_MAX_X){
+		
+	}
+		curr_x = (curr_x + VIDEO_CHARACTER_WIDTH * size + VIDEO_CHARACTER_HORIZONTAL_SPACE * size) % (VIDEO_MAX_X - VIDEO_CHARACTER_WIDTH);
 }
 
 /*
