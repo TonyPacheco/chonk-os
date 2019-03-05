@@ -1,4 +1,4 @@
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -58,22 +58,22 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   55              	.LC0:
   56 0000 0A00     		.string	"\n"
   57 0002 00000000 		.zero	6
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   57      0000
   58              	.LC1:
   59 0008 256300   		.string	"%c"
   60              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:8      .text:0000000000000000 kernel_main
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:8      .text:0000000000000000 kernel_main
                             *COM*:00000000000001f4 buffer
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:54     .rodata.str1.8:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:54     .rodata.str1.8:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 printf
@@ -86,7 +86,7 @@ trm_init
 hal_io_serial_getc
 trm_capture
 hal_io_serial_putc
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              	# 1 "src/boot/SmartStart64.S"
@@ -146,7 +146,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   52 0034 210D0058 		ldr x1, =RPi_CpuId						// Address of RPi_CpuId
   53 0038 200000B9 		str w0, [x1]							// Store the CPU id 
   54              	
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   55              	//"================================================================"
@@ -206,7 +206,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  109 00c8 7F111CD5 		msr	hstr_el2, xzr						// Disable coprocessor traps to EL2
  110 00cc 0006A0D2 		mov	x0, #3 << 20
  111 00d0 401018D5 		msr	cpacr_el1, x0						// Enable FP/SIMD at EL1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  112              	
@@ -266,7 +266,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  166 0134 1F0003EB 		cmp	x0, x3
  167 0138 82000054 		bcs	.bss_cleared
  168              	.bss_zero_loop:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  169 013c 1F4400B8 		str	wzr, [x0], 4
@@ -326,7 +326,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  219      00000000 
  220              	
  221              	
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  222              	/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++}
@@ -386,7 +386,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  274 02e0 051B80D2 		mov x5, #spin_cpu0						// Load address of spins
  275 02e4 A17826F8 		str x1, [x5, x6, lsl #3]				// Save caller address
  276 02e8 9F3F03D5 		dsb sy
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  277 02ec 9F2003D5 		sev
@@ -446,7 +446,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  330              	c_irq_handler:
  331 000c C0035FD6 		ret
  332              	
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  333              	/* Provide weak reference c_irq_identify_and_clear_source so if user does not use it functions as d
@@ -506,7 +506,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  387 00bc E0039FD6 		eret
  388              	
  389              	/* macro to align handlers every 0x80 bytes */
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  390              	.macro	vector handler
@@ -566,7 +566,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  411      1F2003D5 
  411      1F2003D5 
  411      1F2003D5 
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
  411      1F2003D5 
@@ -626,7 +626,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  435              	.globl RPi_IO_Base_Addr;				// Make sure Pi_IO_Base_Addr label is global
  436 0000 00000000 	RPi_IO_Base_Addr : .4byte 0;			// Peripheral Base addr is 4 byte variable in 64bit mode
  437              	
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 10
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 10
 
 
  438              	.globl RPi_BootAddr;					// Make sure RPi_BootAddr label is global
@@ -643,7 +643,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  449              	
  450              	.globl RPi_CompileMode;					// Make sure RPi_CompileMode label is global
  451 0014 00000000 	RPi_CompileMode : .4byte 0;				// Compile mode is 4 byte variable in 64bit mode
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 11
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 11
 
 
 DEFINED SYMBOLS
@@ -703,12 +703,12 @@ __EL2_stack_core3
 __EL1_stack_core3
 __EL0_stack_core3
 __bss_end__
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 12
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 12
 
 
 __bss_start__
 kernel_main
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -768,7 +768,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   55 00b0 E0030CAA 		mov	x0, x12
   56 00b4 1F2003D5 		.p2align 3
   57              	.L7:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   58 00b8 02004039 		ldrb	w2, [x0]
@@ -828,7 +828,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  111 0174 E77C0353 		lsr	w7, w7, 3
  112 0178 6300058B 		add	x3, x3, x5
  113 017c 41050034 		cbz	w1, .L34
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  114 0180 087D7FD3 		ubfiz	x8, x8, 1, 32
@@ -888,7 +888,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  168              		.p2align 2
  169              	.L39:
  170 0238 E903062A 		mov	w9, w6
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  171              	.L27:
@@ -948,7 +948,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  224 02f4 E7781F53 		lsl	w7, w7, 1
  225 02f8 83C0238B 		add	x3, x4, x3, sxtw
  226 02fc 6B7D0353 		lsr	w11, w11, 3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  227 0300 4A7D0253 		lsr	w10, w10, 2
@@ -1008,7 +1008,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  281              		.type	DiagLine16, %function
  282              	DiagLine16:
  283 03b0 10C44229 		ldp	w16, w17, [x0, 20]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  284 03b4 3F00026B 		cmp	w1, w2
@@ -1068,7 +1068,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  337 0470 020840B9 		ldr	w2, [x0, 8]
  338 0474 211C1E53 		ubfiz	w1, w1, 2, 8
  339 0478 F37BBFA9 		stp	x19, x30, [sp, -16]!
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  340 047c 12000090 		adrp	x18, BitFont
@@ -1128,7 +1128,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  394 0548 21040011 		add	w1, w1, 1
  395 054c 3F00136B 		cmp	w1, w19
  396 0550 61FCFF54 		bne	.L65
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  397 0554 DE230011 		add	w30, w30, 8
@@ -1188,7 +1188,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  449              	.L70:
  450 0614 FF430091 		add	sp, sp, 16
  451 0618 C0035FD6 		ret
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
  452              		.size	PutImage16, .-PutImage16
@@ -1248,7 +1248,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  504 06c4 060840B9 		ldr	w6, [x0, 8]
  505 06c8 070C4029 		ldp	w7, w3, [x0]
  506 06cc 8404040B 		add	w4, w4, w4, lsl 1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 10
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 10
 
 
  507 06d0 057D061B 		mul	w5, w8, w6
@@ -1308,7 +1308,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  560 0788 6304030B 		add	w3, w3, w3, lsl 1
  561 078c A4C0248B 		add	x4, x5, x4, sxtw
  562 0790 6300048B 		add	x3, x3, x4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 11
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 11
 
 
  563 0794 E1010034 		cbz	w1, .L108
@@ -1368,7 +1368,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  617 084c 09094039 		ldrb	w9, [x8, 2]
  618 0850 A9080039 		strb	w9, [x5, 2]
  619 0854 A5000B8B 		add	x5, x5, x11
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 12
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 12
 
 
  620 0858 68000054 		bhi	.L116
@@ -1428,7 +1428,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  674 0908 A8040039 		strb	w8, [x5, 1]
  675 090c 7F800071 		cmp	w3, 32
  676 0910 A7080039 		strb	w7, [x5, 2]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 13
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 13
 
 
  677 0914 A1FDFF54 		bne	.L124
@@ -1488,7 +1488,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  731 09d0 6300088B 		add	x3, x3, x8
  732 09d4 5F00096B 		cmp	w2, w9
  733 09d8 81FDFF54 		bne	.L131
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 14
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 14
 
 
  734              	.L128:
@@ -1548,7 +1548,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  786 0a78 A3C0238B 		add	x3, x5, x3, sxtw
  787 0a7c 84741E53 		lsl	w4, w4, 2
  788 0a80 6300048B 		add	x3, x3, x4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 15
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 15
 
 
  789 0a84 A1010034 		cbz	w1, .L158
@@ -1608,7 +1608,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  843 0b30 04008052 		mov	w4, 0
  844 0b34 1F2003D5 		.p2align 3
  845              	.L171:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 16
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 16
 
 
  846 0b38 C50040B9 		ldr	w5, [x6]
@@ -1668,7 +1668,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  900              		.size	DiagLine32, .-DiagLine32
  901              		.align	2
  902 0be8 1F2003D5 		.p2align 4,,15
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 17
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 17
 
 
  902      1F2003D5 
@@ -1728,7 +1728,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  956              		.align	2
  957 0c94 1F2003D5 		.p2align 4,,15
  957      1F2003D5 
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 18
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 18
 
 
  957      1F2003D5 
@@ -1788,7 +1788,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1011 0d50 E9030C2A 		mov	w9, w12
  1012 0d54 F30300AA 		mov	x19, x0
  1013 0d58 E8830391 		add	x8, sp, 224
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 19
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 19
 
 
  1014 0d5c EEC30291 		add	x14, sp, 176
@@ -1848,7 +1848,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1068 0e14 02001D32 		orr	w2, w0, 8
  1069 0e18 00109752 		mov	w0, 47232
  1070 0e1c 2100000B 		add	w1, w1, w0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 20
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 20
 
 
  1071              		.p2align 3
@@ -1908,7 +1908,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1124 0ecc E20F0729 		stp	w2, w3, [sp, 56]
  1125 0ed0 E4170829 		stp	w4, w5, [sp, 64]
  1126 0ed4 E67F0929 		stp	w6, wzr, [sp, 72]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 21
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 21
 
 
  1127 0ed8 E28F0BA9 		stp	x2, x3, [sp, 184]
@@ -1968,7 +1968,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1181 0f88 E0C30091 		add	x0, sp, 48
  1182 0f8c E82301A9 		stp	x8, x8, [sp, 16]
  1183 0f90 E71300F9 		str	x7, [sp, 32]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 22
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 22
 
 
  1184 0f94 E67F0529 		stp	w6, wzr, [sp, 40]
@@ -2028,7 +2028,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1236 1044 06008052 		mov	w6, 0
  1237 1048 2298477A 		ccmp	w1, 7, 2, ls
  1238 104c 88020054 		bhi	.L316
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 23
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 23
 
 
  1239 1050 A3999952 		mov	w3, 52429
@@ -2088,7 +2088,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1291              		.p2align 2
  1292              	.L321:
  1293 1108 01008052 		mov	w1, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 24
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 24
 
 
  1294 110c E003012A 		mov	w0, w1
@@ -2148,7 +2148,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1346              		.global	gpio_clearEvent
  1347              		.type	gpio_clearEvent, %function
  1348              	gpio_clearEvent:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 25
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 25
 
 
  1349 11a0 1FD80071 		cmp	w0, 54
@@ -2208,7 +2208,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1402              		.p2align 2
  1403              	.L335:
  1404 124c A5000191 		add	x5, x5, 64
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 26
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 26
 
 
  1405 1250 E203012A 		mov	w2, w1
@@ -2268,7 +2268,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1459 12f4 2020C01A 		lsl	w0, w1, w0
  1460 12f8 C508058B 		add	x5, x6, x5, lsl 2
  1461 12fc A09800B9 		str	w0, [x5, 152]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 27
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 27
 
 
  1462              		.p2align 3
@@ -2328,7 +2328,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1514 1398 210C4011 		add	w1, w1, 12288
  1515 139c 1F2003D5 		.p2align 3
  1516              	.L358:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 28
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 28
 
 
  1517 13a0 220840B9 		ldr	w2, [x1, 8]
@@ -2388,7 +2388,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1569 1438 C0035FD6 		ret
  1570              		.size	mailbox_write, .-mailbox_write
  1571              		.align	2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 29
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 29
 
 
  1572 143c 1F2003D5 		.p2align 4,,15
@@ -2448,7 +2448,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1624 14e8 E203082A 		mov	w2, w8
  1625 14ec E503082A 		mov	w5, w8
  1626 14f0 E403082A 		mov	w4, w8
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 30
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 30
 
 
  1627 14f4 E3C30391 		add	x3, sp, 240
@@ -2508,7 +2508,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1681 15ac 4200000B 		add	w2, w2, w0
  1682              		.p2align 3
  1683              	.L379:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 31
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 31
 
 
  1684 15b0 403840B9 		ldr	w0, [x2, 56]
@@ -2568,7 +2568,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1738 165c 13008052 		mov	w19, 0
  1739              	.L417:
  1740 1660 E003132A 		mov	w0, w19
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 32
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 32
 
 
  1741 1664 F37BC2A8 		ldp	x19, x30, [sp], 32
@@ -2628,7 +2628,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1795 1714 33008052 		mov	w19, 1
  1796 1718 E003132A 		mov	w0, w19
  1797 171c F37BC2A8 		ldp	x19, x30, [sp], 32
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 33
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 33
 
 
  1798 1720 C0035FD6 		ret
@@ -2688,7 +2688,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1850 17c4 82008052 		mov	w2, 4
  1851 17c8 6200A072 		movk	w2, 0x3, lsl 16
  1852 17cc 06008052 		mov	w6, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 34
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 34
 
 
  1853 17d0 65008052 		mov	w5, 3
@@ -2748,7 +2748,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1907 1880 01000090 		adrp	x1, RPi_CoresReady
  1908 1884 E40313AA 		mov	x4, x19
  1909 1888 F37BC1A8 		ldp	x19, x30, [sp], 16
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 35
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 35
 
 
  1910 188c 02000090 		adrp	x2, RPi_CpuId
@@ -2808,7 +2808,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1964 1934 00140011 		add	w0, w0, 5
  1965 1938 E203006B 		negs	w2, w0
  1966 193c 03040012 		and	w3, w0, 3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 36
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 36
 
 
  1967 1940 42040012 		and	w2, w2, 3
@@ -2868,7 +2868,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2019 19f4 A12240B9 		ldr	w1, [x21, 32]
  2020 19f8 73060091 		add	x19, x19, 1
  2021 19fc 21140011 		add	w1, w1, 5
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 37
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 37
 
 
  2022 1a00 E203016B 		negs	w2, w1
@@ -2928,7 +2928,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2072      1F2003D5 
  2073              		.global	MoveToEx
  2074              		.type	MoveToEx, %function
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 38
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 38
 
 
  2075              	MoveToEx:
@@ -2988,7 +2988,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2129 1b24 07184929 		ldp	w7, w6, [x0, 72]
  2130 1b28 E303022A 		mov	w3, w2
  2131 1b2c E203012A 		mov	w2, w1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 39
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 39
 
 
  2132 1b30 E103052A 		mov	w1, w5
@@ -3048,7 +3048,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2186 1bcc F50303AA 		mov	x21, x3
  2187 1bd0 360C040B 		add	w22, w1, w4, lsl 3
  2188 1bd4 1F2003D5 		.p2align 3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 40
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 40
 
 
  2189              	.L527:
@@ -3108,7 +3108,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2242 1c74 C00000B5 		cbnz	x0, .L598
  2243 1c78 00008052 		mov	w0, 0
  2244 1c7c 100482D2 		mov	x16, 4128
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 41
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 41
 
 
  2245 1c80 FE0340F9 		ldr	x30, [sp]
@@ -3168,7 +3168,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2299 1d3c E20301AA 		mov	x2, x1
  2300 1d40 04D15F38 		ldrb	w4, [x8, -3]
  2301 1d44 49244078 		ldrh	w9, [x2], 2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 42
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 42
 
 
  2302 1d48 847C0253 		lsr	w4, w4, 2
@@ -3228,7 +3228,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2356 1e00 44D05F38 		ldrb	w4, [x2, -3]
  2357 1e04 41E05F38 		ldrb	w1, [x2, -2]
  2358 1e08 C4E01F38 		strb	w4, [x6, -2]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 43
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 43
 
 
  2359 1e0c C1F01F38 		strb	w1, [x6, -1]
@@ -3288,7 +3288,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2413 1ec8 63EFFF34 		cbz	w3, .L551
  2414 1ecc 67040051 		sub	w7, w3, #1
  2415 1ed0 E10305AA 		mov	x1, x5
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 44
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 44
 
 
  2416 1ed4 E7040091 		add	x7, x7, 1
@@ -3348,7 +3348,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2470 1f8c 3F0008EB 		cmp	x1, x8
  2471 1f90 42101D53 		ubfiz	w2, w2, 3, 5
  2472 1f94 82440038 		strb	w2, [x4], 4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 45
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 45
 
 
  2473 1f98 81FFFF54 		bne	.L568
@@ -3408,7 +3408,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2527 2034 C0035FD6 		ret
  2528              		.size	Rectangle, .-Rectangle
  2529              		.align	2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 46
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 46
 
 
  2530 2038 1F2003D5 		.p2align 4,,15
@@ -3468,7 +3468,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2583 20f8 E54300B9 		str	w5, [sp, 64]
  2584 20fc E14B00B9 		str	w1, [sp, 72]
  2585 2100 E503142A 		mov	w5, w20
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 47
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 47
 
 
  2586 2104 E85300B9 		str	w8, [sp, 80]
@@ -3528,7 +3528,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2640 21c0 06008052 		mov	w6, 0
  2641 21c4 05008052 		mov	w5, 0
  2642 21c8 04008052 		mov	w4, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 48
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 48
 
 
  2643 21cc 03018052 		mov	w3, 8
@@ -3588,7 +3588,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2697 2288 00000090 		adrp	x0, PutImage32
  2698 228c 00000091 		add	x0, x0, :lo12:PutImage32
  2699 2290 E7FFFF17 		b	.L633
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 49
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 49
 
 
  2700              		.p2align 2
@@ -3648,7 +3648,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2753              		.align	2
  2754 230c 1F2003D5 		.p2align 4,,15
  2755              		.weak	_sbrk
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 50
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 50
 
 
  2756              		.type	_sbrk, %function
@@ -3708,7 +3708,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2806 2388 1F2003D5 		.p2align 4,,15
  2806      1F2003D5 
  2807              		.weak	_lseek
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 51
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 51
 
 
  2808              		.type	_lseek, %function
@@ -3768,7 +3768,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2858 2404 0D000014 		b	.L660
  2859              		.p2align 2
  2860              	.L668:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 52
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 52
 
 
  2861 2408 648E4329 		ldp	w4, w3, [x19, 28]
@@ -3828,7 +3828,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2915              		.size	BitFont, 4096
  2916              	BitFont:
  2917 0000 00000000 		.word	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 53
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 53
 
 
  2918 0004 00000000 		.word	0
@@ -3888,7 +3888,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2972 00dc 00000000 		.word	0
  2973 00e0 637F0000 		.word	32611
  2974 00e4 6363637F 		.word	2137219939
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 54
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 54
 
 
  2975 00e8 E6E76763 		.word	1667753958
@@ -3948,7 +3948,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3029 01c0 00000000 		.word	0
  3030 01c4 C0C00000 		.word	49344
  3031 01c8 0000FEC0 		.word	-1057095680
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 55
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 55
 
 
  3032 01cc 00000000 		.word	0
@@ -4008,7 +4008,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3086 02a4 FF3C6600 		.word	6700287
  3087 02a8 0000663C 		.word	1013317632
  3088 02ac 00000000 		.word	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 56
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 56
 
 
  3089 02b0 00000000 		.word	0
@@ -4068,7 +4068,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3143 0388 7CC6C6C6 		.word	-960051588
  3144 038c 00000000 		.word	0
  3145 0390 C67C0000 		.word	31942
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 57
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 57
 
 
  3146 0394 067EC6C6 		.word	-960070138
@@ -4128,7 +4128,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3200 046c 00000000 		.word	0
  3201 0470 663C0000 		.word	15462
  3202 0474 DEC0C0C2 		.word	-1027555106
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 58
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 58
 
 
  3203 0478 3A66C6C6 		.word	-960076230
@@ -4188,7 +4188,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3257 0550 C6C60000 		.word	50886
  3258 0554 C6C6C6C6 		.word	-960051514
  3259 0558 7CC6C6C6 		.word	-960051588
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 59
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 59
 
 
  3260 055c 00000000 		.word	0
@@ -4248,7 +4248,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3314 0634 C0C67C00 		.word	8177344
  3315 0638 7CC6C0C0 		.word	-1061108100
  3316 063c 00000000 		.word	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 60
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 60
 
 
  3317 0640 0C1C0000 		.word	7180
@@ -4308,7 +4308,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3371 0718 7CCCCCCC 		.word	-858993540
  3372 071c 001E0C0C 		.word	202120704
  3373 0720 00000000 		.word	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 61
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 61
 
 
  3374 0724 6676DC00 		.word	14448230
@@ -4368,7 +4368,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3428 07fc 00000000 		.word	0
  3429 0800 663C0000 		.word	15462
  3430 0804 C0C0C0C2 		.word	-1027555136
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 62
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 62
 
 
  3431 0808 0C3C66C2 		.word	-1033487348
@@ -4428,7 +4428,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3485 08e0 1000C600 		.word	12976144
  3486 08e4 C6C66C38 		.word	946652870
  3487 08e8 C6C6C6FE 		.word	-20527418
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 63
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 63
 
 
  3488 08ec 00000000 		.word	0
@@ -4488,7 +4488,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3542 09c4 6060F060 		.word	1626366048
  3543 09c8 FCE66060 		.word	1616963324
  3544 09cc 00000000 		.word	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 64
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 64
 
 
  3545 09d0 66660000 		.word	26214
@@ -4548,7 +4548,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3599 0aa8 00060606 		.word	101058048
  3600 0aac 00000000 		.word	0
  3601 0ab0 C2C0C000 		.word	12632258
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 65
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 65
 
 
  3602 0ab4 3018CCC6 		.word	-959702992
@@ -4608,7 +4608,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3656 0b8c 18181818 		.word	404232216
  3657 0b90 36363636 		.word	909522486
  3658 0b94 F606F636 		.word	922093302
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 66
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 66
 
 
  3659 0b98 36363636 		.word	909522486
@@ -4668,7 +4668,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3713 0c70 36363636 		.word	909522486
  3714 0c74 37363636 		.word	909522487
  3715 0c78 36363636 		.word	909522486
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 67
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 67
 
 
  3716 0c7c 36363636 		.word	909522486
@@ -4728,7 +4728,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3770 0d54 1F181F00 		.word	2037791
  3771 0d58 18181818 		.word	404232216
  3772 0d5c 18181818 		.word	404232216
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 68
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 68
 
 
  3773 0d60 00000000 		.word	0
@@ -4788,7 +4788,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3827 0e38 6C6C6C6C 		.word	1819044972
  3828 0e3c 00000000 		.word	0
  3829 0e40 FE000000 		.word	254
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 69
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 69
 
 
  3830 0e44 183060C6 		.word	-966774760
@@ -4848,7 +4848,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3884 0f1c 00000000 		.word	0
  3885 0f20 30000000 		.word	48
  3886 0f24 0C060C18 		.word	403441164
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 70
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 70
 
 
  3887 0f28 7E003018 		.word	405799038
@@ -4908,7 +4908,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3941              		.data
  3942              		.align	2
  3943              		.set	.LANCHOR1,. + 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 71
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 71
 
 
  3944              		.type	ActivityGPIOPort, %object
@@ -4968,7 +4968,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3981              	.LC3:
  3982 00a8 494E5349 		.string	"INSIDE SMART PUT PIXEL"
  3982      44452053 
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 72
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 72
 
 
  3982      4D415254 
@@ -4982,89 +4982,89 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3985      7574696F 
  3985      6E202569 
  3986              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 73
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 73
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 rpi-SmartStart.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:7      .text:0000000000000000 ClearArea16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:97     .text:0000000000000140 VertLine16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:214    .text:00000000000002d0 HorzLine16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:282    .text:00000000000003b0 DiagLine16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:336    .text:0000000000000470 WriteChar16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2916   .rodata:0000000000000000 BitFont
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:405    .text:0000000000000570 PutImage16
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:456    .text:0000000000000620 ClearArea24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:502    .text:00000000000006c0 VertLine24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:553    .text:0000000000000770 HorzLine24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:588    .text:00000000000007e0 DiagLine24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:635    .text:0000000000000880 WriteChar24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:688    .text:0000000000000930 PutImage24
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:741    .text:00000000000009f0 ClearArea32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:779    .text:0000000000000a60 VertLine32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:830    .text:0000000000000b00 HorzLine32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:861    .text:0000000000000b60 DiagLine32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:904    .text:0000000000000bf0 WriteChar32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:913    .text:0000000000000c00 PutImage32
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:959    .text:0000000000000ca0 mailbox_tag_message.constprop.4
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1006   .text:0000000000000d40 mailbox_tag_message.constprop.7
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1112   .text:0000000000000ea0 mailbox_tag_message.constprop.5
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1174   .text:0000000000000f70 mailbox_tag_message.constprop.6
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1234   .text:0000000000001040 gpio_setup
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1266   .text:00000000000010b0 gpio_output
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1301   .text:0000000000001120 gpio_input
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1325   .text:0000000000001160 gpio_checkEvent
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1348   .text:00000000000011a0 gpio_clearEvent
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1370   .text:00000000000011e0 gpio_edgeDetect
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1423   .text:0000000000001280 gpio_fixResistor
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1492   .text:0000000000001360 timer_getTickCount
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1511   .text:0000000000001390 timer_wait
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1542   .text:00000000000013f0 tick_difference
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1550   .text:0000000000001400 mailbox_write
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1575   .text:0000000000001440 mailbox_read
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1601   .text:0000000000001490 mailbox_tag_message
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1726   .text:0000000000001630 set_Activity_LED
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1844   .text:00000000000017b0 ARM_setmaxspeed
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1890   .text:0000000000001840 displaySmartStart
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1926   .text:00000000000018b0 Embedded_Console_WriteChar
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1977   .text:0000000000001960 WriteText
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2049   .text:0000000000001a50 SetDCPenColor
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2062   .text:0000000000001a70 SetDCBrushColor
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2075   .text:0000000000001a90 MoveToEx
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2096   .text:0000000000001ac0 LineTo
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2168   .text:0000000000001b90 TextOut
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2210   .text:0000000000001c10 BmpOut
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2236   .text:0000000000001c60 CvtBmpLine
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2505   .text:0000000000002000 SmartStartPutPixelRaw
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2515   .text:0000000000002010 Rectangle
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2533   .text:0000000000002040 PiConsole_Init
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2720   .text:00000000000022d0 GetConsoleDC
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2730   .text:00000000000022e0 GetConsole_FrameBuffer
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2739   .text:00000000000022f0 GetConsole_Width
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 74
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:7      .text:0000000000000000 ClearArea16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:97     .text:0000000000000140 VertLine16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:214    .text:00000000000002d0 HorzLine16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:282    .text:00000000000003b0 DiagLine16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:336    .text:0000000000000470 WriteChar16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2916   .rodata:0000000000000000 BitFont
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:405    .text:0000000000000570 PutImage16
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:456    .text:0000000000000620 ClearArea24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:502    .text:00000000000006c0 VertLine24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:553    .text:0000000000000770 HorzLine24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:588    .text:00000000000007e0 DiagLine24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:635    .text:0000000000000880 WriteChar24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:688    .text:0000000000000930 PutImage24
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:741    .text:00000000000009f0 ClearArea32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:779    .text:0000000000000a60 VertLine32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:830    .text:0000000000000b00 HorzLine32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:861    .text:0000000000000b60 DiagLine32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:904    .text:0000000000000bf0 WriteChar32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:913    .text:0000000000000c00 PutImage32
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:959    .text:0000000000000ca0 mailbox_tag_message.constprop.4
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1006   .text:0000000000000d40 mailbox_tag_message.constprop.7
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1112   .text:0000000000000ea0 mailbox_tag_message.constprop.5
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1174   .text:0000000000000f70 mailbox_tag_message.constprop.6
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1234   .text:0000000000001040 gpio_setup
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1266   .text:00000000000010b0 gpio_output
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1301   .text:0000000000001120 gpio_input
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1325   .text:0000000000001160 gpio_checkEvent
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1348   .text:00000000000011a0 gpio_clearEvent
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1370   .text:00000000000011e0 gpio_edgeDetect
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1423   .text:0000000000001280 gpio_fixResistor
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1492   .text:0000000000001360 timer_getTickCount
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1511   .text:0000000000001390 timer_wait
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1542   .text:00000000000013f0 tick_difference
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1550   .text:0000000000001400 mailbox_write
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1575   .text:0000000000001440 mailbox_read
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1601   .text:0000000000001490 mailbox_tag_message
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1726   .text:0000000000001630 set_Activity_LED
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1844   .text:00000000000017b0 ARM_setmaxspeed
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1890   .text:0000000000001840 displaySmartStart
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1926   .text:00000000000018b0 Embedded_Console_WriteChar
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1977   .text:0000000000001960 WriteText
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2049   .text:0000000000001a50 SetDCPenColor
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2062   .text:0000000000001a70 SetDCBrushColor
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2075   .text:0000000000001a90 MoveToEx
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2096   .text:0000000000001ac0 LineTo
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2168   .text:0000000000001b90 TextOut
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2210   .text:0000000000001c10 BmpOut
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2236   .text:0000000000001c60 CvtBmpLine
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2505   .text:0000000000002000 SmartStartPutPixelRaw
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2515   .text:0000000000002010 Rectangle
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2533   .text:0000000000002040 PiConsole_Init
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2720   .text:00000000000022d0 GetConsoleDC
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2730   .text:00000000000022e0 GetConsole_FrameBuffer
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2739   .text:00000000000022f0 GetConsole_Width
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 74
 
 
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2748   .text:0000000000002300 GetConsole_Height
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2757   .text:0000000000002310 _sbrk
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2774   .text:0000000000002340 _kill
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2785   .text:0000000000002360 _getpid
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2793   .text:0000000000002370 _read
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2801   .text:0000000000002380 _close
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2809   .text:0000000000002390 _lseek
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2817   .text:00000000000023a0 _isatty
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2825   .text:00000000000023b0 _fstat
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2835   .text:00000000000023c0 _exit
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2844   .text:00000000000023d0 _write
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3958   .bss:0000000000000004 console
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3969   .rodata:0000000000001000 BitFontEnd
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2913   .rodata:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3942   .data:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3946   .data:0000000000000000 ActivityGPIOPort
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3949   .bss:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3953   .bss:0000000000000000 ModelCheckHasRun
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3963   .bss:0000000000000068 heap_end.4634
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3972   .rodata.str1.8:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2748   .text:0000000000002300 GetConsole_Height
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2757   .text:0000000000002310 _sbrk
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2774   .text:0000000000002340 _kill
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2785   .text:0000000000002360 _getpid
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2793   .text:0000000000002370 _read
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2801   .text:0000000000002380 _close
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2809   .text:0000000000002390 _lseek
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2817   .text:00000000000023a0 _isatty
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2825   .text:00000000000023b0 _fstat
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2835   .text:00000000000023c0 _exit
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2844   .text:00000000000023d0 _write
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3958   .bss:0000000000000004 console
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3969   .rodata:0000000000001000 BitFontEnd
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2913   .rodata:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3942   .data:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3946   .data:0000000000000000 ActivityGPIOPort
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3949   .bss:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3953   .bss:0000000000000000 ModelCheckHasRun
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3963   .bss:0000000000000068 heap_end.4634
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3972   .rodata.str1.8:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 ARMaddrToGPUaddr
@@ -5078,7 +5078,7 @@ hal_io_serial_puts
 GPUaddrToARMaddr
 _end
 errno
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -5138,7 +5138,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   55 00a4 1F2003D5 		.p2align 3
   56              	.L14:
   57 00a8 26140038 		strb	w6, [x1], 1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   58 00ac 7F0001EB 		cmp	x3, x1
@@ -5198,7 +5198,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  112 0160 02000014 		b	.L24
  113              		.p2align 2
  114              	.L60:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  115 0164 C5F05F38 		ldrb	w5, [x6, -1]
@@ -5258,7 +5258,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  169              		.p2align 2
  170              	.L31:
  171 0214 E803092A 		mov	w8, w9
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  172              	.L11:
@@ -5318,7 +5318,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  224              		.type	vsprintf, %function
  225              	vsprintf:
  226 02b0 F353B9A9 		stp	x19, x20, [sp, -112]!
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  227 02b4 F30301AA 		mov	x19, x1
@@ -5378,7 +5378,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  281 0374 3FAC0071 		cmp	w1, 43
  282 0378 C1FEFF54 		bne	.L216
  283              	.L66:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  284 037c 9C031E32 		orr	w28, w28, 4
@@ -5438,7 +5438,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  338              	.L236:
  339 042c E13E0091 		add	x1, x23, 15
  340 0430 E00317AA 		mov	x0, x23
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  341 0434 37F07D92 		and	x23, x1, -8
@@ -5498,7 +5498,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  395 04d8 BFB00171 		cmp	w5, 108
  396 04dc A1FDFF54 		bne	.L135
  397              	.L223:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  398 04e0 5826F837 		tbnz	w24, #31, .L136
@@ -5558,7 +5558,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  452 058c F40313AA 		mov	x20, x19
  453 0590 1F300171 		cmp	w0, 76
  454 0594 04008052 		mov	w4, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
  455 0598 24105A7A 		ccmp	w1, w26, 4, ne
@@ -5618,7 +5618,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  509 0644 3F600171 		cmp	w1, 88
  510 0648 05008012 		mov	w5, -1
  511 064c 01FCFF54 		bne	.L97
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 10
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 10
 
 
  512 0650 02028052 		mov	w2, 16
@@ -5678,7 +5678,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  566 06f4 80FFFF17 		b	.L139
  567              		.p2align 2
  568              	.L95:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 11
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 11
 
 
  569 06f8 A0048052 		mov	w0, 37
@@ -5738,7 +5738,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  623 07a4 2DF2FF54 		ble	.L214
  624              		.p2align 3
  625              	.L120:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 12
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 12
 
 
  626 07a8 A4160038 		strb	w4, [x21], 1
@@ -5798,7 +5798,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  680 085c F803052A 		mov	w24, w5
  681 0860 F7F07D92 		and	x23, x7, -8
  682 0864 9FFFFF17 		b	.L141
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 13
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 13
 
 
  683              	.L145:
@@ -5858,7 +5858,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  737 0924 19028052 		mov	w25, 16
  738 0928 38D8FF36 		tbz	w24, #31, .L236
  739 092c EDFFFF17 		b	.L122
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 14
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 14
 
 
  740              	.L234:
@@ -5918,7 +5918,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  794 09d8 E00317AA 		mov	x0, x23
  795 09dc 37F07D92 		and	x23, x1, -8
  796              	.L127:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 15
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 15
 
 
  797 09e0 000040F9 		ldr	x0, [x0]
@@ -5978,7 +5978,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  851 0a98 F803012A 		mov	w24, w1
  852 0a9c 57F07D92 		and	x23, x2, -8
  853 0aa0 DCFFFF17 		b	.L130
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 16
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 16
 
 
  854              	.L232:
@@ -6038,7 +6038,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  908              	.L87:
  909 0b58 01230011 		add	w1, w24, 8
  910 0b5c 3F000071 		cmp	w1, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 17
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 17
 
 
  911 0b60 0D030054 		ble	.L89
@@ -6098,7 +6098,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  965 0c08 E82744A9 		ldp	x8, x9, [sp, 64]
  966 0c0c EA2F01A9 		stp	x10, x11, [sp, 16]
  967 0c10 E82702A9 		stp	x8, x9, [sp, 32]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 18
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 18
 
 
  968 0c14 E017803D 		str	q0, [sp, 80]
@@ -6158,7 +6158,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1020 0cd8 E68B01F9 		str	x6, [sp, 784]
  1021 0cdc E78F01F9 		str	x7, [sp, 792]
  1022 0ce0 00000094 		bl	vsprintf
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 19
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 19
 
 
  1023 0ce4 F503002A 		mov	w21, w0
@@ -6192,24 +6192,24 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1049      38394142 
  1049      43444546 
  1050              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 20
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 emb-stdio.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:7      .text:0000000000000000 number
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:225    .text:00000000000002b0 vsprintf
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:954    .text:0000000000000be0 sprintf
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:989    .text:0000000000000c60 printf
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1044   .rodata:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1048   .rodata:0000000000000000 digits.3946
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:7      .text:0000000000000000 number
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:225    .text:00000000000002b0 vsprintf
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:954    .text:0000000000000be0 sprintf
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:989    .text:0000000000000c60 printf
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1044   .rodata:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1048   .rodata:0000000000000000 digits.3946
 
 UNDEFINED SYMBOLS
 __locale_ctype_ptr
 strnlen
 Embedded_Console_WriteChar
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -6269,7 +6269,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   55 00b0 A1010054 		bne	.L9
   56 00b4 00008052 		mov	w0, 0
   57 00b8 F55B41A9 		ldp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   58 00bc F76342A9 		ldp	x23, x24, [sp, 32]
@@ -6329,7 +6329,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  112 016c FE2300F9 		str	x30, [sp, 64]
  113              		.p2align 3
  114              	.L18:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  115 0170 C00240B9 		ldr	w0, [x22]
@@ -6389,7 +6389,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  169 0230 00000090 		adrp	x0, .LC2
  170 0234 E203132A 		mov	w2, w19
  171 0238 00000091 		add	x0, x0, :lo12:.LC2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  172 023c 210040B9 		ldr	w1, [x1]
@@ -6449,7 +6449,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  225 02f0 F4020091 		add	x20, x23, :lo12:RPi_IO_Base_Addr
  226 02f4 F803002A 		mov	w24, w0
  227 02f8 F55B01A9 		stp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  228 02fc 96048052 		mov	w22, 36
@@ -6509,7 +6509,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  282 03a8 E2D390D2 		mov	x2, 34463
  283 03ac 2200A0F2 		movk	x2, 0x1, lsl 16
  284 03b0 BF0202EB 		cmp	x21, x2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  285 03b4 48FDFF54 		bhi	.L64
@@ -6569,7 +6569,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  339 0480 F30300AA 		mov	x19, x0
  340 0484 800240B9 		ldr	w0, [x20]
  341 0488 0000160B 		add	w0, w0, w22
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  342 048c 000040B9 		ldr	w0, [x0]
@@ -6629,7 +6629,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  395              	SetFindDataFromFATEntry.part.0:
  396 0530 022C4039 		ldrb	w2, [x0, 11]
  397 0534 226C00B9 		str	w2, [x1, 108]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  398 0538 03604039 		ldrb	w3, [x0, 24]
@@ -6689,7 +6689,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  452 0610 02004039 		ldrb	w2, [x0]
  453 0614 22E00539 		strb	w2, [x1, 376]
  454 0618 02044039 		ldrb	w2, [x0, 1]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
  455 061c 22E40539 		strb	w2, [x1, 377]
@@ -6749,7 +6749,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  509 06dc 61010054 		bne	.L84
  510 06e0 9F0314EB 		cmp	x28, x20
  511 06e4 C80A0054 		bhi	.L86
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 10
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 10
 
 
  512 06e8 F30900B5 		cbnz	x19, .L82
@@ -6809,7 +6809,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  566 07b8 1F4400B9 		str	wzr, [x0, 68]
  567 07bc 26004C11 		add	w6, w1, 3145728
  568 07c0 25004C11 		add	w5, w1, 3145728
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 11
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 11
 
 
  569 07c4 A41240B9 		ldr	w4, [x21, 16]
@@ -6869,7 +6869,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  623 0888 FE2B40F9 		ldr	x30, [sp, 80]
  624 088c F353C6A8 		ldp	x19, x20, [sp], 96
  625 0890 C0035FD6 		ret
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 12
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 12
 
 
  626              		.p2align 2
@@ -6929,7 +6929,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  680 0940 5F03026B 		cmp	w26, w2
  681 0944 9F4E00B9 		str	wzr, [x20, 76]
  682 0948 F3079F1A 		cset	w19, ne
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 13
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 13
 
 
  683 094c AEFFFF17 		b	.L80
@@ -6989,7 +6989,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  737 0a1c 46041F53 		ubfiz	w6, w2, 1, 2
  738 0a20 A108010B 		add	w1, w5, w1, lsl 2
  739 0a24 03091D33 		bfi	w3, w8, 3, 3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 14
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 14
 
 
  740 0a28 03600039 		strb	w3, [x0, 24]
@@ -7049,7 +7049,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  794 0afc 85010033 		bfi	w5, w12, 0, 1
  795 0b00 21001A12 		and	w1, w1, 64
  796 0b04 13008052 		mov	w19, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 15
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 15
 
 
  797 0b08 60010033 		bfi	w0, w11, 0, 1
@@ -7109,7 +7109,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  851              	.L119:
  852 0bc4 94220091 		add	x20, x20, 8
  853 0bc8 F96B03A9 		stp	x25, x26, [sp, 48]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 16
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 16
 
 
  854 0bcc D9820D91 		add	x25, x22, 864
@@ -7169,7 +7169,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  908 0c80 E0031AAA 		mov	x0, x26
  909 0c84 7BFEFF97 		bl	sdSendCommandP
  910 0c88 80010035 		cbnz	w0, .L123
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 17
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 17
 
 
  911 0c8c 804640B9 		ldr	w0, [x20, 68]
@@ -7229,7 +7229,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  965              		.align	2
  966              		.p2align 4,,15
  967              		.type	sdResetCard, %function
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 18
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 18
 
 
  968              	sdResetCard:
@@ -7289,7 +7289,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1022 0df4 42000032 		orr	w2, w2, 1
  1023 0df8 220000B9 		str	w2, [x1]
  1024 0dfc 00000094 		bl	timer_wait
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 19
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 19
 
 
  1025 0e00 00508352 		mov	w0, 6784
@@ -7349,7 +7349,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1079 0ebc F77B42A9 		ldp	x23, x30, [sp, 32]
  1080 0ec0 F353C3A8 		ldp	x19, x20, [sp], 48
  1081 0ec4 C0035FD6 		ret
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 20
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 20
 
 
  1082              		.size	sdResetCard, .-sdResetCard
@@ -7409,7 +7409,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1135 0f88 F91B40F9 		ldr	x25, [sp, 48]
  1136              	.L160:
  1137 0f8c E003162A 		mov	w0, w22
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 21
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 21
 
 
  1138 0f90 F55B41A9 		ldp	x21, x22, [sp, 16]
@@ -7469,7 +7469,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1192              	.L168:
  1193 1048 25084039 		ldrb	w5, [x1, 2]
  1194 104c 21040091 		add	x1, x1, 1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 22
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 22
 
 
  1195 1050 430040B9 		ldr	w3, [x2]
@@ -7529,7 +7529,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1248      1F2003D5 
  1248      1F2003D5 
  1249              		.type	LoadDrivePartition, %function
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 23
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 23
 
 
  1250              	LoadDrivePartition:
@@ -7589,7 +7589,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1304 11dc 00008052 		mov	w0, 0
  1305 11e0 F35340A9 		ldp	x19, x20, [sp]
  1306 11e4 F55B41A9 		ldp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 24
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 24
 
 
  1307 11e8 FE1340F9 		ldr	x30, [sp, 32]
@@ -7649,7 +7649,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1361 12ac 007C061B 		mul	w0, w0, w6
  1362 12b0 42840051 		sub	w2, w2, #33
  1363 12b4 45008052 		mov	w5, 2
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 25
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 25
 
 
  1364 12b8 21040011 		add	w1, w1, 1
@@ -7709,7 +7709,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1417 1360 F353BAA9 		stp	x19, x20, [sp, -96]!
  1418 1364 741C0012 		and	w20, w3, 255
  1419 1368 F55B01A9 		stp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 26
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 26
 
 
  1420 136c F76302A9 		stp	x23, x24, [sp, 32]
@@ -7769,7 +7769,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1474 1438 F76342A9 		ldp	x23, x24, [sp, 32]
  1475 143c F96B43A9 		ldp	x25, x26, [sp, 48]
  1476 1440 FB7344A9 		ldp	x27, x28, [sp, 64]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 27
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 27
 
 
  1477 1444 FE2B40F9 		ldr	x30, [sp, 80]
@@ -7829,7 +7829,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1531 14f8 417C1053 		lsr	w1, w2, 16
  1532 14fc 427C1853 		lsr	w2, w2, 24
  1533 1500 03000039 		strb	w3, [x0]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 28
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 28
 
 
  1534 1504 01040039 		strb	w1, [x0, 1]
@@ -7889,7 +7889,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1588 15b8 410340B9 		ldr	w1, [x26]
  1589 15bc 21001B0B 		add	w1, w1, w27
  1590 15c0 210040B9 		ldr	w1, [x1]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 29
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 29
 
 
  1591 15c4 014400B8 		str	w1, [x0], 4
@@ -7949,7 +7949,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1645 1688 C0EAFF34 		cbz	w0, .L240
  1646 168c 68FFFF17 		b	.L296
  1647              	.L301:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 30
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 30
 
 
  1648 1690 F4ECFF34 		cbz	w20, .L296
@@ -8009,7 +8009,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1701 174c 40000036 		tbz	x0, 0, .L308
  1702 1750 E14640B9 		ldr	w1, [x23, 68]
  1703              	.L308:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 31
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 31
 
 
  1704 1754 60220A91 		add	x0, x19, 648
@@ -8069,7 +8069,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1758 1804 54008052 		mov	w20, 2
  1759 1808 E003142A 		mov	w0, w20
  1760 180c F55B41A9 		ldp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 32
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 32
 
 
  1761 1810 F77B42A9 		ldp	x23, x30, [sp, 32]
@@ -8129,7 +8129,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1814 18d0 815A1753 		lsl	w1, w20, 9
  1815 18d4 620040B9 		ldr	w2, [x3]
  1816 18d8 2100941A 		csel	w1, w1, w20, eq
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 33
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 33
 
 
  1817 18dc 40430591 		add	x0, x26, 336
@@ -8189,7 +8189,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1871              		.p2align 2
  1872              	.L332:
  1873 1998 E04240B9 		ldr	w0, [x23, 64]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 34
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 34
 
 
  1874 199c F7220091 		add	x23, x23, 8
@@ -8249,7 +8249,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1928 1a68 00000091 		add	x0, x0, :lo12:.LC8
  1929 1a6c 20003FD6 		blr	x1
  1930 1a70 01008012 		mov	w1, -1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 35
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 35
 
 
  1931 1a74 FB7344A9 		ldp	x27, x28, [sp, 64]
@@ -8309,7 +8309,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  1985 1b20 0000398B 		add	x0, x0, x25, uxtb
  1986 1b24 00044039 		ldrb	w0, [x0, 1]
  1987 1b28 00040012 		and	w0, w0, 3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 36
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 36
 
 
  1988 1b2c 1F080071 		cmp	w0, 2
@@ -8369,7 +8369,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2042 1bdc F50313AA 		mov	x21, x19
  2043 1be0 15F7FFB5 		cbnz	x21, .L372
  2044 1be4 E3FFFF17 		b	.L380
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 37
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 37
 
 
  2045              		.p2align 2
@@ -8429,7 +8429,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2099 1c90 E1FFA172 		movk	w1, 0xfff, lsl 16
  2100 1c94 00040051 		sub	w0, w0, #1
  2101 1c98 1F00016B 		cmp	w0, w1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 38
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 38
 
 
  2102 1c9c 68360054 		bhi	.L461
@@ -8489,7 +8489,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2156 1d6c 801B4039 		ldrb	w0, [x28, 6]
  2157 1d70 01781A12 		and	w1, w0, -33
  2158 1d74 61280034 		cbz	w1, .L546
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 39
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 39
 
 
  2159 1d78 401B0039 		strb	w0, [x26, 6]
@@ -8549,7 +8549,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2213 1e34 FB7344A9 		ldp	x27, x28, [sp, 64]
  2214 1e38 FE2B40F9 		ldr	x30, [sp, 80]
  2215 1e3c F353C9A8 		ldp	x19, x20, [sp], 144
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 40
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 40
 
 
  2216 1e40 C0035FD6 		ret
@@ -8609,7 +8609,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2270 1ef4 025C40B9 		ldr	w2, [x0, 92]
  2271              	.L459:
  2272 1ef8 9C070011 		add	w28, w28, 1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 41
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 41
 
 
  2273 1efc 7C0B00B9 		str	w28, [x27, 8]
@@ -8669,7 +8669,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2327              	.L540:
  2328 1fcc F50313AA 		mov	x21, x19
  2329 1fd0 96070091 		add	x22, x28, 1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 42
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 42
 
 
  2330 1fd4 18008052 		mov	w24, 0
@@ -8729,7 +8729,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2384 20a4 424B2038 		strb	w2, [x26, w0, uxtw]
  2385 20a8 00060054 		beq	.L433
  2386 20ac A0208052 		mov	w0, 261
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 43
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 43
 
 
  2387 20b0 0000194B 		sub	w0, w0, w25
@@ -8789,7 +8789,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2441 217c 01070011 		add	w1, w24, 1
  2442 2180 D60A0091 		add	x22, x22, 2
  2443 2184 381C0012 		and	w24, w1, 255
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 44
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 44
 
 
  2444 2188 1F170071 		cmp	w24, 5
@@ -8849,7 +8849,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2498 2244 D8FEFF17 		b	.L435
  2499              	.L544:
  2500 2248 40130091 		add	x0, x26, 4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 45
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 45
 
 
  2501 224c 0A0180D2 		mov	x10, 8
@@ -8909,7 +8909,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2555 2308 21000091 		add	x1, x1, :lo12:.LANCHOR0
  2556 230c 38200091 		add	x24, x1, 8
  2557 2310 02008052 		mov	w2, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 46
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 46
 
 
  2558 2314 61430091 		add	x1, x27, 16
@@ -8969,7 +8969,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2612              		.global	sdFindFirstFile
  2613              		.type	sdFindFirstFile, %function
  2614              	sdFindFirstFile:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 47
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 47
 
 
  2615 23d0 F353A7A9 		stp	x19, x20, [sp, -400]!
@@ -9029,7 +9029,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2669 2488 441B4B29 		ldp	w4, w6, [x26, 88]
  2670 248c E13B00F9 		str	x1, [sp, 112]
  2671 2490 43030291 		add	x3, x26, 128
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 48
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 48
 
 
  2672 2494 454340B9 		ldr	w5, [x26, 64]
@@ -9089,7 +9089,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2726 2564 3554009B 		madd	x21, x1, x0, x21
  2727 2568 810B8052 		mov	w1, 92
  2728 256c E00314AA 		mov	x0, x20
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 49
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 49
 
 
  2729 2570 00000094 		bl	strchr
@@ -9149,7 +9149,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2783 2644 BBF6FF97 		bl	sdWaitForInterrupt
  2784 2648 C0040035 		cbnz	w0, .L611
  2785 264c 000340B9 		ldr	w0, [x24, #:lo12:RPi_IO_Base_Addr]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 50
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 50
 
 
  2786 2650 E10317AA 		mov	x1, x23
@@ -9209,7 +9209,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2840 2708 00000091 		add	x0, x0, :lo12:.LC8
  2841 270c 20003FD6 		blr	x1
  2842 2710 00008052 		mov	w0, 0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 51
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 51
 
 
  2843 2714 F55B41A9 		ldp	x21, x22, [sp, 16]
@@ -9269,7 +9269,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2895              		.type	sdFindNextFile, %function
  2896              	sdFindNextFile:
  2897 27c0 F353BCA9 		stp	x19, x20, [sp, -64]!
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 52
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 52
 
 
  2898 27c4 02040051 		sub	w2, w0, #1
@@ -9329,7 +9329,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  2952              		.global	sdFindClose
  2953              		.type	sdFindClose, %function
  2954              	sdFindClose:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 53
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 53
 
 
  2955 2880 00040051 		sub	w0, w0, #1
@@ -9389,7 +9389,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3008 292c 9416949A 		cinc	x20, x20, eq
  3009 2930 60170034 		cbz	w0, .L677
  3010 2934 002343B9 		ldr	w0, [x24, 800]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 54
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 54
 
 
  3011 2938 A0170034 		cbz	w0, .L653
@@ -9449,7 +9449,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3065 2a08 63001032 		orr	w3, w3, 65536
  3066 2a0c 430000B9 		str	w3, [x2]
  3067 2a10 430040B9 		ldr	w3, [x2]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 55
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 55
 
 
  3068 2a14 83240033 		bfi	w3, w4, 0, 10
@@ -9509,7 +9509,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3122 2ae4 1450041B 		madd	w20, w0, w4, w20
  3123 2ae8 D40600B9 		str	w20, [x22, 4]
  3124 2aec 23060034 		cbz	w3, .L689
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 56
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 56
 
 
  3125 2af0 44F5FF97 		bl	sdWaitForData
@@ -9569,7 +9569,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3179 2bb4 F76342A9 		ldp	x23, x24, [sp, 32]
  3180 2bb8 F96B43A9 		ldp	x25, x26, [sp, 48]
  3181 2bbc FB7344A9 		ldp	x27, x28, [sp, 64]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 57
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 57
 
 
  3182              	.L641:
@@ -9629,7 +9629,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3236 2c60 07684039 		ldrb	w7, [x0, 26]
  3237 2c64 267C069B 		mul	x6, x1, x6
  3238 2c68 056C4039 		ldrb	w5, [x0, 27]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 58
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 58
 
 
  3239 2c6c E10317AA 		mov	x1, x23
@@ -9689,7 +9689,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3293 2d2c 24080034 		cbz	w4, .L696
  3294 2d30 F55B01A9 		stp	x21, x22, [sp, 16]
  3295 2d34 F50301AA 		mov	x21, x1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 59
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 59
 
 
  3296 2d38 010280D2 		mov	x1, 16
@@ -9749,7 +9749,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3350 2dfc E13F40F9 		ldr	x1, [sp, 120]
  3351 2e00 20008052 		mov	w0, 1
  3352 2e04 211100B4 		cbz	x1, .L746
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 60
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 60
 
 
  3353              	.L757:
@@ -9809,7 +9809,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3407 2ebc 1F0C0071 		cmp	w0, 3
  3408 2ec0 20581753 		lsl	w0, w1, 9
  3409 2ec4 430040B9 		ldr	w3, [x2]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 61
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 61
 
 
  3410 2ec8 0100811A 		csel	w1, w0, w1, eq
@@ -9869,7 +9869,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3464 2f8c 63001032 		orr	w3, w3, 65536
  3465 2f90 E03740F9 		ldr	x0, [sp, 104]
  3466 2f94 430000B9 		str	w3, [x2]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 62
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 62
 
 
  3467 2f98 430040B9 		ldr	w3, [x2]
@@ -9929,7 +9929,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3521 3044 1F1C0071 		cmp	w0, 7
  3522 3048 48010054 		bhi	.L765
  3523 304c E103002A 		uxtw	x1, w0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 63
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 63
 
 
  3524 3050 02000090 		adrp	x2, intFileIORecord
@@ -9989,7 +9989,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3576 3100 437C019B 		mul	x3, x2, x1
  3577 3104 0203038B 		add	x2, x24, x3
  3578 3108 441443B9 		ldr	w4, [x2, 788]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 64
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 64
 
 
  3579 310c 9F00136B 		cmp	w4, w19
@@ -10049,7 +10049,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3633              	.L778:
  3634 31e0 410040B9 		ldr	w1, [x2]
  3635 31e4 014400B8 		str	w1, [x0], 4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 65
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 65
 
 
  3636 31e8 1F0016EB 		cmp	x0, x22
@@ -10109,7 +10109,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3690              	.L783:
  3691 32b8 020040B9 		ldr	w2, [x0]
  3692 32bc 224400B8 		str	w2, [x1], 4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 66
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 66
 
 
  3693 32c0 DF0201EB 		cmp	x22, x1
@@ -10169,7 +10169,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3747 336c 1C080051 		sub	w28, w0, #2
  3748 3370 455740B9 		ldr	w5, [x26, 84]
  3749 3374 415F40B9 		ldr	w1, [x26, 92]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 67
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 67
 
 
  3750 3378 423B40B9 		ldr	w2, [x26, 56]
@@ -10229,7 +10229,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3804 3440 20003FD6 		blr	x1
  3805 3444 00008012 		mov	w0, -1
  3806 3448 F55B41A9 		ldp	x21, x22, [sp, 16]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 68
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 68
 
 
  3807 344c F76342A9 		ldp	x23, x24, [sp, 32]
@@ -10289,7 +10289,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3858              		.global	sdInitCard
  3859              		.type	sdInitCard, %function
  3860              	sdInitCard:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 69
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 69
 
 
  3861 34e0 FF0303D1 		sub	sp, sp, #192
@@ -10349,7 +10349,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3915 35a4 C14640B9 		ldr	w1, [x22, 68]
  3916              	.L858:
  3917 35a8 80C20091 		add	x0, x20, 48
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 70
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 70
 
 
  3918 35ac 31F4FF97 		bl	sdSendCommandP
@@ -10409,7 +10409,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  3972 3674 F303002A 		mov	w19, w0
  3973 3678 40160035 		cbnz	w0, .L924
  3974 367c C14640B9 		ldr	w1, [x22, 68]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 71
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 71
 
 
  3975 3680 61000034 		cbz	w1, .L866
@@ -10469,7 +10469,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4029 3748 0A40012A 		orr	w10, w0, w1, lsl 16
  4030 374c C5224039 		ldrb	w5, [x22, 8]
  4031 3750 00000090 		adrp	x0, .LC16
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 72
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 72
 
 
  4032 3754 00000091 		add	x0, x0, :lo12:.LC16
@@ -10529,7 +10529,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4086 381c F303002A 		mov	w19, w0
  4087 3820 80E7FF35 		cbnz	w0, .L849
  4088              	.L856:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 73
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 73
 
 
  4089 3824 E0231132 		mov	w0, 16744448
@@ -10589,7 +10589,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4143 38e4 F96B48A9 		ldp	x25, x26, [sp, 128]
  4144 38e8 0AFFFF17 		b	.L849
  4145              	.L933:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 74
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 74
 
 
  4146 38ec B93E40B9 		ldr	w25, [x21, 60]
@@ -10649,7 +10649,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4200 39a8 FB7349A9 		ldp	x27, x28, [sp, 144]
  4201 39ac CDFFFF17 		b	.L878
  4202              	.L928:
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 75
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 75
 
 
  4203 39b0 FB7349A9 		ldp	x27, x28, [sp, 144]
@@ -10709,7 +10709,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4249 0013 00       		.byte	0
  4250 0014 00       		.byte	0
  4251 0015 00       		.zero	1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 76
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 76
 
 
  4252 0016 0000     		.hword	0
@@ -10769,7 +10769,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4293      5F49465F 
  4293      434F4E44 
  4293      00
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 77
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 77
 
 
  4294 009d 000000   		.zero	3
@@ -10829,7 +10829,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4335 0118 0000     		.zero	2
  4336 011a 02       		.byte	2
  4337 011b 0D       		.byte	13
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 78
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 78
 
 
  4338 011c 01       		.byte	1
@@ -10889,7 +10889,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4380 0194 00       		.byte	0
  4381 0195 00       		.zero	1
  4382 0196 0000     		.hword	0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 79
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 79
 
 
  4383 0198 53504545 		.string	"SPEED_CLASS"
@@ -10949,7 +10949,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4424      57524954 
  4424      455F5052 
  4424      00
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 80
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 80
 
 
  4425 021d 000000   		.zero	3
@@ -11009,7 +11009,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4465      0000
  4466 0298 0000     		.zero	2
  4467 029a 03       		.byte	3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 81
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 81
 
 
  4468 029b 26       		.byte	38
@@ -11069,7 +11069,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4511 0316 0000     		.hword	0
  4512 0318 53445F53 		.string	"SD_STATUS"
  4512      54415455 
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 82
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 82
 
 
  4512      5300
@@ -11129,7 +11129,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4552      00
  4553 0399 00000000 		.zero	7
  4553      000000
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 83
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 83
 
 
  4554 03a0 10       		.byte	16
@@ -11189,7 +11189,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4587 0067 00       		.zero	1
  4588              	.LC2:
  4589 0068 454D4D43 		.string	"EMMC: Error waiting for interrupt: %08x %08x %08x\n"
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 84
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 84
 
 
  4589      3A204572 
@@ -11249,7 +11249,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4609      74207761 
  4609      6974696E 
  4610 01ed 000000   		.zero	3
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 85
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 85
 
 
  4611              	.LC10:
@@ -11309,7 +11309,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4634              	.LC18:
  4635 0370 4D4D4300 		.string	"MMC"
  4636 0374 00000000 		.zero	4
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 86
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 86
 
 
  4637              	.LC19:
@@ -11327,46 +11327,46 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  4644      20322048 
  4644      4300
  4645              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 87
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 87
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 SDCard.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:7      .text:0000000000000000 sdWaitForData
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:96     .text:0000000000000130 sdWaitForInterrupt
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:220    .text:00000000000002e0 sdSetClock
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:395    .text:0000000000000530 SetFindDataFromFATEntry.part.0
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:479    .text:0000000000000670 sdSendCommandP
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:824    .text:0000000000000b60 sdAppSendOpCond
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:968    .text:0000000000000d30 sdResetCard
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1086   .text:0000000000000ed0 sdTransferBlocks.constprop.7
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1250   .text:0000000000001110 LoadDrivePartition
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1416   .text:0000000000001360 sdTransferBlocks
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1668   .text:00000000000016d0 sdClearBlocks
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1781   .text:0000000000001850 getSetNextCluster
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:1948   .text:0000000000001aa0 WildcardMatch
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2081   .text:0000000000001c50 LocateFATEntry
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2614   .text:00000000000023d0 sdFindFirstFile
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2896   .text:00000000000027c0 sdFindNextFile
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2954   .text:0000000000002880 sdFindClose
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:2982   .text:00000000000028d0 sdCreateFile
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4578   .bss:0000000000000cc0 intFileIORecord
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3281   .text:0000000000002d00 sdReadFile
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3519   .text:0000000000003040 sdCloseHandle
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3546   .text:0000000000003090 sdSetFilePointer
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3836   .text:00000000000034a0 sdGetFileSize
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:3860   .text:00000000000034e0 sdInitCard
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4218   .text:00000000000039d0 sdCardCSD
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4566   .bss:0000000000000000 LOG_ERROR
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4229   .rodata:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4233   .rodata:0000000000000000 SD_TYPE_NAME
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4240   .data:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4244   .data:0000000000000000 sdCommandTable
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4562   .bss:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4570   .bss:0000000000000008 sdCard
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4574   .bss:0000000000000080 intSearchRecord
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4581   .rodata.str1.8:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:7      .text:0000000000000000 sdWaitForData
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:96     .text:0000000000000130 sdWaitForInterrupt
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:220    .text:00000000000002e0 sdSetClock
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:395    .text:0000000000000530 SetFindDataFromFATEntry.part.0
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:479    .text:0000000000000670 sdSendCommandP
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:824    .text:0000000000000b60 sdAppSendOpCond
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:968    .text:0000000000000d30 sdResetCard
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1086   .text:0000000000000ed0 sdTransferBlocks.constprop.7
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1250   .text:0000000000001110 LoadDrivePartition
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1416   .text:0000000000001360 sdTransferBlocks
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1668   .text:00000000000016d0 sdClearBlocks
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1781   .text:0000000000001850 getSetNextCluster
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:1948   .text:0000000000001aa0 WildcardMatch
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2081   .text:0000000000001c50 LocateFATEntry
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2614   .text:00000000000023d0 sdFindFirstFile
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2896   .text:00000000000027c0 sdFindNextFile
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2954   .text:0000000000002880 sdFindClose
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:2982   .text:00000000000028d0 sdCreateFile
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4578   .bss:0000000000000cc0 intFileIORecord
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3281   .text:0000000000002d00 sdReadFile
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3519   .text:0000000000003040 sdCloseHandle
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3546   .text:0000000000003090 sdSetFilePointer
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3836   .text:00000000000034a0 sdGetFileSize
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:3860   .text:00000000000034e0 sdInitCard
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4218   .text:00000000000039d0 sdCardCSD
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4566   .bss:0000000000000000 LOG_ERROR
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4229   .rodata:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4233   .rodata:0000000000000000 SD_TYPE_NAME
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4240   .data:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4244   .data:0000000000000000 sdCommandTable
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4562   .bss:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4570   .bss:0000000000000008 sdCard
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4574   .bss:0000000000000080 intSearchRecord
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4581   .rodata.str1.8:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 RPi_IO_Base_Addr
@@ -11376,7 +11376,7 @@ timer_wait
 __locale_ctype_ptr
 wctob
 strchr
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -11436,7 +11436,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   52 0090 F100C0F2 		movk	x17, 0x7, lsl 32
   53 0094 412C09A9 		stp	x1, x11, [x2, 144]
   54 0098 0B001091 		add	x11, x0, 1024
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   55 009c 4301C0D2 		mov	x3, 42949672960
@@ -11496,7 +11496,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  109 0174 0CA02891 		add	x12, x0, 2600
  110 0178 108403F9 		str	x16, [x0, 1800]
  111 017c F0777EB2 		mov	x16, 4294967292
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  112 0180 5001C0F2 		movk	x16, 0xa, lsl 32
@@ -11556,7 +11556,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  166 0258 1F4C04F9 		str	xzr, [x0, 2200]
  167 025c 015004F9 		str	x1, [x0, 2208]
  168 0260 105404F9 		str	x16, [x0, 2216]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  169 0264 0F5804F9 		str	x15, [x0, 2224]
@@ -11616,7 +11616,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  223 033c 710E09A9 		stp	x17, x3, [x19, 144]
  224 0340 6E4A0AA9 		stp	x14, x18, [x19, 160]
  225 0344 8F420BA9 		stp	x15, x16, [x20, 176]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  226 0348 8A2A0CA9 		stp	x10, x10, [x20, 192]
@@ -11676,7 +11676,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  260      00000000 
  261 05ac 00000000 		.zero	4
  262              		.type	H, %object
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  263              		.size	H, 100
@@ -11736,7 +11736,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  293              		.size	P, 100
  294              	P:
  295 0820 00000000 		.zero	100
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  295      00000000 
@@ -11796,42 +11796,42 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  325      00000000 
  325      00000000 
  325      00000000 
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  325      00000000 
  326              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 fonts.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:8      .text:0000000000000000 fonts_is_implemented
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:19     .text:0000000000000020 fonts_char_to_font
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:31     .text:0000000000000040 fonts_init
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:236    .bss:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:240    .bss:0000000000000000 char_is_implemented
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:245    .bss:0000000000000080 char_font_map
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:249    .bss:0000000000000478 A
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:254    .bss:00000000000004e0 C
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:259    .bss:0000000000000548 E
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:264    .bss:00000000000005b0 H
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:269    .bss:0000000000000618 I
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:274    .bss:0000000000000680 L
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:279    .bss:00000000000006e8 M
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:284    .bss:0000000000000750 N
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:289    .bss:00000000000007b8 O
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:294    .bss:0000000000000820 P
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:299    .bss:0000000000000888 R
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:304    .bss:00000000000008f0 S
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:309    .bss:0000000000000958 T
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:314    .bss:00000000000009c0 W
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:319    .bss:0000000000000a28 Z
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:324    .bss:0000000000000a90 DOLLAR_SIGN
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:8      .text:0000000000000000 fonts_is_implemented
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:19     .text:0000000000000020 fonts_char_to_font
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:31     .text:0000000000000040 fonts_init
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:236    .bss:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:240    .bss:0000000000000000 char_is_implemented
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:245    .bss:0000000000000080 char_font_map
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:249    .bss:0000000000000478 A
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:254    .bss:00000000000004e0 C
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:259    .bss:0000000000000548 E
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:264    .bss:00000000000005b0 H
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:269    .bss:0000000000000618 I
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:274    .bss:0000000000000680 L
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:279    .bss:00000000000006e8 M
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:284    .bss:0000000000000750 N
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:289    .bss:00000000000007b8 O
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:294    .bss:0000000000000820 P
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:299    .bss:0000000000000888 R
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:304    .bss:00000000000008f0 S
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:309    .bss:0000000000000958 T
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:314    .bss:00000000000009c0 W
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:319    .bss:0000000000000a28 Z
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:324    .bss:0000000000000a90 DOLLAR_SIGN
 
 NO UNDEFINED SYMBOLS
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -11891,7 +11891,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   51 0090 AC040054 		bgt	.L10
   52 0094 F303144B 		neg	w19, w20
   53 0098 737E530B 		add	w19, w19, w19, lsr 31
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
   54 009c 737E0113 		asr	w19, w19, 1
@@ -11951,7 +11951,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  108 0138 1F280071 		cmp	w0, 10
  109 013c FE2B00F9 		str	x30, [sp, 80]
  110 0140 00130054 		beq	.L50
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
  111 0144 1F340071 		cmp	w0, 13
@@ -12011,7 +12011,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  165 020c 83825FB8 		ldr	w3, [x20, -8]
  166 0210 635A031B 		madd	w3, w19, w3, w22
  167 0214 E39B00B9 		str	w3, [sp, 152]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
  168 0218 83C25FB8 		ldr	w3, [x20, -4]
@@ -12071,7 +12071,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  222              	.L35:
  223 02e0 00508052 		mov	w0, 640
  224 02e4 02009F52 		mov	w2, 63488
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
  225 02e8 E51B0C29 		stp	w5, w6, [sp, 96]
@@ -12131,7 +12131,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  279              		.p2align 2
  280              	.L50:
  281 03a0 02000090 		adrp	x2, .LANCHOR0
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
  282 03a4 530040B9 		ldr	w19, [x2, #:lo12:.LANCHOR0]
@@ -12191,7 +12191,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  336 0450 18008052 		mov	w24, 0
  337 0454 F96B03A9 		stp	x25, x26, [sp, 48]
  338 0458 19008012 		mov	w25, -1
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
  339 045c FB7304A9 		stp	x27, x28, [sp, 64]
@@ -12251,7 +12251,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  393 0524 EB335029 		ldp	w11, w12, [sp, 128]
  394 0528 EA7740B9 		ldr	w10, [sp, 116]
  395 052c 9F01136B 		cmp	w12, w19
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
 
 
  396 0530 6A000054 		bge	.L67
@@ -12311,7 +12311,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  450 05f0 F76342A9 		ldp	x23, x24, [sp, 32]
  451 05f4 FE2B40F9 		ldr	x30, [sp, 80]
  452 05f8 E82F40FD 		ldr	d8, [sp, 88]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
  453 05fc F353CAA8 		ldp	x19, x20, [sp], 160
@@ -12371,7 +12371,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  507 06ac 26110091 		add	x6, x9, 4
  508 06b0 E403192A 		mov	w4, w25
  509 06b4 F803132A 		mov	w24, w19
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 10
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 10
 
 
  510 06b8 F65300F9 		str	x22, [sp, 160]
@@ -12431,7 +12431,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  564 0784 6003597A 		ccmp	w27, w25, 0, eq
  565 0788 E77740B9 		ldr	w7, [sp, 116]
  566 078c E48340B9 		ldr	w4, [sp, 128]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 11
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 11
 
 
  567 0790 E93F40F9 		ldr	x9, [sp, 120]
@@ -12491,7 +12491,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  621 084c E3BB00B9 		str	w3, [sp, 184]
  622 0850 83C25FB8 		ldr	w3, [x20, -4]
  623 0854 6362031B 		madd	w3, w19, w3, w24
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 12
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 12
 
 
  624 0858 E3BF00B9 		str	w3, [sp, 188]
@@ -12551,7 +12551,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  677      1F2003D5 
  677      1F2003D5 
  678              		.global	hal_io_video_put_pixel
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 13
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 13
 
 
  679              		.type	hal_io_video_put_pixel, %function
@@ -12611,7 +12611,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  729 09a4 24008052 		mov	w4, 1
  730 09a8 820582D2 		mov	x2, 4140
  731 09ac 02E4A7F2 		movk	x2, 0x3f20, lsl 16
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 14
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 14
 
 
  732 09b0 040000B9 		str	w4, [x0]
@@ -12671,7 +12671,7 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  784 0a40 010000B9 		str	w1, [x0]
  785              	.L126:
  786 0a44 C0035FD6 		ret
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 15
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 15
 
 
  787              		.size	hal_io_serial_putc, .-hal_io_serial_putc
@@ -12713,28 +12713,28 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
  822              	curr_x:
  823 0004 0A000000 		.word	10
  824              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 16
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 hal_io.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:8      .text:0000000000000000 hal_io_init
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:15     .text:0000000000000010 hal_io_video_init
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:26     .text:0000000000000030 hal_io_video_line
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:105    .text:0000000000000130 hal_io_video_putc
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:304    .text:00000000000003e0 hal_io_video_putc_x_y
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:465    .text:0000000000000610 hal_io_video_puts
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:680    .text:0000000000000910 hal_io_video_put_pixel
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:695    .text:0000000000000940 hal_io_serial_init
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:706    .text:0000000000000960 __delay_890
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:716    .text:0000000000000978 __delay_895
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:747    .text:00000000000009e0 hal_io_serial_puts
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:773    .text:0000000000000a20 hal_io_serial_putc
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:792    .text:0000000000000a50 hal_io_serial_getc
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:818    .data:0000000000000000 curr_y
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:822    .data:0000000000000004 curr_x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:814    .data:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:8      .text:0000000000000000 hal_io_init
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:15     .text:0000000000000010 hal_io_video_init
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:26     .text:0000000000000030 hal_io_video_line
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:105    .text:0000000000000130 hal_io_video_putc
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:304    .text:00000000000003e0 hal_io_video_putc_x_y
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:465    .text:0000000000000610 hal_io_video_puts
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:680    .text:0000000000000910 hal_io_video_put_pixel
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:695    .text:0000000000000940 hal_io_serial_init
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:706    .text:0000000000000960 __delay_890
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:716    .text:0000000000000978 __delay_895
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:747    .text:00000000000009e0 hal_io_serial_puts
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:773    .text:0000000000000a20 hal_io_serial_putc
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:792    .text:0000000000000a50 hal_io_serial_getc
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:818    .data:0000000000000000 curr_y
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:822    .data:0000000000000004 curr_x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:814    .data:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 fonts_init
@@ -12742,7 +12742,7 @@ printf
 SmartStartPutPixelRaw
 fonts_is_implemented
 fonts_char_to_font
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 1
 
 
    1              		.arch armv8-a
@@ -12759,426 +12759,459 @@ AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 1
   12              		.align	2
   13 0008 1F2003D5 		.p2align 4,,15
   13      1F2003D5 
-  14              		.global	ls
-  15              		.type	ls, %function
-  16              	ls:
-  17 0010 FFC309D1 		sub	sp, sp, #624
-  18 0014 00000090 		adrp	x0, .LC13
-  19 0018 00000091 		add	x0, x0, :lo12:.LC13
-  20 001c F35305A9 		stp	x19, x20, [sp, 80]
-  21 0020 13000090 		adrp	x19, .LC17
-  22 0024 73020091 		add	x19, x19, :lo12:.LC17
-  23 0028 F55B06A9 		stp	x21, x22, [sp, 96]
-  24 002c F5230291 		add	x21, sp, 136
-  25 0030 16000090 		adrp	x22, .LC16
-  26 0034 D6020091 		add	x22, x22, :lo12:.LC16
-  27 0038 F77B07A9 		stp	x23, x30, [sp, 112]
-  28 003c 00000094 		bl	printf
-  29 0040 020C80D2 		mov	x2, 96
-  30 0044 E00315AA 		mov	x0, x21
-  31 0048 01000090 		adrp	x1, .LANCHOR0
-  32 004c 21000091 		add	x1, x1, :lo12:.LANCHOR0
-  33 0050 00000094 		bl	memcpy
-  34 0054 E1A30391 		add	x1, sp, 232
-  35 0058 00000090 		adrp	x0, .LC15
-  36 005c 34E00191 		add	x20, x1, 120
-  37 0060 00000091 		add	x0, x0, :lo12:.LC15
-  38 0064 00000094 		bl	sdFindFirstFile
-  39 0068 F703002A 		mov	w23, w0
-  40 006c 1F2003D5 		.p2align 3
-  41              	.L4:
-  42 0070 E15741B9 		ldr	w1, [sp, 340]
-  43 0074 E00313AA 		mov	x0, x19
-  44 0078 3F400071 		cmp	w1, 16
-  45 007c 00050054 		beq	.L9
-  46 0080 E9FB80B9 		ldrsw	x9, [sp, 248]
-  47 0084 E8F740B9 		ldr	w8, [sp, 244]
-  48 0088 EBAB4939 		ldrb	w11, [sp, 618]
-  49 008c ECA74939 		ldrb	w12, [sp, 617]
-  50 0090 EDA34939 		ldrb	w13, [sp, 616]
-  51 0094 EE9F4939 		ldrb	w14, [sp, 615]
-  52 0098 EA5F41B9 		ldr	w10, [sp, 348]
-  53 009c EE0300B9 		str	w14, [sp]
-  54 00a0 ED0B00B9 		str	w13, [sp, 8]
-  55 00a4 EC1300B9 		str	w12, [sp, 16]
-  56 00a8 EB1B00B9 		str	w11, [sp, 24]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 2
+  14              		.global	cd
+  15              		.type	cd, %function
+  16              	cd:
+  17 0010 80008052 		mov	w0, 4
+  18 0014 C0035FD6 		ret
+  19              		.size	cd, .-cd
+  20              		.align	2
+  21 0018 1F2003D5 		.p2align 4,,15
+  21      1F2003D5 
+  22              		.global	ls
+  23              		.type	ls, %function
+  24              	ls:
+  25 0020 FFC309D1 		sub	sp, sp, #624
+  26 0024 00000090 		adrp	x0, .LC13
+  27 0028 00000091 		add	x0, x0, :lo12:.LC13
+  28 002c F35305A9 		stp	x19, x20, [sp, 80]
+  29 0030 13000090 		adrp	x19, .LC17
+  30 0034 73020091 		add	x19, x19, :lo12:.LC17
+  31 0038 F55B06A9 		stp	x21, x22, [sp, 96]
+  32 003c F5230291 		add	x21, sp, 136
+  33 0040 16000090 		adrp	x22, .LC16
+  34 0044 D6020091 		add	x22, x22, :lo12:.LC16
+  35 0048 F77B07A9 		stp	x23, x30, [sp, 112]
+  36 004c 00000094 		bl	printf
+  37 0050 020C80D2 		mov	x2, 96
+  38 0054 E00315AA 		mov	x0, x21
+  39 0058 01000090 		adrp	x1, .LANCHOR0
+  40 005c 21000091 		add	x1, x1, :lo12:.LANCHOR0
+  41 0060 00000094 		bl	memcpy
+  42 0064 E1A30391 		add	x1, sp, 232
+  43 0068 00000090 		adrp	x0, .LC15
+  44 006c 34E00191 		add	x20, x1, 120
+  45 0070 00000091 		add	x0, x0, :lo12:.LC15
+  46 0074 00000094 		bl	sdFindFirstFile
+  47 0078 F703002A 		mov	w23, w0
+  48 007c 1F2003D5 		.p2align 3
+  49              	.L5:
+  50 0080 E15741B9 		ldr	w1, [sp, 340]
+  51 0084 E00313AA 		mov	x0, x19
+  52 0088 3F400071 		cmp	w1, 16
+  53 008c 00050054 		beq	.L10
+  54 0090 E9FB80B9 		ldrsw	x9, [sp, 248]
+  55 0094 E8F740B9 		ldr	w8, [sp, 244]
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 2
 
 
-  57 00ac EA1300F9 		str	x10, [sp, 32]
-  58 00b0 E82B00B9 		str	w8, [sp, 40]
-  59 00b4 E8FF40B9 		ldr	w8, [sp, 252]
-  60 00b8 E1834939 		ldrb	w1, [sp, 608]
-  61 00bc E79B4939 		ldrb	w7, [sp, 614]
-  62 00c0 08B11D11 		add	w8, w8, 1900
-  63 00c4 E6974939 		ldrb	w6, [sp, 613]
-  64 00c8 E5934939 		ldrb	w5, [sp, 612]
-  65 00cc E48F4939 		ldrb	w4, [sp, 611]
-  66 00d0 E38B4939 		ldrb	w3, [sp, 610]
-  67 00d4 E2874939 		ldrb	w2, [sp, 609]
-  68 00d8 A97A69F8 		ldr	x9, [x21, x9, lsl 3]
-  69 00dc E91B00F9 		str	x9, [sp, 48]
-  70 00e0 E83B00B9 		str	w8, [sp, 56]
-  71 00e4 F42300F9 		str	x20, [sp, 64]
-  72 00e8 00000094 		bl	printf
-  73 00ec E1A30391 		add	x1, sp, 232
-  74 00f0 E003172A 		mov	w0, w23
-  75 00f4 00000094 		bl	sdFindNextFile
-  76 00f8 C0FBFF35 		cbnz	w0, .L4
-  77 00fc E003172A 		mov	w0, w23
-  78 0100 00000094 		bl	sdFindClose
-  79 0104 40008052 		mov	w0, 2
-  80 0108 F35345A9 		ldp	x19, x20, [sp, 80]
-  81 010c F55B46A9 		ldp	x21, x22, [sp, 96]
-  82 0110 F77B47A9 		ldp	x23, x30, [sp, 112]
-  83 0114 FFC30991 		add	sp, sp, 624
-  84 0118 C0035FD6 		ret
-  85              		.p2align 2
-  86              	.L9:
-  87 011c E10314AA 		mov	x1, x20
-  88 0120 E00316AA 		mov	x0, x22
-  89 0124 00000094 		bl	printf
-  90 0128 E1A30391 		add	x1, sp, 232
-  91 012c E003172A 		mov	w0, w23
-  92 0130 00000094 		bl	sdFindNextFile
-  93 0134 E0F9FF35 		cbnz	w0, .L4
-  94 0138 E003172A 		mov	w0, w23
-  95 013c 00000094 		bl	sdFindClose
-  96 0140 40008052 		mov	w0, 2
-  97 0144 F35345A9 		ldp	x19, x20, [sp, 80]
-  98 0148 F55B46A9 		ldp	x21, x22, [sp, 96]
-  99 014c F77B47A9 		ldp	x23, x30, [sp, 112]
- 100 0150 FFC30991 		add	sp, sp, 624
- 101 0154 C0035FD6 		ret
- 102              		.size	ls, .-ls
- 103              		.align	2
- 104 0158 1F2003D5 		.p2align 4,,15
- 104      1F2003D5 
- 105              		.global	trm_init
- 106              		.type	trm_init, %function
- 107              	trm_init:
- 108 0160 02000090 		adrp	x2, commands
- 109 0164 40000091 		add	x0, x2, :lo12:commands
- 110 0168 04000090 		adrp	x4, bpos
- 111 016c 01000090 		adrp	x1, .LC18
- 112 0170 21000091 		add	x1, x1, :lo12:.LC18
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 3
+  56 0098 EBAB4939 		ldrb	w11, [sp, 618]
+  57 009c ECA74939 		ldrb	w12, [sp, 617]
+  58 00a0 EDA34939 		ldrb	w13, [sp, 616]
+  59 00a4 EE9F4939 		ldrb	w14, [sp, 615]
+  60 00a8 EA5F41B9 		ldr	w10, [sp, 348]
+  61 00ac EE0300B9 		str	w14, [sp]
+  62 00b0 ED0B00B9 		str	w13, [sp, 8]
+  63 00b4 EC1300B9 		str	w12, [sp, 16]
+  64 00b8 EB1B00B9 		str	w11, [sp, 24]
+  65 00bc EA1300F9 		str	x10, [sp, 32]
+  66 00c0 E82B00B9 		str	w8, [sp, 40]
+  67 00c4 E8FF40B9 		ldr	w8, [sp, 252]
+  68 00c8 E1834939 		ldrb	w1, [sp, 608]
+  69 00cc E79B4939 		ldrb	w7, [sp, 614]
+  70 00d0 08B11D11 		add	w8, w8, 1900
+  71 00d4 E6974939 		ldrb	w6, [sp, 613]
+  72 00d8 E5934939 		ldrb	w5, [sp, 612]
+  73 00dc E48F4939 		ldrb	w4, [sp, 611]
+  74 00e0 E38B4939 		ldrb	w3, [sp, 610]
+  75 00e4 E2874939 		ldrb	w2, [sp, 609]
+  76 00e8 A97A69F8 		ldr	x9, [x21, x9, lsl 3]
+  77 00ec E91B00F9 		str	x9, [sp, 48]
+  78 00f0 E83B00B9 		str	w8, [sp, 56]
+  79 00f4 F42300F9 		str	x20, [sp, 64]
+  80 00f8 00000094 		bl	printf
+  81 00fc E1A30391 		add	x1, sp, 232
+  82 0100 E003172A 		mov	w0, w23
+  83 0104 00000094 		bl	sdFindNextFile
+  84 0108 C0FBFF35 		cbnz	w0, .L5
+  85 010c E003172A 		mov	w0, w23
+  86 0110 00000094 		bl	sdFindClose
+  87 0114 40008052 		mov	w0, 2
+  88 0118 F35345A9 		ldp	x19, x20, [sp, 80]
+  89 011c F55B46A9 		ldp	x21, x22, [sp, 96]
+  90 0120 F77B47A9 		ldp	x23, x30, [sp, 112]
+  91 0124 FFC30991 		add	sp, sp, 624
+  92 0128 C0035FD6 		ret
+  93              		.p2align 2
+  94              	.L10:
+  95 012c E10314AA 		mov	x1, x20
+  96 0130 E00316AA 		mov	x0, x22
+  97 0134 00000094 		bl	printf
+  98 0138 E1A30391 		add	x1, sp, 232
+  99 013c E003172A 		mov	w0, w23
+ 100 0140 00000094 		bl	sdFindNextFile
+ 101 0144 E0F9FF35 		cbnz	w0, .L5
+ 102 0148 E003172A 		mov	w0, w23
+ 103 014c 00000094 		bl	sdFindClose
+ 104 0150 40008052 		mov	w0, 2
+ 105 0154 F35345A9 		ldp	x19, x20, [sp, 80]
+ 106 0158 F55B46A9 		ldp	x21, x22, [sp, 96]
+ 107 015c F77B47A9 		ldp	x23, x30, [sp, 112]
+ 108 0160 FFC30991 		add	sp, sp, 624
+ 109 0164 C0035FD6 		ret
+ 110              		.size	ls, .-ls
+ 111              		.align	2
+ 112 0168 1F2003D5 		.p2align 4,,15
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 3
 
 
- 113 0174 03000090 		adrp	x3, .LC19
- 114 0178 63000091 		add	x3, x3, :lo12:.LC19
- 115 017c 410000F9 		str	x1, [x2, #:lo12:commands]
- 116 0180 9F0000B9 		str	wzr, [x4, #:lo12:bpos]
- 117 0184 02000090 		adrp	x2, ls
- 118 0188 42000091 		add	x2, x2, :lo12:ls
- 119 018c 01000090 		adrp	x1, sysinfo
- 120 0190 21000091 		add	x1, x1, :lo12:sysinfo
- 121 0194 038800A9 		stp	x3, x2, [x0, 8]
- 122 0198 010C00F9 		str	x1, [x0, 24]
- 123 019c C0035FD6 		ret
- 124              		.size	trm_init, .-trm_init
- 125              		.align	2
- 126              		.p2align 4,,15
- 127              		.global	trm_capture
- 128              		.type	trm_capture, %function
- 129              	trm_capture:
- 130 01a0 001C0012 		and	w0, w0, 255
- 131 01a4 1F280071 		cmp	w0, 10
- 132 01a8 40020054 		beq	.L12
- 133 01ac 1F340071 		cmp	w0, 13
- 134 01b0 00020054 		beq	.L12
- 135 01b4 1F240071 		cmp	w0, 9
- 136 01b8 E0040054 		beq	.L32
- 137 01bc 02000090 		adrp	x2, bpos
- 138 01c0 440040B9 		ldr	w4, [x2, #:lo12:bpos]
- 139 01c4 03000090 		adrp	x3, buffer
- 140 01c8 650040F9 		ldr	x5, [x3, #:lo12:buffer]
- 141 01cc 81040011 		add	w1, w4, 1
- 142 01d0 410000B9 		str	w1, [x2, #:lo12:bpos]
- 143 01d4 01008052 		mov	w1, 0
- 144 01d8 A0C82438 		strb	w0, [x5, w4, sxtw]
- 145 01dc 400080B9 		ldrsw	x0, [x2, #:lo12:bpos]
- 146 01e0 620040F9 		ldr	x2, [x3, #:lo12:buffer]
- 147 01e4 5F682038 		strb	wzr, [x2, x0]
- 148 01e8 E003012A 		mov	w0, w1
- 149 01ec C0035FD6 		ret
- 150              		.p2align 2
- 151              	.L12:
- 152 01f0 F353BEA9 		stp	x19, x20, [sp, -32]!
- 153 01f4 00000090 		adrp	x0, .LC20
- 154 01f8 00000091 		add	x0, x0, :lo12:.LC20
- 155 01fc FE0B00F9 		str	x30, [sp, 16]
- 156 0200 00000094 		bl	printf
- 157 0204 01000090 		adrp	x1, commands
- 158 0208 34000091 		add	x20, x1, :lo12:commands
- 159 020c 13000090 		adrp	x19, buffer
- 160 0210 210040F9 		ldr	x1, [x1, #:lo12:commands]
- 161 0214 600240F9 		ldr	x0, [x19, #:lo12:buffer]
- 162 0218 00000094 		bl	strcmp
- 163 021c A0030034 		cbz	w0, .L15
- 164 0220 600240F9 		ldr	x0, [x19, #:lo12:buffer]
- 165 0224 810640F9 		ldr	x1, [x20, 8]
- 166 0228 00000094 		bl	strcmp
- 167 022c 01008012 		mov	w1, -1
- 168 0230 E0020034 		cbz	w0, .L33
- 169 0234 600240F9 		ldr	x0, [x19, #:lo12:buffer]
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 4
+ 112      1F2003D5 
+ 113              		.global	trm_init
+ 114              		.type	trm_init, %function
+ 115              	trm_init:
+ 116 0170 02000090 		adrp	x2, commands
+ 117 0174 40000091 		add	x0, x2, :lo12:commands
+ 118 0178 06000090 		adrp	x6, bpos
+ 119 017c 01000090 		adrp	x1, .LC18
+ 120 0180 21000091 		add	x1, x1, :lo12:.LC18
+ 121 0184 05000090 		adrp	x5, .LC19
+ 122 0188 A5000091 		add	x5, x5, :lo12:.LC19
+ 123 018c 410000F9 		str	x1, [x2, #:lo12:commands]
+ 124 0190 04000090 		adrp	x4, .LC20
+ 125 0194 84000091 		add	x4, x4, :lo12:.LC20
+ 126 0198 03000090 		adrp	x3, ls
+ 127 019c 63000091 		add	x3, x3, :lo12:ls
+ 128 01a0 02000090 		adrp	x2, sysinfo
+ 129 01a4 42000091 		add	x2, x2, :lo12:sysinfo
+ 130 01a8 01000090 		adrp	x1, cd
+ 131 01ac 21000091 		add	x1, x1, :lo12:cd
+ 132 01b0 DF0000B9 		str	wzr, [x6, #:lo12:bpos]
+ 133 01b4 059000A9 		stp	x5, x4, [x0, 8]
+ 134 01b8 038801A9 		stp	x3, x2, [x0, 24]
+ 135 01bc 011400F9 		str	x1, [x0, 40]
+ 136 01c0 C0035FD6 		ret
+ 137              		.size	trm_init, .-trm_init
+ 138              		.align	2
+ 139 01c4 1F2003D5 		.p2align 4,,15
+ 139      1F2003D5 
+ 139      1F2003D5 
+ 140              		.global	trm_capture
+ 141              		.type	trm_capture, %function
+ 142              	trm_capture:
+ 143 01d0 F353BCA9 		stp	x19, x20, [sp, -64]!
+ 144 01d4 001C0012 		and	w0, w0, 255
+ 145 01d8 1F280071 		cmp	w0, 10
+ 146 01dc FE1B00F9 		str	x30, [sp, 48]
+ 147 01e0 80020054 		beq	.L13
+ 148 01e4 1F340071 		cmp	w0, 13
+ 149 01e8 40020054 		beq	.L13
+ 150 01ec 1F240071 		cmp	w0, 9
+ 151 01f0 C0050054 		beq	.L29
+ 152 01f4 01000090 		adrp	x1, bpos
+ 153 01f8 230040B9 		ldr	w3, [x1, #:lo12:bpos]
+ 154 01fc 02000090 		adrp	x2, buffer
+ 155 0200 440040F9 		ldr	x4, [x2, #:lo12:buffer]
+ 156 0204 65040011 		add	w5, w3, 1
+ 157 0208 250000B9 		str	w5, [x1, #:lo12:bpos]
+ 158 020c 14008052 		mov	w20, 0
+ 159 0210 80C82338 		strb	w0, [x4, w3, sxtw]
+ 160 0214 200080B9 		ldrsw	x0, [x1, #:lo12:bpos]
+ 161 0218 410040F9 		ldr	x1, [x2, #:lo12:buffer]
+ 162 021c 3F682038 		strb	wzr, [x1, x0]
+ 163 0220 E003142A 		mov	w0, w20
+ 164 0224 FE1B40F9 		ldr	x30, [sp, 48]
+ 165 0228 F353C4A8 		ldp	x19, x20, [sp], 64
+ 166 022c C0035FD6 		ret
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 4
 
 
- 170 0238 02000090 		adrp	x2, bpos
- 171 023c 5F0000B9 		str	wzr, [x2, #:lo12:bpos]
- 172 0240 1F000039 		strb	wzr, [x0]
- 173 0244 E003012A 		mov	w0, w1
- 174 0248 FE0B40F9 		ldr	x30, [sp, 16]
- 175 024c F353C2A8 		ldp	x19, x20, [sp], 32
- 176 0250 C0035FD6 		ret
- 177              		.p2align 2
- 178              	.L32:
- 179 0254 00000090 		adrp	x0, bpos
- 180 0258 030040B9 		ldr	w3, [x0, #:lo12:bpos]
- 181 025c 02000090 		adrp	x2, buffer
- 182 0260 440040F9 		ldr	x4, [x2, #:lo12:buffer]
- 183 0264 61040011 		add	w1, w3, 1
- 184 0268 010000B9 		str	w1, [x0, #:lo12:bpos]
- 185 026c 05048052 		mov	w5, 32
- 186 0270 01008052 		mov	w1, 0
- 187 0274 85C82338 		strb	w5, [x4, w3, sxtw]
- 188 0278 000080B9 		ldrsw	x0, [x0, #:lo12:bpos]
- 189 027c 420040F9 		ldr	x2, [x2, #:lo12:buffer]
- 190 0280 5F682038 		strb	wzr, [x2, x0]
- 191 0284 E003012A 		mov	w0, w1
- 192 0288 C0035FD6 		ret
- 193              		.p2align 2
- 194              	.L33:
- 195 028c 20008052 		mov	w0, 1
- 196              	.L15:
- 197 0290 80CE208B 		add	x0, x20, x0, sxtw 3
- 198 0294 000840F9 		ldr	x0, [x0, 16]
- 199 0298 00003FD6 		blr	x0
- 200 029c 600240F9 		ldr	x0, [x19, #:lo12:buffer]
- 201 02a0 02000090 		adrp	x2, bpos
- 202 02a4 01008052 		mov	w1, 0
- 203 02a8 5F0000B9 		str	wzr, [x2, #:lo12:bpos]
- 204 02ac 1F000039 		strb	wzr, [x0]
- 205 02b0 E003012A 		mov	w0, w1
- 206 02b4 FE0B40F9 		ldr	x30, [sp, 16]
- 207 02b8 F353C2A8 		ldp	x19, x20, [sp], 32
- 208 02bc C0035FD6 		ret
- 209              		.size	trm_capture, .-trm_capture
- 210              		.align	2
- 211              		.p2align 4,,15
- 212              		.global	trm_parse_buffer
- 213              		.type	trm_parse_buffer, %function
- 214              	trm_parse_buffer:
- 215 02c0 F353BEA9 		stp	x19, x20, [sp, -32]!
- 216 02c4 00000090 		adrp	x0, commands
- 217 02c8 14000091 		add	x20, x0, :lo12:commands
- 218 02cc 13000090 		adrp	x19, buffer
- 219 02d0 FE0B00F9 		str	x30, [sp, 16]
- 220 02d4 010040F9 		ldr	x1, [x0, #:lo12:commands]
- 221 02d8 600240F9 		ldr	x0, [x19, #:lo12:buffer]
- 222 02dc 00000094 		bl	strcmp
- 223 02e0 E0000034 		cbz	w0, .L34
- 224 02e4 600240F9 		ldr	x0, [x19, #:lo12:buffer]
- 225 02e8 810640F9 		ldr	x1, [x20, 8]
- 226 02ec 00000094 		bl	strcmp
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 5
+ 167              		.p2align 2
+ 168              	.L13:
+ 169 0230 F55B01A9 		stp	x21, x22, [sp, 16]
+ 170 0234 15000090 		adrp	x21, commands
+ 171 0238 B5020091 		add	x21, x21, :lo12:commands
+ 172 023c F76302A9 		stp	x23, x24, [sp, 32]
+ 173 0240 18000090 		adrp	x24, buffer
+ 174 0244 17030091 		add	x23, x24, :lo12:buffer
+ 175 0248 130080D2 		mov	x19, 0
+ 176 024c 00000090 		adrp	x0, .LC21
+ 177 0250 00000091 		add	x0, x0, :lo12:.LC21
+ 178 0254 00000094 		bl	printf
+ 179              	.L17:
+ 180 0258 A17A73F8 		ldr	x1, [x21, x19, lsl 3]
+ 181 025c F603132A 		mov	w22, w19
+ 182 0260 E00240F9 		ldr	x0, [x23]
+ 183 0264 73060091 		add	x19, x19, 1
+ 184 0268 00000094 		bl	strcmp
+ 185 026c F403002A 		mov	w20, w0
+ 186 0270 C0030034 		cbz	w0, .L16
+ 187 0274 7F0E00F1 		cmp	x19, 3
+ 188 0278 01FFFF54 		bne	.L17
+ 189 027c 14008012 		mov	w20, -1
+ 190              	.L19:
+ 191 0280 000340F9 		ldr	x0, [x24, #:lo12:buffer]
+ 192 0284 01000090 		adrp	x1, bpos
+ 193 0288 3F0000B9 		str	wzr, [x1, #:lo12:bpos]
+ 194 028c 1F000039 		strb	wzr, [x0]
+ 195 0290 E003142A 		mov	w0, w20
+ 196 0294 F55B41A9 		ldp	x21, x22, [sp, 16]
+ 197 0298 F76342A9 		ldp	x23, x24, [sp, 32]
+ 198 029c FE1B40F9 		ldr	x30, [sp, 48]
+ 199 02a0 F353C4A8 		ldp	x19, x20, [sp], 64
+ 200 02a4 C0035FD6 		ret
+ 201              		.p2align 2
+ 202              	.L29:
+ 203 02a8 00000090 		adrp	x0, bpos
+ 204 02ac 020040B9 		ldr	w2, [x0, #:lo12:bpos]
+ 205 02b0 01000090 		adrp	x1, buffer
+ 206 02b4 230040F9 		ldr	x3, [x1, #:lo12:buffer]
+ 207 02b8 44040011 		add	w4, w2, 1
+ 208 02bc 040000B9 		str	w4, [x0, #:lo12:bpos]
+ 209 02c0 04048052 		mov	w4, 32
+ 210 02c4 14008052 		mov	w20, 0
+ 211 02c8 64C82238 		strb	w4, [x3, w2, sxtw]
+ 212 02cc 000080B9 		ldrsw	x0, [x0, #:lo12:bpos]
+ 213 02d0 210040F9 		ldr	x1, [x1, #:lo12:buffer]
+ 214 02d4 3F682038 		strb	wzr, [x1, x0]
+ 215 02d8 E003142A 		mov	w0, w20
+ 216 02dc FE1B40F9 		ldr	x30, [sp, 48]
+ 217 02e0 F353C4A8 		ldp	x19, x20, [sp], 64
+ 218 02e4 C0035FD6 		ret
+ 219              		.p2align 2
+ 220              	.L16:
+ 221 02e8 B5CE368B 		add	x21, x21, x22, sxtw 3
+ 222 02ec A00E40F9 		ldr	x0, [x21, 24]
+ 223 02f0 00003FD6 		blr	x0
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 5
 
 
- 227 02f0 1F000071 		cmp	w0, 0
- 228 02f4 20008052 		mov	w0, 1
- 229 02f8 0004805A 		csneg	w0, w0, w0, eq
- 230              	.L34:
- 231 02fc FE0B40F9 		ldr	x30, [sp, 16]
- 232 0300 F353C2A8 		ldp	x19, x20, [sp], 32
- 233 0304 C0035FD6 		ret
- 234              		.size	trm_parse_buffer, .-trm_parse_buffer
- 235              		.align	2
- 236 0308 1F2003D5 		.p2align 4,,15
- 236      1F2003D5 
- 237              		.global	buffer_out
- 238              		.type	buffer_out, %function
- 239              	buffer_out:
- 240 0310 00000090 		adrp	x0, buffer
- 241 0314 000040F9 		ldr	x0, [x0, #:lo12:buffer]
- 242 0318 C0035FD6 		ret
- 243              		.size	buffer_out, .-buffer_out
- 244              		.align	2
- 245 031c 1F2003D5 		.p2align 4,,15
- 246              		.global	buffer_add_c
- 247              		.type	buffer_add_c, %function
- 248              	buffer_add_c:
- 249 0320 01000090 		adrp	x1, bpos
- 250 0324 230040B9 		ldr	w3, [x1, #:lo12:bpos]
- 251 0328 02000090 		adrp	x2, buffer
- 252 032c 440040F9 		ldr	x4, [x2, #:lo12:buffer]
- 253 0330 65040011 		add	w5, w3, 1
- 254 0334 250000B9 		str	w5, [x1, #:lo12:bpos]
- 255 0338 80C82338 		strb	w0, [x4, w3, sxtw]
- 256 033c 200080B9 		ldrsw	x0, [x1, #:lo12:bpos]
- 257 0340 410040F9 		ldr	x1, [x2, #:lo12:buffer]
- 258 0344 3F682038 		strb	wzr, [x1, x0]
- 259 0348 C0035FD6 		ret
- 260              		.size	buffer_add_c, .-buffer_add_c
- 261              		.align	2
- 262 034c 1F2003D5 		.p2align 4,,15
- 263              		.global	buffer_clear
- 264              		.type	buffer_clear, %function
- 265              	buffer_clear:
- 266 0350 00000090 		adrp	x0, buffer
- 267 0354 000040F9 		ldr	x0, [x0, #:lo12:buffer]
- 268 0358 01000090 		adrp	x1, bpos
- 269 035c 3F0000B9 		str	wzr, [x1, #:lo12:bpos]
- 270 0360 1F000039 		strb	wzr, [x0]
- 271 0364 C0035FD6 		ret
- 272              		.size	buffer_clear, .-buffer_clear
- 273              		.align	2
- 274 0368 1F2003D5 		.p2align 4,,15
- 274      1F2003D5 
- 275              		.global	trm_exec_run
- 276              		.type	trm_exec_run, %function
- 277              	trm_exec_run:
- 278 0370 01000090 		adrp	x1, commands
- 279 0374 21000091 		add	x1, x1, :lo12:commands
- 280 0378 20CC208B 		add	x0, x1, x0, sxtw 3
- 281 037c FE0F1FF8 		str	x30, [sp, -16]!
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 6
+ 224 02f4 E3FFFF17 		b	.L19
+ 225              		.size	trm_capture, .-trm_capture
+ 226              		.align	2
+ 227 02f8 1F2003D5 		.p2align 4,,15
+ 227      1F2003D5 
+ 228              		.global	trm_parse_buffer
+ 229              		.type	trm_parse_buffer, %function
+ 230              	trm_parse_buffer:
+ 231 0300 F353BDA9 		stp	x19, x20, [sp, -48]!
+ 232 0304 14000090 		adrp	x20, buffer
+ 233 0308 94020091 		add	x20, x20, :lo12:buffer
+ 234 030c F55B01A9 		stp	x21, x22, [sp, 16]
+ 235 0310 15000090 		adrp	x21, commands
+ 236 0314 B5020091 		add	x21, x21, :lo12:commands
+ 237 0318 130080D2 		mov	x19, 0
+ 238 031c FE1300F9 		str	x30, [sp, 32]
+ 239              	.L32:
+ 240 0320 A17A73F8 		ldr	x1, [x21, x19, lsl 3]
+ 241 0324 F603132A 		mov	w22, w19
+ 242 0328 800240F9 		ldr	x0, [x20]
+ 243 032c 73060091 		add	x19, x19, 1
+ 244 0330 00000094 		bl	strcmp
+ 245 0334 80000034 		cbz	w0, .L30
+ 246 0338 7F0E00F1 		cmp	x19, 3
+ 247 033c 21FFFF54 		bne	.L32
+ 248 0340 16008012 		mov	w22, -1
+ 249              	.L30:
+ 250 0344 E003162A 		mov	w0, w22
+ 251 0348 F55B41A9 		ldp	x21, x22, [sp, 16]
+ 252 034c FE1340F9 		ldr	x30, [sp, 32]
+ 253 0350 F353C3A8 		ldp	x19, x20, [sp], 48
+ 254 0354 C0035FD6 		ret
+ 255              		.size	trm_parse_buffer, .-trm_parse_buffer
+ 256              		.align	2
+ 257 0358 1F2003D5 		.p2align 4,,15
+ 257      1F2003D5 
+ 258              		.global	buffer_out
+ 259              		.type	buffer_out, %function
+ 260              	buffer_out:
+ 261 0360 00000090 		adrp	x0, buffer
+ 262 0364 000040F9 		ldr	x0, [x0, #:lo12:buffer]
+ 263 0368 C0035FD6 		ret
+ 264              		.size	buffer_out, .-buffer_out
+ 265              		.align	2
+ 266 036c 1F2003D5 		.p2align 4,,15
+ 267              		.global	buffer_add_c
+ 268              		.type	buffer_add_c, %function
+ 269              	buffer_add_c:
+ 270 0370 01000090 		adrp	x1, bpos
+ 271 0374 230040B9 		ldr	w3, [x1, #:lo12:bpos]
+ 272 0378 02000090 		adrp	x2, buffer
+ 273 037c 440040F9 		ldr	x4, [x2, #:lo12:buffer]
+ 274 0380 65040011 		add	w5, w3, 1
+ 275 0384 250000B9 		str	w5, [x1, #:lo12:bpos]
+ 276 0388 80C82338 		strb	w0, [x4, w3, sxtw]
+ 277 038c 200080B9 		ldrsw	x0, [x1, #:lo12:bpos]
+ 278 0390 410040F9 		ldr	x1, [x2, #:lo12:buffer]
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 6
 
 
- 282 0380 000840F9 		ldr	x0, [x0, 16]
- 283 0384 00003FD6 		blr	x0
- 284 0388 00008052 		mov	w0, 0
- 285 038c FE0741F8 		ldr	x30, [sp], 16
- 286 0390 C0035FD6 		ret
- 287              		.size	trm_exec_run, .-trm_exec_run
- 288              		.comm	commands,32,8
- 289              		.comm	bpos,4,4
- 290              		.comm	buffer,8,8
- 291              		.section	.rodata
- 292              		.align	3
- 293              		.set	.LANCHOR0,. + 0
- 294              	.LC14:
- 295 0000 00000000 		.xword	.LC0
- 295      00000000 
- 296 0008 00000000 		.xword	.LC1
- 296      00000000 
- 297 0010 00000000 		.xword	.LC2
- 297      00000000 
- 298 0018 00000000 		.xword	.LC3
- 298      00000000 
- 299 0020 00000000 		.xword	.LC4
- 299      00000000 
- 300 0028 00000000 		.xword	.LC5
- 300      00000000 
- 301 0030 00000000 		.xword	.LC6
- 301      00000000 
- 302 0038 00000000 		.xword	.LC7
- 302      00000000 
- 303 0040 00000000 		.xword	.LC8
- 303      00000000 
- 304 0048 00000000 		.xword	.LC9
- 304      00000000 
- 305 0050 00000000 		.xword	.LC10
- 305      00000000 
- 306 0058 00000000 		.xword	.LC11
- 306      00000000 
- 307              		.section	.rodata.str1.8,"aMS",@progbits,1
- 308              		.align	3
- 309              	.LC13:
- 310 0000 44697265 		.string	"Directory (/) <ROOT> : \n"
- 310      63746F72 
- 310      7920282F 
- 310      29203C52 
- 310      4F4F543E 
- 311 0019 00000000 		.zero	7
- 311      000000
- 312              	.LC15:
- 313 0020 5C2A2E2A 		.string	"\\*.*"
- 313      00
- 314 0025 000000   		.zero	3
- 315              	.LC16:
- 316 0028 2573203C 		.string	"%s <DIR>\n"
- 316      4449523E 
- 316      0A00
- 317 0032 00000000 		.zero	6
- 317      0000
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 7
+ 279 0394 3F682038 		strb	wzr, [x1, x0]
+ 280 0398 C0035FD6 		ret
+ 281              		.size	buffer_add_c, .-buffer_add_c
+ 282              		.align	2
+ 283 039c 1F2003D5 		.p2align 4,,15
+ 284              		.global	buffer_clear
+ 285              		.type	buffer_clear, %function
+ 286              	buffer_clear:
+ 287 03a0 00000090 		adrp	x0, buffer
+ 288 03a4 000040F9 		ldr	x0, [x0, #:lo12:buffer]
+ 289 03a8 01000090 		adrp	x1, bpos
+ 290 03ac 3F0000B9 		str	wzr, [x1, #:lo12:bpos]
+ 291 03b0 1F000039 		strb	wzr, [x0]
+ 292 03b4 C0035FD6 		ret
+ 293              		.size	buffer_clear, .-buffer_clear
+ 294              		.align	2
+ 295 03b8 1F2003D5 		.p2align 4,,15
+ 295      1F2003D5 
+ 296              		.global	trm_exec_run
+ 297              		.type	trm_exec_run, %function
+ 298              	trm_exec_run:
+ 299 03c0 01000090 		adrp	x1, commands
+ 300 03c4 21000091 		add	x1, x1, :lo12:commands
+ 301 03c8 20CC208B 		add	x0, x1, x0, sxtw 3
+ 302 03cc FE0F1FF8 		str	x30, [sp, -16]!
+ 303 03d0 000C40F9 		ldr	x0, [x0, 24]
+ 304 03d4 00003FD6 		blr	x0
+ 305 03d8 00008052 		mov	w0, 0
+ 306 03dc FE0741F8 		ldr	x30, [sp], 16
+ 307 03e0 C0035FD6 		ret
+ 308              		.size	trm_exec_run, .-trm_exec_run
+ 309              		.comm	commands,48,8
+ 310              		.comm	bpos,4,4
+ 311              		.comm	buffer,8,8
+ 312              		.section	.rodata
+ 313              		.align	3
+ 314              		.set	.LANCHOR0,. + 0
+ 315              	.LC14:
+ 316 0000 00000000 		.xword	.LC0
+ 316      00000000 
+ 317 0008 00000000 		.xword	.LC1
+ 317      00000000 
+ 318 0010 00000000 		.xword	.LC2
+ 318      00000000 
+ 319 0018 00000000 		.xword	.LC3
+ 319      00000000 
+ 320 0020 00000000 		.xword	.LC4
+ 320      00000000 
+ 321 0028 00000000 		.xword	.LC5
+ 321      00000000 
+ 322 0030 00000000 		.xword	.LC6
+ 322      00000000 
+ 323 0038 00000000 		.xword	.LC7
+ 323      00000000 
+ 324 0040 00000000 		.xword	.LC8
+ 324      00000000 
+ 325 0048 00000000 		.xword	.LC9
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 7
 
 
- 318              	.LC17:
- 319 0038 25632563 		.string	"%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n"
- 319      25632563 
- 319      25632563 
- 319      25632563 
- 319      2E256325 
- 320 0077 00       		.zero	1
- 321              	.LC18:
- 322 0078 6C7300   		.string	"ls"
- 323 007b 00000000 		.zero	5
- 323      00
- 324              	.LC19:
- 325 0080 73797369 		.string	"sysinfo"
- 325      6E666F00 
- 326              	.LC20:
- 327 0088 0A00     		.string	"\n"
- 328 008a 00000000 		.zero	6
- 328      0000
- 329              	.LC0:
- 330 0090 4A616E00 		.string	"Jan"
- 331 0094 00000000 		.zero	4
- 332              	.LC1:
- 333 0098 46656200 		.string	"Feb"
- 334 009c 00000000 		.zero	4
- 335              	.LC2:
- 336 00a0 4D617200 		.string	"Mar"
- 337 00a4 00000000 		.zero	4
- 338              	.LC3:
- 339 00a8 41707200 		.string	"Apr"
- 340 00ac 00000000 		.zero	4
- 341              	.LC4:
- 342 00b0 4D617900 		.string	"May"
- 343 00b4 00000000 		.zero	4
- 344              	.LC5:
- 345 00b8 4A756E00 		.string	"Jun"
- 346 00bc 00000000 		.zero	4
- 347              	.LC6:
- 348 00c0 4A756C00 		.string	"Jul"
- 349 00c4 00000000 		.zero	4
- 350              	.LC7:
- 351 00c8 41756700 		.string	"Aug"
- 352 00cc 00000000 		.zero	4
- 353              	.LC8:
- 354 00d0 53657000 		.string	"Sep"
- 355 00d4 00000000 		.zero	4
- 356              	.LC9:
- 357 00d8 4F637400 		.string	"Oct"
- 358 00dc 00000000 		.zero	4
- 359              	.LC10:
- 360 00e0 4E6F7600 		.string	"Nov"
- 361 00e4 00000000 		.zero	4
- 362              	.LC11:
- 363 00e8 44656300 		.string	"Dec"
- 364              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
-AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s 			page 8
+ 325      00000000 
+ 326 0050 00000000 		.xword	.LC10
+ 326      00000000 
+ 327 0058 00000000 		.xword	.LC11
+ 327      00000000 
+ 328              		.section	.rodata.str1.8,"aMS",@progbits,1
+ 329              		.align	3
+ 330              	.LC13:
+ 331 0000 44697265 		.string	"Directory (/) <ROOT> : \n"
+ 331      63746F72 
+ 331      7920282F 
+ 331      29203C52 
+ 331      4F4F543E 
+ 332 0019 00000000 		.zero	7
+ 332      000000
+ 333              	.LC15:
+ 334 0020 5C2A2E2A 		.string	"\\*.*"
+ 334      00
+ 335 0025 000000   		.zero	3
+ 336              	.LC16:
+ 337 0028 2573203C 		.string	"%s <DIR>\n"
+ 337      4449523E 
+ 337      0A00
+ 338 0032 00000000 		.zero	6
+ 338      0000
+ 339              	.LC17:
+ 340 0038 25632563 		.string	"%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n"
+ 340      25632563 
+ 340      25632563 
+ 340      25632563 
+ 340      2E256325 
+ 341 0077 00       		.zero	1
+ 342              	.LC18:
+ 343 0078 6C7300   		.string	"ls"
+ 344 007b 00000000 		.zero	5
+ 344      00
+ 345              	.LC19:
+ 346 0080 73797369 		.string	"sysinfo"
+ 346      6E666F00 
+ 347              	.LC20:
+ 348 0088 636400   		.string	"cd"
+ 349 008b 00000000 		.zero	5
+ 349      00
+ 350              	.LC21:
+ 351 0090 0A00     		.string	"\n"
+ 352 0092 00000000 		.zero	6
+ 352      0000
+ 353              	.LC0:
+ 354 0098 4A616E00 		.string	"Jan"
+ 355 009c 00000000 		.zero	4
+ 356              	.LC1:
+ 357 00a0 46656200 		.string	"Feb"
+ 358 00a4 00000000 		.zero	4
+ 359              	.LC2:
+ 360 00a8 4D617200 		.string	"Mar"
+ 361 00ac 00000000 		.zero	4
+ 362              	.LC3:
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 8
+
+
+ 363 00b0 41707200 		.string	"Apr"
+ 364 00b4 00000000 		.zero	4
+ 365              	.LC4:
+ 366 00b8 4D617900 		.string	"May"
+ 367 00bc 00000000 		.zero	4
+ 368              	.LC5:
+ 369 00c0 4A756E00 		.string	"Jun"
+ 370 00c4 00000000 		.zero	4
+ 371              	.LC6:
+ 372 00c8 4A756C00 		.string	"Jul"
+ 373 00cc 00000000 		.zero	4
+ 374              	.LC7:
+ 375 00d0 41756700 		.string	"Aug"
+ 376 00d4 00000000 		.zero	4
+ 377              	.LC8:
+ 378 00d8 53657000 		.string	"Sep"
+ 379 00dc 00000000 		.zero	4
+ 380              	.LC9:
+ 381 00e0 4F637400 		.string	"Oct"
+ 382 00e4 00000000 		.zero	4
+ 383              	.LC10:
+ 384 00e8 4E6F7600 		.string	"Nov"
+ 385 00ec 00000000 		.zero	4
+ 386              	.LC11:
+ 387 00f0 44656300 		.string	"Dec"
+ 388              		.ident	"GCC: (GNU Toolchain for the A-profile Architecture 8.2-2019.01 (arm-rel-8.28)) 8.2.1 20180
+AARCH64 GAS  C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 terminal.c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:4      .text:0000000000000000 $x
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:8      .text:0000000000000000 sysinfo
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:16     .text:0000000000000010 ls
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:107    .text:0000000000000160 trm_init
-                            *COM*:0000000000000020 commands
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:4      .text:0000000000000000 $x
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:8      .text:0000000000000000 sysinfo
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:16     .text:0000000000000010 cd
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:24     .text:0000000000000020 ls
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:115    .text:0000000000000170 trm_init
+                            *COM*:0000000000000030 commands
                             *COM*:0000000000000004 bpos
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:129    .text:00000000000001a0 trm_capture
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:142    .text:00000000000001d0 trm_capture
                             *COM*:0000000000000008 buffer
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:214    .text:00000000000002c0 trm_parse_buffer
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:239    .text:0000000000000310 buffer_out
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:248    .text:0000000000000320 buffer_add_c
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:265    .text:0000000000000350 buffer_clear
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:277    .text:0000000000000370 trm_exec_run
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:292    .rodata:0000000000000000 $d
-C:\Users\Tony\AppData\Local\Temp\ccsbWsHd.s:308    .rodata.str1.8:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:230    .text:0000000000000300 trm_parse_buffer
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:260    .text:0000000000000360 buffer_out
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:269    .text:0000000000000370 buffer_add_c
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:286    .text:00000000000003a0 buffer_clear
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:298    .text:00000000000003c0 trm_exec_run
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:313    .rodata:0000000000000000 $d
+C:\Users\Tony\AppData\Local\Temp\cc9lcC49.s:329    .rodata.str1.8:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 printf
