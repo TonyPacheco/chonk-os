@@ -22,7 +22,7 @@ void DisplayDirectory(const char*);
 int main (void) {
 	PiConsole_Init(0, 0, 0, &printf);								// Auto resolution console, show resolution to screen
 
-	displaySmartStart(&printf);
+	// displaySmartStart(&printf);
 	printf("\n");															// Display smart start details
 	ARM_setmaxspeed(&printf);										// ARM CPU to max speed and confirm to screen
 
@@ -66,7 +66,7 @@ int main (void) {
 
 	while(1){
 		c = hal_io_serial_getc( SerialA );
-	  trm_capture(c);
+	  	trm_capture(c);
 		hal_io_serial_putc( SerialA, c );
 		printf( "%c", c );
 	}

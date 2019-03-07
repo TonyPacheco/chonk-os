@@ -1,5 +1,6 @@
 #include "../drivers/sdcard/SDCard.h"
 #include "../drivers/stdio/emb-stdio.h" // Needed for printf
+#include "../boot/rpi-smartstart.h"        // For sysinfo
 #include <string.h>                     // Needed for memcpy
 #include <stdarg.h>                     // Needed for variadic arguments
 
@@ -39,6 +40,11 @@ int ls()
 
 int sysinfo()
 {
+    printf("OS: "); displaySmartStart(&printf);  // OS: 
+    // Resolution: 
+    // Shell: 
+    // Font: 
+
     return 3;
 }
 
