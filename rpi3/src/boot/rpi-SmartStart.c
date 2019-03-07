@@ -650,7 +650,8 @@ void Embedded_Console_WriteChar(char Ch) {
 	case '\b': {
 		if(console.cursor.x == 0) return;
 		console.curPos.x = -console.cursor.x * BitFontWth;
-		//console.ClearArea(, console.curPos.x, console.curPos.y, console.curPos.x * BitFontWth, console.curPos.y * BitFontWth);
+		console.cursor.x--;
+		Embedded_Console_WriteChar(' ');
 		console.cursor.x--;
 	}
 			   break;
