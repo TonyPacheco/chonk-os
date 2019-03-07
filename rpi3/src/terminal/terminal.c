@@ -4,9 +4,10 @@
 #include <stdio.h>
 #include "../drivers/sdcard/SDCard.h"
 #include "../drivers/stdio/emb-stdio.h" 
-#include <stdarg.h>                     
+#include <stdarg.h>
+#include "../hal/hal.h"
 
-#define NUM_CMDS 3
+#define NUM_CMDS 4
 #define WIDTH 640
 #define HEIGHT 480
 typedef struct
@@ -15,7 +16,14 @@ typedef struct
     int (*p[NUM_CMDS])(void);
 } cmds;
 
-char* buffer;
+#define BUFFER_MAX 500
+
+#define SIG_KILL 66
+#define SIG_STRT 0
+#define SIG_GOOD 1
+#define SIG_FAIL -1
+
+char buffer[BUFFER_MAX];
 int bpos;
 cmds commands;
 char* work_dir;
@@ -23,13 +31,31 @@ char* work_dir;
 void trm_init(){
     bpos = 0;
     work_dir = "\\";
+
     commands.n[0] = "ls";
     commands.n[1] = "sysinfo";
     commands.n[2] = "cd";
+    commands.n[3] = "exit";
+
     commands.p[0] = ls;
     commands.p[1] = sysinfo;
     commands.p[2] = cd;
-    printf("%s>", work_dir);
+    commands.p[3] = exit_sh;
+
+    trm_main();
+}
+
+void trm_main(){
+    char c;
+    int s = SIG_GOOD;
+    printf("%s\n\n%s>", "Welcome to CHONK OS", work_dir);
+    while (s != SIG_KILL)
+    {
+        c = hal_io_serial_getc(SerialA);
+        hal_io_serial_putc(SerialA, c);
+        printf("%c", c);
+        s = trm_capture(c);
+    }
 }
 
 int trm_capture(char ch){
@@ -37,14 +63,15 @@ int trm_capture(char ch){
     case '\r':
     case '\n':
     {
-        printf("\n");
-        int cmd_return_val = -1;
+        int cmd_return_val = SIG_STRT;
         int cmd_index = trm_parse_buffer();
-        if(cmd_index != -1)
+        if(cmd_index == -1)
+            printf("%s>", work_dir);
+        else 
             cmd_return_val = commands.p[cmd_index]();
+        
 
         buffer_clear();
-        printf("%s>", work_dir);
         return cmd_return_val;
     } break;
 
@@ -60,7 +87,7 @@ int trm_capture(char ch){
         buffer_add_c(ch);
     }
     }
-	return 0;
+	return SIG_GOOD;
 }
 
 int trm_parse_buffer() { //return index of command to call, or -1 if not found
@@ -72,7 +99,6 @@ int trm_parse_buffer() { //return index of command to call, or -1 if not found
     for (int i = 0; i < NUM_CMDS; ++i)
         if (!strcmp(cm, commands.n[i]))
             return i;
-
     return -1;
 }
 
@@ -127,7 +153,7 @@ int ls()
     } while (sdFindNextFile(fh, &find) != 0); // Loop finding next file
     sdFindClose(fh);                          // Close the serach handle
     printf("\n");                             // New line at end looks nicer
-    return 0;
+    return SIG_GOOD;
 }
 
 int sysinfo()
@@ -139,14 +165,14 @@ int sysinfo()
     printf("CPU FREQ: %12u Hz\n", Buffer[4]);
     printf("SHELL: %11s\n", "SealSh"); 
     printf("FONT: \t\t%s\n", "Monospace 8x16"); 
-    return 0;
+    return SIG_GOOD;
 }
 
 int cd()
 {
     if(buffer[2] != ' ' || buffer[3] == '\0'){
         printf("CD - MISSING ARG\n");
-        return -1;
+        return SIG_FAIL;
     }
 
     char new_path[bpos-3];
@@ -160,5 +186,10 @@ int cd()
 
     new_path[i-3] = '\0';
     strcat(work_dir, new_path);
-    return 0;
+    return SIG_GOOD;
+}
+
+int exit_sh(){
+    printf("EXITING SealShell");
+    return SIG_KILL;
 }

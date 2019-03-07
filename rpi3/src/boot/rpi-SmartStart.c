@@ -649,9 +649,9 @@ void Embedded_Console_WriteChar(char Ch) {
 				break;
 	case '\b': {
 		if(console.cursor.x == 0) return;
-		console.curPos.x = -console.cursor.x * BitFontWth;
-		console.cursor.x--;
-		Embedded_Console_WriteChar(' ');
+		console.curPos.x = -console.cursor.x * BitFontWth;  // @Tony: to backspace, move cursor back
+		console.cursor.x--;								    // and then put a space there, followed 
+		Embedded_Console_WriteChar(' ');                    // by moving back again to be able to overwrite
 		console.cursor.x--;
 	}
 			   break;
