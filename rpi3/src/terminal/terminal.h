@@ -10,3 +10,4 @@ int ls(void);
 int cd(void);
 int sysinfo(void);
 int exit_sh(void);
+int here(void);

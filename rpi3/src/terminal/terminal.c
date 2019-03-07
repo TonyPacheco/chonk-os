@@ -7,14 +7,14 @@
 #include <stdarg.h>
 #include "../hal/hal.h"
 
-#define NUM_CMDS 4
+#define NUM_CMDS 5
 #define WIDTH 640
 #define HEIGHT 480
 typedef struct
 {
     char *n[NUM_CMDS];
     int (*p[NUM_CMDS])(void);
-} cmds;
+} cmd_map;
 
 #define BUFFER_MAX 500
 
@@ -25,22 +25,24 @@ typedef struct
 
 char buffer[BUFFER_MAX];
 int bpos;
-cmds commands;
+cmd_map cmds;
 char* work_dir;
 
 void trm_init(){
     bpos = 0;
     work_dir = "\\";
 
-    commands.n[0] = "ls";
-    commands.n[1] = "sysinfo";
-    commands.n[2] = "cd";
-    commands.n[3] = "exit";
+    cmds.n[0] = "ls";
+    cmds.n[1] = "sysinfo";
+    cmds.n[2] = "cd";
+    cmds.n[3] = "exit";
+    cmds.n[4] = "here";
 
-    commands.p[0] = ls;
-    commands.p[1] = sysinfo;
-    commands.p[2] = cd;
-    commands.p[3] = exit_sh;
+    cmds.p[0] = ls;
+    cmds.p[1] = sysinfo;
+    cmds.p[2] = cd;
+    cmds.p[3] = exit_sh;
+    cmds.p[4] = here;
 
     trm_main();
 }
@@ -48,7 +50,7 @@ void trm_init(){
 void trm_main(){
     char c;
     int s = SIG_GOOD;
-    printf("%s\n\n%s>", "Welcome to CHONK OS", work_dir);
+    printf("%s\n\n>", "Welcome to CHONK OS");
     while (s != SIG_KILL)
     {
         c = hal_io_serial_getc(SerialA);
@@ -66,11 +68,12 @@ int trm_capture(char ch){
         int cmd_return_val = SIG_STRT;
         int cmd_index = trm_parse_buffer();
         if(cmd_index == -1)
-            printf("%s>", work_dir);
-        else 
-            cmd_return_val = commands.p[cmd_index]();
-        
-
+            printf(">");
+        else {
+            cmd_return_val = cmds.p[cmd_index]();
+            printf(">");
+        }
+            
         buffer_clear();
         return cmd_return_val;
     } break;
@@ -97,7 +100,7 @@ int trm_parse_buffer() { //return index of command to call, or -1 if not found
         cm[i] = buffer[i];
     }
     for (int i = 0; i < NUM_CMDS; ++i)
-        if (!strcmp(cm, commands.n[i]))
+        if (!strcmp(cm, cmds.n[i]))
             return i;
     return -1;
 }
@@ -186,6 +189,11 @@ int cd()
 
     new_path[i-3] = '\0';
     strcat(work_dir, new_path);
+    return SIG_GOOD;
+}
+
+int here(){
+    printf("%s\n", work_dir);
     return SIG_GOOD;
 }
 
