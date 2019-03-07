@@ -20,15 +20,14 @@ char buffer[500];
 void DisplayDirectory(const char*);
 
 int main (void) {
-	PiConsole_Init(0, 0, 0, &printf);								// Auto resolution console, show resolution to screen
+	PiConsole_Init(0, 0, 0, 0);								// Auto resolution console, show resolution to screen
 
 	// displaySmartStart(&printf);
 	printf("\n");															// Display smart start details
 	ARM_setmaxspeed(0);										// ARM CPU to max speed and confirm to screen
 
 	/* Display the SD CARD directory */
-	sdInitCard (&printf, &printf, true);
-	printf("\n");
+	sdInitCard (0, &printf, true);
 
   //printf("Opening Alice.txt \n");
 
@@ -56,7 +55,7 @@ int main (void) {
 	//Typewriter
 	//hal_io_serial_init();
 	//hal_io_serial_puts( SerialA, "Typewriter:" );
-
+	printf("Welcome to CHONK OS\n\n");
 	char c;
 	trm_init();
 
