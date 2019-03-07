@@ -50,6 +50,10 @@ int trm_capture(char ch){
         buffer_add_c(' ');
     } break;
 
+    case '\b':{
+        buffer_backs();
+    } break;
+
     default:{             //simply add ch to the end of the buffer
         buffer_add_c(ch);
     }
@@ -77,6 +81,12 @@ char* buffer_out(){
 void buffer_add_c(char c){
     buffer[bpos++] = c;
     buffer[bpos] = '\0';
+}
+
+void buffer_backs(){
+    if(bpos == 0) 
+        return;
+    buffer[--bpos] = '\0';
 }
 
 void buffer_clear(){
@@ -138,7 +148,6 @@ int cd()
 
     if(buffer[i-1] != '\\')
         new_path[i-2] = '\\'; 
-
 
     new_path[i-3] = '\0';
     strcat(work_dir, new_path);

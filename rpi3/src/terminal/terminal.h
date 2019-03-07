@@ -4,6 +4,7 @@ int trm_parse_buffer(void);
 char* buffer_out(void);
 void buffer_clear(void);
 void buffer_add_c(char);
+void buffer_backs(void);
 int ls(void);
 int cd(void);
 int sysinfo(void);

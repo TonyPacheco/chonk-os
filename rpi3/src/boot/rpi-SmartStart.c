@@ -646,6 +646,13 @@ void Embedded_Console_WriteChar(char Ch) {
 		console.cursor.x += 5;								// Cursor increment to by 5
 		console.cursor.x -= (console.cursor.x % 4);			// align it to 4
 	}
+				break;
+	case '\b': {
+		if(console.cursor.x == 0) return;
+		console.curPos.x = -console.cursor.x * BitFontWth;
+		//console.ClearArea(, console.curPos.x, console.curPos.y, console.curPos.x * BitFontWth, console.curPos.y * BitFontWth);
+		console.cursor.x--;
+	}
 			   break;
 	default: {												// All other characters
 		console.curPos.x = console.cursor.x * BitFontWth;

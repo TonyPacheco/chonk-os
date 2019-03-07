@@ -50,7 +50,6 @@ int main (void) {
 	// }
 
 	//hal_io_video_init();
-
 	//hal_io_video_puts( "HELLO THERE ", 3, VIDEO_COLOR_WHITE );
 
 	//Typewriter
@@ -62,7 +61,7 @@ int main (void) {
 
 	while(1){
 		c = hal_io_serial_getc( SerialA );
-	    trm_capture(c);
+	  trm_capture(c);
 		hal_io_serial_putc( SerialA, c );
 		printf( "%c", c );
 	}
@@ -72,34 +71,5 @@ int main (void) {
 	/* display bitmap on screen */
 	//DisplayBitmap(743, 624, "./MINIOS.BMP");   //<<<<-- Doesn't seem to work
 
-	// while (1){
-	// 	set_Activity_LED(1);			// Turn LED on
-	// 	timer_wait(500000);				// 0.5 sec delay
-	// 	set_Activity_LED(0);			// Turn Led off
-	// 	timer_wait(500000);				// 0.5 sec delay
-  //   }
 	return(0);
-}
-
-void DisplayDirectory(const char* dirName) {
-	HANDLE fh;
-	FIND_DATA find;
-	char* month[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-	fh = sdFindFirstFile(dirName, &find);							// Find first file
-	do {
-	if (find.dwFileAttributes == FILE_ATTRIBUTE_DIRECTORY)
-			printf("%s <DIR>\n", find.cFileName);
-		else printf("%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n",
-			find.cAlternateFileName[0], find.cAlternateFileName[1],
-			find.cAlternateFileName[2], find.cAlternateFileName[3],
-			find.cAlternateFileName[4], find.cAlternateFileName[5],
-			find.cAlternateFileName[6], find.cAlternateFileName[7],
-			find.cAlternateFileName[8], find.cAlternateFileName[9],
-			find.cAlternateFileName[10],
-			(unsigned long)find.nFileSizeLow,
-			find.CreateDT.tm_mday, month[find.CreateDT.tm_mon],
-			find.CreateDT.tm_year + 1900,
-			find.cFileName);										// Display each entry
-	} while (sdFindNextFile(fh, &find) != 0);						// Loop finding next file
-	sdFindClose(fh);												// Close the serach handle
 }
