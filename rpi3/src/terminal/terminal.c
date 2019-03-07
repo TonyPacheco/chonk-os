@@ -7,6 +7,8 @@
 #include <stdarg.h>                     
 
 #define NUM_CMDS 3
+#define WIDTH 640
+#define HEIGHT 480
 typedef struct
 {
     char *n[NUM_CMDS];
@@ -130,6 +132,13 @@ int ls()
 
 int sysinfo()
 {
+    uint32_t Buffer[5];
+    printf("OS: \t\t%s", "ChonkOS v1.1 Developer Edition 2019\n"); 
+    printf("PROCESSOR: %1s", ""); displaySmartStart(&printf);
+    printf("RESOLUTION: %3dx%d \n", WIDTH, HEIGHT); 
+    printf("CPU FREQ: %12u Hz\n", Buffer[4]);
+    printf("SHELL: %11s\n", "SealSh"); 
+    printf("FONT: \t\t%s\n", "Monospace 8x16"); 
     return 0;
 }
 
