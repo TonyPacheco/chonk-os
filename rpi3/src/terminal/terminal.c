@@ -7,7 +7,7 @@
 #include <stdarg.h>
 #include "../hal/hal.h"
 
-#define NUM_CMDS 5
+#define NUM_CMDS 6
 #define WIDTH 640
 #define HEIGHT 480
 typedef struct
@@ -32,17 +32,19 @@ void trm_init(){
     bpos = 0;
     work_dir = "\\";
 
-    cmds.n[0] = "ls";
+    cmds.n[0] = "help";
     cmds.n[1] = "sysinfo";
     cmds.n[2] = "cd";
     cmds.n[3] = "exit";
     cmds.n[4] = "here";
+    cmds.n[5] = "ls";
 
-    cmds.p[0] = ls;
+    cmds.p[0] = help;
     cmds.p[1] = sysinfo;
     cmds.p[2] = cd;
     cmds.p[3] = exit_sh;
     cmds.p[4] = here;
+    cmds.p[5] = ls;
 
     trm_main();
 }
@@ -103,10 +105,6 @@ int trm_parse_buffer() { //return index of command to call, or -1 if not found
         if (!strcmp(cm, cmds.n[i]))
             return i;
     return -1;
-}
-
-char* buffer_out(){
-    return buffer;
 }
 
 void buffer_add_c(char c){
@@ -200,4 +198,10 @@ int here(){
 int exit_sh(){
     printf("EXITING SealShell");
     return SIG_KILL;
+}
+
+int help(){
+    for(int i = 1; i < NUM_CMDS; ++i){
+        printf("%s\n", cmds.n[i]);
+    }
 }
