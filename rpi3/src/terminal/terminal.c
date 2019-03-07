@@ -7,8 +7,11 @@
 #include <stdarg.h>                     
 
 #define NUM_CMDS 3
+<<<<<<< HEAD
 #define WIDTH 640
 #define HEIGHT 480
+=======
+>>>>>>> b9cfd1c4eb3ff053c9ad436ba1a6653b8ade4dda
 typedef struct
 {
     char *n[NUM_CMDS];
