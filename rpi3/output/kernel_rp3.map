@@ -1,27 +1,27 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o (__locale_ctype_ptr)
+                              C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o (__locale_ctype_ptr)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (__ascii_mbtowc)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o (memcpy)
+                              C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o (memcpy)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
-                              C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o (errno)
+                              C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o (errno)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcasecmp.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strcasecmp)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
-                              c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strcat)
+                              C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o (strcat)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o (strchr)
+                              C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o (strchr)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o (strcmp)
+                              C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o (strcmp)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
-                              c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strcpy)
+                              C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o (strcpy)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlcpy.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strlcpy)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
-                              C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o (strlen)
+                              C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o (strlen)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strncasecmp.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strncasecmp)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strncmp.o)
@@ -29,11 +29,11 @@ c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strncmp.o)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strncpy.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strncpy)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o (strnlen)
+                              C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o (strnlen)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strtol.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (strtol)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
-                              C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o (wctob)
+                              C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o (wctob)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
                               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o) (__ascii_wctomb)
 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
@@ -61,30 +61,31 @@ Allocating common symbols
 Common symbol       size              file
 
 errno               0x4               c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
-bpos                0x4               C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
-buffer              0x1f4             C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
-commands            0x30              C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
+bpos                0x4               C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+buffer              0x1f4             C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+work_dir            0x8               C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+commands            0x30              C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
 
 Discarded input sections
 
- .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
- .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
- .text          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
- .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
- .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
- .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
- .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
- .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccT1fDKW.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccT1fDKW.o
- .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccMPpNyu.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccMPpNyu.o
- .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
- .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
- .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
+ .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+ .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+ .text          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+ .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+ .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+ .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
+ .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
+ .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\cceIBv27.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\cceIBv27.o
+ .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccZzLpOi.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccZzLpOi.o
+ .data          0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+ .bss           0x0000000000000000        0x0 C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+ .comment       0x0000000000000000       0x5f C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
  .text          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
@@ -174,30 +175,14 @@ Discarded input sections
  .text          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .text.strcat   0x0000000000000000       0x74 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_info    0x0000000000000000      0x9c0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_abbrev  0x0000000000000000      0x23b c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_loc     0x0000000000000000      0x12e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_aranges
-                0x0000000000000000       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_ranges  0x0000000000000000       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_line    0x0000000000000000      0x2d1 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
- .debug_str     0x0000000000000000      0x61e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .comment       0x0000000000000000       0x5f c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .debug_frame   0x0000000000000000       0x38 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
- .text          0x0000000000000000      0x1b8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
- .debug_line    0x0000000000000000      0x12e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
- .debug_info    0x0000000000000000       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
- .debug_abbrev  0x0000000000000000       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
- .debug_aranges
-                0x0000000000000000       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
- .debug_str     0x0000000000000000      0x147 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
  .text          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlcpy.o)
  .data          0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlcpy.o)
  .bss           0x0000000000000000        0x0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlcpy.o)
@@ -440,33 +425,34 @@ RAM              0x0000000000080000 0x0000000008000000 xrw
 Linker script and memory map
 
 
-.text           0x0000000000080000     0x9dd8
+.text           0x0000000000080000     0xa198
                 0x0000000000080000                . = ALIGN (0x4)
                 0x0000000000080000                __text_start__ = .
                 0x0000000000080000                _start = .
  *(.text.startup)
- .text.startup  0x0000000000080000      0x308 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
+ .text.startup  0x0000000000080000      0x308 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
                 0x000000000008029c                RPi_CpuIdString
                 0x00000000000802b0                EnableInterrupts
                 0x00000000000802b8                DisableInterrupts
                 0x00000000000802c0                CoreExecute
  *(.text .text.* .gnu.linkonce.t.*)
  *fill*         0x0000000000080308        0x8 
- .text          0x0000000000080310       0xa4 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
+ .text          0x0000000000080310      0x1d0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
                 0x0000000000080310                kernel_main
+                0x00000000000803b0                DisplayDirectory
  .text.ARMaddrToGPUaddr
-                0x00000000000803b4        0xc C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
-                0x00000000000803b4                ARMaddrToGPUaddr
- *fill*         0x00000000000803c0      0x440 
+                0x00000000000804e0        0xc C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+                0x00000000000804e0                ARMaddrToGPUaddr
+ *fill*         0x00000000000804ec      0x314 
  .text.GPUaddrToARMaddr
-                0x0000000000080800      0xf84 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
+                0x0000000000080800      0xf84 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
                 0x0000000000080800                GPUaddrToARMaddr
                 0x000000000008080c                c_irq_handler
                 0x0000000000080810                c_irq_identify_and_clear_source
                 0x0000000000080814                irq_handler
                 0x0000000000081000                VectorTable
  *fill*         0x0000000000081784        0xc 
- .text          0x0000000000081790     0x24b0 C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
+ .text          0x0000000000081790     0x24b0 C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
                 0x00000000000827d0                gpio_setup
                 0x0000000000082840                gpio_output
                 0x00000000000828b0                gpio_input
@@ -509,12 +495,12 @@ Linker script and memory map
                 0x0000000000083b40                _fstat
                 0x0000000000083b50                _exit
                 0x0000000000083b60                _write
- .text          0x0000000000083c40      0xd24 C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
+ .text          0x0000000000083c40      0xd24 C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
                 0x0000000000083ef0                vsprintf
                 0x0000000000084820                sprintf
                 0x00000000000848a0                printf
  *fill*         0x0000000000084964        0xc 
- .text          0x0000000000084970     0x39ec C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
+ .text          0x0000000000084970     0x39ec C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
                 0x0000000000085cd0                sdTransferBlocks
                 0x0000000000086040                sdClearBlocks
                 0x00000000000861c0                getSetNextCluster
@@ -530,12 +516,12 @@ Linker script and memory map
                 0x0000000000087e50                sdInitCard
                 0x0000000000088340                sdCardCSD
  *fill*         0x000000000008835c        0x4 
- .text          0x0000000000088360      0x368 C:\Users\Tony\AppData\Local\Temp\ccT1fDKW.o
+ .text          0x0000000000088360      0x368 C:\Users\Tony\AppData\Local\Temp\cceIBv27.o
                 0x0000000000088360                fonts_is_implemented
                 0x0000000000088380                fonts_char_to_font
                 0x00000000000883a0                fonts_init
  *fill*         0x00000000000886c8        0x8 
- .text          0x00000000000886d0      0xa88 C:\Users\Tony\AppData\Local\Temp\ccMPpNyu.o
+ .text          0x00000000000886d0      0xa88 C:\Users\Tony\AppData\Local\Temp\ccZzLpOi.o
                 0x00000000000886d0                hal_io_init
                 0x00000000000886e0                hal_io_video_init
                 0x0000000000088700                hal_io_video_line
@@ -548,231 +534,234 @@ Linker script and memory map
                 0x00000000000890f0                hal_io_serial_putc
                 0x0000000000089120                hal_io_serial_getc
  *fill*         0x0000000000089158        0x8 
- .text          0x0000000000089160      0x3e4 C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
+ .text          0x0000000000089160      0x5a8 C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
                 0x0000000000089160                sysinfo
                 0x0000000000089170                cd
-                0x0000000000089180                ls
-                0x00000000000892d0                trm_init
-                0x0000000000089330                trm_capture
-                0x0000000000089460                trm_parse_buffer
-                0x00000000000894c0                buffer_out
-                0x00000000000894d0                buffer_add_c
-                0x0000000000089500                buffer_clear
-                0x0000000000089520                trm_exec_run
- *fill*         0x0000000000089544        0x4 
+                0x0000000000089250                ls
+                0x00000000000893d0                trm_init
+                0x0000000000089440                trm_capture
+                0x0000000000089600                trm_parse_buffer
+                0x00000000000896b0                buffer_out
+                0x00000000000896c0                buffer_add_c
+                0x00000000000896f0                buffer_clear
  .text.__locale_ctype_ptr
-                0x0000000000089548       0x24 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
-                0x0000000000089548                __locale_ctype_ptr
- *fill*         0x000000000008956c        0x4 
+                0x0000000000089708       0x24 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
+                0x0000000000089708                __locale_ctype_ptr
+ *fill*         0x000000000008972c        0x4 
  .text.__ascii_mbtowc
-                0x0000000000089570       0x48 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
-                0x0000000000089570                __ascii_mbtowc
- *fill*         0x00000000000895b8        0x8 
- .text          0x00000000000895c0      0x16c c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
-                0x00000000000895c0                memcpy
- .text          0x000000000008972c       0xdc c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
-                0x000000000008972c                strchr
- *fill*         0x0000000000089808       0x38 
- .text          0x0000000000089840       0xa4 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
-                0x0000000000089840                strcmp
- *fill*         0x00000000000898e4       0x1c 
- .text          0x0000000000089900      0x140 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
-                0x0000000000089900                strlen
- .text          0x0000000000089a40       0xe0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
-                0x0000000000089a64                strnlen
- .text.wctob    0x0000000000089b20       0x84 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
-                0x0000000000089b20                wctob
- *fill*         0x0000000000089ba4        0x4 
+                0x0000000000089730       0x48 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
+                0x0000000000089730                __ascii_mbtowc
+ *fill*         0x0000000000089778        0x8 
+ .text          0x0000000000089780      0x16c c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
+                0x0000000000089780                memcpy
+ *fill*         0x00000000000898ec        0x4 
+ .text.strcat   0x00000000000898f0       0x74 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+                0x00000000000898f0                strcat
+ .text          0x0000000000089964       0xdc c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+                0x0000000000089964                strchr
+ .text          0x0000000000089a40       0xa4 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+                0x0000000000089a40                strcmp
+ *fill*         0x0000000000089ae4       0x1c 
+ .text          0x0000000000089b00      0x1b8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
+                0x0000000000089b00                strcpy
+ *fill*         0x0000000000089cb8        0x8 
+ .text          0x0000000000089cc0      0x140 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+                0x0000000000089cc0                strlen
+ .text          0x0000000000089e00       0xe0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+                0x0000000000089e24                strnlen
+ .text.wctob    0x0000000000089ee0       0x84 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+                0x0000000000089ee0                wctob
+ *fill*         0x0000000000089f64        0x4 
  .text.__ascii_wctomb
-                0x0000000000089ba8       0x34 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
-                0x0000000000089ba8                __ascii_wctomb
- *fill*         0x0000000000089bdc       0x24 
- .text          0x0000000000089c00      0x1d8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
-                0x0000000000089c00                memset
+                0x0000000000089f68       0x34 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+                0x0000000000089f68                __ascii_wctomb
+ *fill*         0x0000000000089f9c       0x24 
+ .text          0x0000000000089fc0      0x1d8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+                0x0000000000089fc0                memset
  *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
  *(.init .init.*)
-                0x0000000000089dd8                . = ALIGN (0x4)
-                0x0000000000089dd8                __text_end__ = .
+                0x000000000008a198                . = ALIGN (0x4)
+                0x000000000008a198                __text_end__ = .
 
-.iplt           0x0000000000089dd8        0x0
- .iplt          0x0000000000089dd8        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
+.iplt           0x000000000008a198        0x0
+ .iplt          0x000000000008a198        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
 
-.bss            0x0000000000089dd8     0x333c
-                0x0000000000089dd8                . = ALIGN (0x4)
-                0x0000000000089dd8                __bss_start__ = .
+.bss            0x000000000008a198     0x3344
+                0x000000000008a198                . = ALIGN (0x4)
+                0x000000000008a198                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000089dd8       0x70 C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
-                0x0000000000089ddc                console
- .bss           0x0000000000089e48     0x25a0 C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
-                0x0000000000089e48                LOG_ERROR
- .bss           0x000000000008c3e8      0xaf4 C:\Users\Tony\AppData\Local\Temp\ccT1fDKW.o
+ .bss           0x000000000008a198       0x70 C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+                0x000000000008a19c                console
+ .bss           0x000000000008a208     0x25a0 C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
+                0x000000000008a208                LOG_ERROR
+ .bss           0x000000000008c7a8      0xaf4 C:\Users\Tony\AppData\Local\Temp\cceIBv27.o
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
  *(COMMON)
- *fill*         0x000000000008cedc        0x4 
- COMMON         0x000000000008cee0      0x1f4 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
-                0x000000000008cee0                buffer
- *fill*         0x000000000008d0d4        0x4 
- COMMON         0x000000000008d0d8       0x38 C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
-                0x000000000008d0d8                bpos
-                0x000000000008d0e0                commands
- COMMON         0x000000000008d110        0x4 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
-                0x000000000008d110                errno
-                0x000000000008d114                . = ALIGN (0x4)
-                0x000000000008d114                __bss_end__ = .
+ *fill*         0x000000000008d29c        0x4 
+ COMMON         0x000000000008d2a0      0x1f4 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+                0x000000000008d2a0                buffer
+ *fill*         0x000000000008d494        0x4 
+ COMMON         0x000000000008d498       0x40 C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+                0x000000000008d498                bpos
+                0x000000000008d4a0                work_dir
+                0x000000000008d4a8                commands
+ COMMON         0x000000000008d4d8        0x4 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
+                0x000000000008d4d8                errno
+                0x000000000008d4dc                . = ALIGN (0x4)
+                0x000000000008d4dc                __bss_end__ = .
 
-.rodata         0x000000000008d118     0x1794
-                0x000000000008d118                . = ALIGN (0x4)
-                0x000000000008d118                __rodata_start__ = .
+.rodata         0x000000000008d4e0     0x1814
+                0x000000000008d4e0                . = ALIGN (0x4)
+                0x000000000008d4e0                __rodata_start__ = .
  *(.rodata .rodata.*)
+ .rodata        0x000000000008d4e0       0x60 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
  .rodata.str1.8
-                0x000000000008d118        0x3 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
-                                          0xb (size before relaxing)
- *fill*         0x000000000008d11b        0x1 
- .rodata.cpuid  0x000000000008d11c        0xc C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
- .rodata        0x000000000008d128     0x1004 C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
-                0x000000000008e128                BitFontEnd
- *fill*         0x000000000008e12c        0x4 
+                0x000000000008d540       0xb4 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+                                         0xbc (size before relaxing)
+ .rodata.cpuid  0x000000000008d5f4        0xc C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+ .rodata        0x000000000008d600     0x1004 C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+                0x000000000008e600                BitFontEnd
+ *fill*         0x000000000008e604        0x4 
  .rodata.str1.8
-                0x000000000008e130       0xec C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
- *fill*         0x000000000008e21c        0x4 
- .rodata        0x000000000008e220       0x10 C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
- .rodata        0x000000000008e230       0x28 C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
+                0x000000000008e608       0xec C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+ *fill*         0x000000000008e6f4        0x4 
+ .rodata        0x000000000008e6f8       0x10 C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
+ .rodata        0x000000000008e708       0x28 C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
  .rodata.str1.8
-                0x000000000008e258      0x39a C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
- *fill*         0x000000000008e5f2        0x6 
- .rodata        0x000000000008e5f8       0x60 C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
+                0x000000000008e730      0x39a C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
+ *fill*         0x000000000008eaca        0x6 
+ .rodata        0x000000000008ead0       0x60 C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
  .rodata.str1.8
-                0x000000000008e658       0xec C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
-                                         0xf4 (size before relaxing)
- *fill*         0x000000000008e744        0x4 
+                0x000000000008eb30       0x5c C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
+                                        0x114 (size before relaxing)
+ *fill*         0x000000000008eb8c        0x4 
  .rodata.str1.8
-                0x000000000008e748       0x60 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
+                0x000000000008eb90       0x60 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
                                          0x64 (size before relaxing)
  .rodata._ctype_
-                0x000000000008e7a8      0x101 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
-                0x000000000008e7a8                _ctype_
+                0x000000000008ebf0      0x101 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+                0x000000000008ebf0                _ctype_
  *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
-                0x000000000008e8ac                . = ALIGN (0x4)
- *fill*         0x000000000008e8a9        0x3 
-                0x000000000008e8ac                __rodata_end__ = .
+                0x000000000008ecf4                . = ALIGN (0x4)
+ *fill*         0x000000000008ecf1        0x3 
+                0x000000000008ecf4                __rodata_end__ = .
 
-.rela.dyn       0x000000000008e8b0        0x0
- .rela.iplt     0x000000000008e8b0        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
+.rela.dyn       0x000000000008ecf8        0x0
+ .rela.iplt     0x000000000008ecf8        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
  .rela.text.startup
-                0x000000000008e8b0        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
- .rela.text     0x000000000008e8b0        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
+                0x000000000008ecf8        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+ .rela.text     0x000000000008ecf8        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
 
-.data           0x000000000008e8b0      0xcc8
-                0x000000000008e8b0                . = ALIGN (0x4)
-                0x000000000008e8b0                __data_start__ = .
+.data           0x000000000008ecf8      0xcc8
+                0x000000000008ecf8                . = ALIGN (0x4)
+                0x000000000008ecf8                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.smartstart64
-                0x000000000008e8b0       0x18 C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
-                0x000000000008e8b0                RPi_IO_Base_Addr
-                0x000000000008e8b4                RPi_BootAddr
-                0x000000000008e8b8                RPi_CoresReady
-                0x000000000008e8bc                RPi_CPUBootMode
-                0x000000000008e8c0                RPi_CpuId
-                0x000000000008e8c4                RPi_CompileMode
- .data          0x000000000008e8c8        0x4 C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
- *fill*         0x000000000008e8cc        0x4 
- .data          0x000000000008e8d0      0x3a8 C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
- .data          0x000000000008ec78        0x8 C:\Users\Tony\AppData\Local\Temp\ccMPpNyu.o
-                0x000000000008ec78                curr_y
-                0x000000000008ec7c                curr_x
+                0x000000000008ecf8       0x18 C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+                0x000000000008ecf8                RPi_IO_Base_Addr
+                0x000000000008ecfc                RPi_BootAddr
+                0x000000000008ed00                RPi_CoresReady
+                0x000000000008ed04                RPi_CPUBootMode
+                0x000000000008ed08                RPi_CpuId
+                0x000000000008ed0c                RPi_CompileMode
+ .data          0x000000000008ed10        0x4 C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+ *fill*         0x000000000008ed14        0x4 
+ .data          0x000000000008ed18      0x3a8 C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
+ .data          0x000000000008f0c0        0x8 C:\Users\Tony\AppData\Local\Temp\ccZzLpOi.o
+                0x000000000008f0c0                curr_y
+                0x000000000008f0c4                curr_x
  .data.__global_locale
-                0x000000000008ec80      0x1a8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
-                0x000000000008ec80                __global_locale
+                0x000000000008f0c8      0x1a8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
+                0x000000000008f0c8                __global_locale
  .data._impure_ptr
-                0x000000000008ee28        0x8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
-                0x000000000008ee28                _impure_ptr
+                0x000000000008f270        0x8 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+                0x000000000008f270                _impure_ptr
  .data.impure_data
-                0x000000000008ee30      0x748 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+                0x000000000008f278      0x748 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
  *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
-                0x000000000008f578                . = ALIGN (0x4)
-                0x000000000008f578                __data_end__ = .
+                0x000000000008f9c0                . = ALIGN (0x4)
+                0x000000000008f9c0                __data_end__ = .
 
-.igot.plt       0x000000000008f578        0x0
- .igot.plt      0x000000000008f578        0x0 C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
+.igot.plt       0x000000000008f9c0        0x0
+ .igot.plt      0x000000000008f9c0        0x0 C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
 
-.data1          0x000000000008f578        0x8
-                0x000000000008f580                . = ALIGN (0x10)
- *fill*         0x000000000008f578        0x8 
-                0x000000000008f580                __data1_start__ = .
+.data1          0x000000000008f9c0        0x0
+                0x000000000008f9c0                . = ALIGN (0x10)
+                0x000000000008f9c0                __data1_start__ = .
  *(.data1 .data1.*)
  *(.rel.data1 .rel.data1.*)
-                0x000000000008f580                . = ALIGN (0x10)
-                0x000000000008f580                __data1_end__ = .
+                0x000000000008f9c0                . = ALIGN (0x10)
+                0x000000000008f9c0                __data1_end__ = .
 
-.stack          0x000000000008f580     0xc200
-                0x000000000008f580                . = ALIGN (0x10)
-                0x000000000008f580                __stack_start__ = .
-                0x000000000008f780                . = (. + 0x200)
- *fill*         0x000000000008f580      0x200 
-                0x000000000008f780                __EL0_stack_core0 = .
-                0x0000000000097780                . = (. + 0x8000)
- *fill*         0x000000000008f780     0x8000 
-                0x0000000000097780                __EL1_stack_core0 = .
-                0x000000000009b780                . = (. + 0x4000)
- *fill*         0x0000000000097780     0x4000 
-                0x000000000009b780                __EL2_stack_core0 = .
-                0x000000000009b780                . = ALIGN (0x10)
-                0x000000000009b780                __stack_end__ = .
+.stack          0x000000000008f9c0     0xc200
+                0x000000000008f9c0                . = ALIGN (0x10)
+                0x000000000008f9c0                __stack_start__ = .
+                0x000000000008fbc0                . = (. + 0x200)
+ *fill*         0x000000000008f9c0      0x200 
+                0x000000000008fbc0                __EL0_stack_core0 = .
+                0x0000000000097bc0                . = (. + 0x8000)
+ *fill*         0x000000000008fbc0     0x8000 
+                0x0000000000097bc0                __EL1_stack_core0 = .
+                0x000000000009bbc0                . = (. + 0x4000)
+ *fill*         0x0000000000097bc0     0x4000 
+                0x000000000009bbc0                __EL2_stack_core0 = .
+                0x000000000009bbc0                . = ALIGN (0x10)
+                0x000000000009bbc0                __stack_end__ = .
 
-.stack_core1    0x000000000009b780     0x1400
-                0x000000000009b780                . = ALIGN (0x10)
-                0x000000000009b780                __stack_start_core1__ = .
-                0x000000000009b980                . = (. + 0x200)
- *fill*         0x000000000009b780      0x200 
-                0x000000000009b980                __EL0_stack_core1 = .
-                0x000000000009bb80                . = (. + 0x200)
- *fill*         0x000000000009b980      0x200 
-                0x000000000009bb80                __EL1_stack_core1 = .
-                0x000000000009cb80                . = (. + 0x1000)
- *fill*         0x000000000009bb80     0x1000 
-                0x000000000009cb80                __EL2_stack_core1 = .
-                0x000000000009cb80                . = ALIGN (0x10)
-                0x000000000009cb80                __stack_end_core1__ = .
+.stack_core1    0x000000000009bbc0     0x1400
+                0x000000000009bbc0                . = ALIGN (0x10)
+                0x000000000009bbc0                __stack_start_core1__ = .
+                0x000000000009bdc0                . = (. + 0x200)
+ *fill*         0x000000000009bbc0      0x200 
+                0x000000000009bdc0                __EL0_stack_core1 = .
+                0x000000000009bfc0                . = (. + 0x200)
+ *fill*         0x000000000009bdc0      0x200 
+                0x000000000009bfc0                __EL1_stack_core1 = .
+                0x000000000009cfc0                . = (. + 0x1000)
+ *fill*         0x000000000009bfc0     0x1000 
+                0x000000000009cfc0                __EL2_stack_core1 = .
+                0x000000000009cfc0                . = ALIGN (0x10)
+                0x000000000009cfc0                __stack_end_core1__ = .
 
-.stack_core2    0x000000000009cb80     0x1400
-                0x000000000009cb80                . = ALIGN (0x10)
-                0x000000000009cb80                __stack_start_core2__ = .
-                0x000000000009cd80                . = (. + 0x200)
- *fill*         0x000000000009cb80      0x200 
-                0x000000000009cd80                __EL0_stack_core2 = .
-                0x000000000009cf80                . = (. + 0x200)
- *fill*         0x000000000009cd80      0x200 
-                0x000000000009cf80                __EL1_stack_core2 = .
-                0x000000000009df80                . = (. + 0x1000)
- *fill*         0x000000000009cf80     0x1000 
-                0x000000000009df80                __EL2_stack_core2 = .
-                0x000000000009df80                . = ALIGN (0x10)
-                0x000000000009df80                __stack_end_core2__ = .
+.stack_core2    0x000000000009cfc0     0x1400
+                0x000000000009cfc0                . = ALIGN (0x10)
+                0x000000000009cfc0                __stack_start_core2__ = .
+                0x000000000009d1c0                . = (. + 0x200)
+ *fill*         0x000000000009cfc0      0x200 
+                0x000000000009d1c0                __EL0_stack_core2 = .
+                0x000000000009d3c0                . = (. + 0x200)
+ *fill*         0x000000000009d1c0      0x200 
+                0x000000000009d3c0                __EL1_stack_core2 = .
+                0x000000000009e3c0                . = (. + 0x1000)
+ *fill*         0x000000000009d3c0     0x1000 
+                0x000000000009e3c0                __EL2_stack_core2 = .
+                0x000000000009e3c0                . = ALIGN (0x10)
+                0x000000000009e3c0                __stack_end_core2__ = .
 
-.stack_core3    0x000000000009df80     0x1400
-                0x000000000009df80                . = ALIGN (0x10)
-                0x000000000009df80                __stack_start_core3__ = .
-                0x000000000009e180                . = (. + 0x200)
- *fill*         0x000000000009df80      0x200 
-                0x000000000009e180                __EL0_stack_core3 = .
-                0x000000000009e380                . = (. + 0x200)
- *fill*         0x000000000009e180      0x200 
-                0x000000000009e380                __EL1_stack_core3 = .
-                0x000000000009f380                . = (. + 0x1000)
- *fill*         0x000000000009e380     0x1000 
-                0x000000000009f380                __EL2_stack_core3 = .
-                0x000000000009f380                . = ALIGN (0x10)
-                0x000000000009f380                __stack_end_core3__ = .
+.stack_core3    0x000000000009e3c0     0x1400
+                0x000000000009e3c0                . = ALIGN (0x10)
+                0x000000000009e3c0                __stack_start_core3__ = .
+                0x000000000009e5c0                . = (. + 0x200)
+ *fill*         0x000000000009e3c0      0x200 
+                0x000000000009e5c0                __EL0_stack_core3 = .
+                0x000000000009e7c0                . = (. + 0x200)
+ *fill*         0x000000000009e5c0      0x200 
+                0x000000000009e7c0                __EL1_stack_core3 = .
+                0x000000000009f7c0                . = (. + 0x1000)
+ *fill*         0x000000000009e7c0     0x1000 
+                0x000000000009f7c0                __EL2_stack_core3 = .
+                0x000000000009f7c0                . = ALIGN (0x10)
+                0x000000000009f7c0                __stack_end_core3__ = .
 
 .ARM.attributes
  *(.ARM.attributes)
 
-.Heap           0x000000000009f380        0x0
-                0x000000000009f380                . = ALIGN (0x4)
-                0x000000000009f380                __heap_start__ = .
-                0x000000000009f380                __end__ = .
+.Heap           0x000000000009f7c0        0x0
+                0x000000000009f7c0                . = ALIGN (0x4)
+                0x000000000009f7c0                __heap_start__ = .
+                0x000000000009f7c0                __end__ = .
                 [!provide]                        PROVIDE (__end__ = .)
-                0x000000000009f380                _end = .
+                0x000000000009f7c0                _end = .
                 [!provide]                        PROVIDE (end = .)
 
 /DISCARD/
@@ -786,58 +775,63 @@ Linker script and memory map
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-LOAD C:\Users\Tony\AppData\Local\Temp\ccwoRtJd.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccFrqMUj.o
-LOAD C:\Users\Tony\AppData\Local\Temp\cc7HJ49N.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccLANs4t.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccy7JFDA.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccT1fDKW.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccMPpNyu.o
-LOAD C:\Users\Tony\AppData\Local\Temp\ccBfKmme.o
+LOAD C:\Users\Tony\AppData\Local\Temp\cc0NMo5P.o
+LOAD C:\Users\Tony\AppData\Local\Temp\cchdrpbe.o
+LOAD C:\Users\Tony\AppData\Local\Temp\cc6Jyzrd.o
+LOAD C:\Users\Tony\AppData\Local\Temp\ccs5NTai.o
+LOAD C:\Users\Tony\AppData\Local\Temp\ccWomtU3.o
+LOAD C:\Users\Tony\AppData\Local\Temp\cceIBv27.o
+LOAD C:\Users\Tony\AppData\Local\Temp\ccZzLpOi.o
+LOAD C:\Users\Tony\AppData\Local\Temp\ccrx1wNm.o
 LOAD c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a
 LOAD c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libm.a
 LOAD c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libgcc.a
 OUTPUT(output/kernel_rp3.elf elf64-littleaarch64)
 
-.debug_info     0x0000000000000000     0x7cb2
+.debug_info     0x0000000000000000     0x86a0
  .debug_info    0x0000000000000000     0x2011 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_info    0x0000000000002011     0x1563 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
  .debug_info    0x0000000000003574       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
  .debug_info    0x00000000000035a2      0xb1d c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
- .debug_info    0x00000000000040bf       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
- .debug_info    0x00000000000040ed       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
- .debug_info    0x000000000000411b       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
- .debug_info    0x0000000000004149       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
- .debug_info    0x0000000000004177      0xfba c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
- .debug_info    0x0000000000005131     0x1314 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
- .debug_info    0x0000000000006445      0xf05 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
- .debug_info    0x000000000000734a      0x93a c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
- .debug_info    0x0000000000007c84       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+ .debug_info    0x00000000000040bf      0x9c0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+ .debug_info    0x0000000000004a7f       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+ .debug_info    0x0000000000004aad       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+ .debug_info    0x0000000000004adb       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
+ .debug_info    0x0000000000004b09       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000004b37       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+ .debug_info    0x0000000000004b65      0xfba c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_info    0x0000000000005b1f     0x1314 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_info    0x0000000000006e33      0xf05 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_info    0x0000000000007d38      0x93a c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000008672       0x2e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
 
-.debug_abbrev   0x0000000000000000     0x1436
+.debug_abbrev   0x0000000000000000     0x1685
  .debug_abbrev  0x0000000000000000      0x414 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_abbrev  0x0000000000000414      0x388 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
  .debug_abbrev  0x000000000000079c       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
  .debug_abbrev  0x00000000000007b0      0x2c9 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
- .debug_abbrev  0x0000000000000a79       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
- .debug_abbrev  0x0000000000000a8d       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
- .debug_abbrev  0x0000000000000aa1       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
- .debug_abbrev  0x0000000000000ab5       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
- .debug_abbrev  0x0000000000000ac9      0x297 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
- .debug_abbrev  0x0000000000000d60      0x2ce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
- .debug_abbrev  0x000000000000102e      0x22d c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
- .debug_abbrev  0x000000000000125b      0x1c7 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
- .debug_abbrev  0x0000000000001422       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000000a79      0x23b c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+ .debug_abbrev  0x0000000000000cb4       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+ .debug_abbrev  0x0000000000000cc8       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x0000000000000cdc       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
+ .debug_abbrev  0x0000000000000cf0       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000000d04       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+ .debug_abbrev  0x0000000000000d18      0x297 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_abbrev  0x0000000000000faf      0x2ce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_abbrev  0x000000000000127d      0x22d c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00000000000014aa      0x1c7 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000001671       0x14 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
 
-.debug_loc      0x0000000000000000     0x4063
+.debug_loc      0x0000000000000000     0x4191
  .debug_loc     0x0000000000000000     0x1506 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_loc     0x0000000000001506     0x166d c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
  .debug_loc     0x0000000000002b73      0x24a c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
- .debug_loc     0x0000000000002dbd       0xce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
- .debug_loc     0x0000000000002e8b     0x1157 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
- .debug_loc     0x0000000000003fe2       0x81 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_loc     0x0000000000002dbd      0x12e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+ .debug_loc     0x0000000000002eeb       0xce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_loc     0x0000000000002fb9     0x1157 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_loc     0x0000000000004110       0x81 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
 
-.debug_aranges  0x0000000000000000      0x380
+.debug_aranges  0x0000000000000000      0x3e0
  .debug_aranges
                 0x0000000000000000       0xa0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_aranges
@@ -847,48 +841,55 @@ OUTPUT(output/kernel_rp3.elf elf64-littleaarch64)
  .debug_aranges
                 0x0000000000000150       0x40 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
  .debug_aranges
-                0x0000000000000190       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+                0x0000000000000190       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
  .debug_aranges
-                0x00000000000001c0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+                0x00000000000001c0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
  .debug_aranges
-                0x00000000000001f0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+                0x00000000000001f0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
  .debug_aranges
-                0x0000000000000220       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+                0x0000000000000220       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
  .debug_aranges
-                0x0000000000000250       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+                0x0000000000000250       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
  .debug_aranges
-                0x0000000000000280       0x80 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+                0x0000000000000280       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
  .debug_aranges
-                0x0000000000000300       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+                0x00000000000002b0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
  .debug_aranges
-                0x0000000000000330       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+                0x00000000000002e0       0x80 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
  .debug_aranges
-                0x0000000000000350       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+                0x0000000000000360       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_aranges
+                0x0000000000000390       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000003b0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
 
-.debug_ranges   0x0000000000000000      0x3e0
+.debug_ranges   0x0000000000000000      0x400
  .debug_ranges  0x0000000000000000      0x1c0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_ranges  0x00000000000001c0      0x100 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
  .debug_ranges  0x00000000000002c0       0x30 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
- .debug_ranges  0x00000000000002f0       0x60 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
- .debug_ranges  0x0000000000000350       0x70 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
- .debug_ranges  0x00000000000003c0       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_ranges  0x00000000000002f0       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+ .debug_ranges  0x0000000000000310       0x60 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_ranges  0x0000000000000370       0x70 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_ranges  0x00000000000003e0       0x20 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
 
-.debug_line     0x0000000000000000     0x324d
+.debug_line     0x0000000000000000     0x364c
  .debug_line    0x0000000000000000      0xc84 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
  .debug_line    0x0000000000000c84      0xb67 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
  .debug_line    0x00000000000017eb      0x11f c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
  .debug_line    0x000000000000190a      0x37b c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
- .debug_line    0x0000000000001c85       0xfc c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
- .debug_line    0x0000000000001d81       0xf0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
- .debug_line    0x0000000000001e71      0x119 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
- .debug_line    0x0000000000001f8a       0xfe c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
- .debug_line    0x0000000000002088      0x3ce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
- .debug_line    0x0000000000002456      0x781 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
- .debug_line    0x0000000000002bd7      0x35a c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
- .debug_line    0x0000000000002f31      0x1e3 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
- .debug_line    0x0000000000003114      0x139 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000001c85      0x2d1 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+ .debug_line    0x0000000000001f56       0xfc c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+ .debug_line    0x0000000000002052       0xf0 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+ .debug_line    0x0000000000002142      0x12e c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
+ .debug_line    0x0000000000002270      0x119 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000002389       0xfe c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+ .debug_line    0x0000000000002487      0x3ce c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_line    0x0000000000002855      0x781 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_line    0x0000000000002fd6      0x35a c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000003330      0x1e3 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000003513      0x139 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
 
-.debug_str      0x0000000000000000     0x152f
+.debug_str      0x0000000000000000     0x16f3
  .debug_str     0x0000000000000000      0xa08 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-locale.o)
                                         0xb50 (size before relaxing)
  .debug_str     0x0000000000000a08      0x270 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-mbtowc_r.o)
@@ -896,21 +897,25 @@ OUTPUT(output/kernel_rp3.elf elf64-littleaarch64)
  .debug_str     0x0000000000000c78      0x147 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memcpy.o)
  .debug_str     0x0000000000000dbf      0x158 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-reent.o)
                                         0x64b (size before relaxing)
- .debug_str     0x0000000000000f17       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
+ .debug_str     0x0000000000000f17      0x132 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcat.o)
+                                        0x61e (size before relaxing)
+ .debug_str     0x0000000000001049       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strchr.o)
                                         0x147 (size before relaxing)
- .debug_str     0x0000000000000fa9       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
+ .debug_str     0x00000000000010db       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcmp.o)
                                         0x147 (size before relaxing)
- .debug_str     0x000000000000103b       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+ .debug_str     0x000000000000116d       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strcpy.o)
                                         0x147 (size before relaxing)
- .debug_str     0x00000000000010cd       0x93 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
+ .debug_str     0x00000000000011ff       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strlen.o)
+                                        0x147 (size before relaxing)
+ .debug_str     0x0000000000001291       0x93 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-strnlen.o)
                                         0x148 (size before relaxing)
- .debug_str     0x0000000000001160       0x95 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
+ .debug_str     0x0000000000001324       0x95 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctob.o)
                                         0x986 (size before relaxing)
- .debug_str     0x00000000000011f5       0xef c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
+ .debug_str     0x00000000000013b9       0xef c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-wctomb_r.o)
                                         0x9fd (size before relaxing)
- .debug_str     0x00000000000012e4      0x125 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
+ .debug_str     0x00000000000014a8      0x125 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-ctype_.o)
                                         0x93b (size before relaxing)
- .debug_str     0x0000000000001409       0x94 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
+ .debug_str     0x00000000000015cd       0x94 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-impure.o)
                                         0x60f (size before relaxing)
- .debug_str     0x000000000000149d       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
+ .debug_str     0x0000000000001661       0x92 c:/apps/arch64/bin/../lib/gcc/aarch64-elf/8.2.1\libc.a(lib_a-memset.o)
                                         0x147 (size before relaxing)

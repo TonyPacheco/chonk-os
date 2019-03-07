@@ -30,10 +30,6 @@ int main (void) {
 	sdInitCard (&printf, &printf, true);
 	printf("\n");
 
-	/* Display root directory */
-	ls();
-	printf("\n");
-
   //printf("Opening Alice.txt \n");
 
 	//HANDLE fHandle = sdCreateFile("Alice.txt", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
@@ -66,7 +62,7 @@ int main (void) {
 
 	while(1){
 		c = hal_io_serial_getc( SerialA );
-	  trm_capture(c);
+	    trm_capture(c);
 		hal_io_serial_putc( SerialA, c );
 		printf( "%c", c );
 	}
@@ -85,25 +81,25 @@ int main (void) {
 	return(0);
 }
 
-// void DisplayDirectory(const char* dirName) {
-// 	HANDLE fh;
-// 	FIND_DATA find;
-// 	char* month[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-// 	fh = sdFindFirstFile(dirName, &find);							// Find first file
-// 	do {
-//	if (find.dwFileAttributes == FILE_ATTRIBUTE_DIRECTORY)
-// 			printf("%s <DIR>\n", find.cFileName);
-// 		else printf("%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n",
-// 			find.cAlternateFileName[0], find.cAlternateFileName[1],
-// 			find.cAlternateFileName[2], find.cAlternateFileName[3],
-// 			find.cAlternateFileName[4], find.cAlternateFileName[5],
-// 			find.cAlternateFileName[6], find.cAlternateFileName[7],
-// 			find.cAlternateFileName[8], find.cAlternateFileName[9],
-// 			find.cAlternateFileName[10],
-// 			(unsigned long)find.nFileSizeLow,
-// 			find.CreateDT.tm_mday, month[find.CreateDT.tm_mon],
-// 			find.CreateDT.tm_year + 1900,
-// 			find.cFileName);										// Display each entry
-// 	} while (sdFindNextFile(fh, &find) != 0);						// Loop finding next file
-// 	sdFindClose(fh);												// Close the serach handle
-// }
+void DisplayDirectory(const char* dirName) {
+	HANDLE fh;
+	FIND_DATA find;
+	char* month[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+	fh = sdFindFirstFile(dirName, &find);							// Find first file
+	do {
+	if (find.dwFileAttributes == FILE_ATTRIBUTE_DIRECTORY)
+			printf("%s <DIR>\n", find.cFileName);
+		else printf("%c%c%c%c%c%c%c%c.%c%c%c Size: %9lu bytes, %2d/%s/%4d, LFN: %s\n",
+			find.cAlternateFileName[0], find.cAlternateFileName[1],
+			find.cAlternateFileName[2], find.cAlternateFileName[3],
+			find.cAlternateFileName[4], find.cAlternateFileName[5],
+			find.cAlternateFileName[6], find.cAlternateFileName[7],
+			find.cAlternateFileName[8], find.cAlternateFileName[9],
+			find.cAlternateFileName[10],
+			(unsigned long)find.nFileSizeLow,
+			find.CreateDT.tm_mday, month[find.CreateDT.tm_mon],
+			find.CreateDT.tm_year + 1900,
+			find.cFileName);										// Display each entry
+	} while (sdFindNextFile(fh, &find) != 0);						// Loop finding next file
+	sdFindClose(fh);												// Close the serach handle
+}
