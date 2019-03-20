@@ -196,7 +196,7 @@ int here(){
 }
 
 int exit_sh(){
-    printf("EXITING SealShell");
+    printf("<EXITING SealShell");
     return SIG_KILL;
 }
 
