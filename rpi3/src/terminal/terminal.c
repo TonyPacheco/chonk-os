@@ -240,6 +240,9 @@ int cat(){
     		printf("CAT FAILED" );
             sig = SIG_FAIL;
     	}
+    } else {
+        printf("File not found: %s\n", path_to_file);
+        sig = SIG_FAIL;
     }
     sdCloseHandle(fHandle);
     work_dir = strcpy(work_dir, save_dir);
@@ -261,6 +264,7 @@ int run(){
     }
 
     run_file[i - 4] = '\0';
+    char* save_dir = strcpy(save_dir, work_dir);
     char* path_to_file = strcat(work_dir, run_file);
 
     memRegion app_allocation;
@@ -268,6 +272,7 @@ int run(){
 
     int status = load_program(path_to_file, &app_allocation, &stack_size);
 
+    work_dir = strcpy(work_dir, save_dir);
     return SIG_GOOD;
 }
 
