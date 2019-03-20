@@ -9,12 +9,11 @@
 #include "../hal/hal.h"
 #include "../loader/loader.h"
 
-#define NUM_CMDS 8
+#define NUM_CMDS 9
 #define WIDTH 640
 #define HEIGHT 480
 
-typedef struct
-{
+typedef struct{
     char *n[NUM_CMDS];
     int (*p[NUM_CMDS])(void);
 } cmd_map;
@@ -233,7 +232,7 @@ int cat(){
     	uint32_t bytesRead;
     	if ((sdReadFile(fHandle, &buffer[0], 500, &bytesRead, 0) == true))  {
     			buffer[bytesRead-1] = '\0';  ///insert null char
-    			printf("File Contents: %s", &buffer[0]);
+    			printf("File Contents: %s\n", &buffer[0]);
                 sig = SIG_GOOD;
     	}
     	else{
