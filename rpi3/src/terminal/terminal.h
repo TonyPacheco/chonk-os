@@ -11,3 +11,6 @@ int cd(void);
 int sysinfo(void);
 int exit_sh(void);
 int here(void);
+int cat (void);
+int run (void);
+int dump(void);

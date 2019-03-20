@@ -1,4 +1,5 @@
 #include "terminal.h"
+#include "../signal.h"
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
@@ -6,10 +7,12 @@
 #include "../drivers/stdio/emb-stdio.h" 
 #include <stdarg.h>
 #include "../hal/hal.h"
+#include "../loader/loader.h"
 
-#define NUM_CMDS 6
+#define NUM_CMDS 8
 #define WIDTH 640
 #define HEIGHT 480
+
 typedef struct
 {
     char *n[NUM_CMDS];
@@ -17,11 +20,6 @@ typedef struct
 } cmd_map;
 
 #define BUFFER_MAX 500
-
-#define SIG_KILL 66
-#define SIG_STRT 0
-#define SIG_GOOD 1
-#define SIG_FAIL -1
 
 char buffer[BUFFER_MAX];
 int bpos;
@@ -38,6 +36,9 @@ void trm_init(){
     cmds.n[3] = "exit";
     cmds.n[4] = "here";
     cmds.n[5] = "ls";
+    cmds.n[6] = "cat";
+    cmds.n[7] = "run";
+    cmds.n[8] = "dump";
 
     cmds.p[0] = help;
     cmds.p[1] = sysinfo;
@@ -45,6 +46,9 @@ void trm_init(){
     cmds.p[3] = exit_sh;
     cmds.p[4] = here;
     cmds.p[5] = ls;
+    cmds.p[6] = cat;
+    cmds.p[7] = run;
+    cmds.p[8] = dump;
 
     trm_main();
 }
@@ -69,7 +73,7 @@ int trm_capture(char ch){
     {
         int cmd_return_val = SIG_STRT;
         int cmd_index = trm_parse_buffer();
-        if(cmd_index == -1)
+        if(cmd_index == SIG_FAIL)
             printf(">");
         else {
             cmd_return_val = cmds.p[cmd_index]();
@@ -95,7 +99,7 @@ int trm_capture(char ch){
 	return SIG_GOOD;
 }
 
-int trm_parse_buffer() { //return index of command to call, or -1 if not found
+int trm_parse_buffer() { //return index of command to call, or SIG_FAIL if not found
     char cm[bpos];
     int i = 0;
     for (i = 0; buffer[i] != '\0' && buffer[i] != ' '; i++){
@@ -104,7 +108,7 @@ int trm_parse_buffer() { //return index of command to call, or -1 if not found
     for (int i = 0; i < NUM_CMDS; ++i)
         if (!strcmp(cm, cmds.n[i]))
             return i;
-    return -1;
+    return SIG_FAIL;
 }
 
 void buffer_add_c(char c){
@@ -204,4 +208,69 @@ int help(){
     for(int i = 1; i < NUM_CMDS; ++i){
         printf("%s\n", cmds.n[i]);
     }
+    return SIG_GOOD;
+}
+
+int cat(){
+    if (buffer[3] != ' ' || buffer[4] == '\0'){
+        printf("CAT - MISSING ARG\n");
+        return SIG_FAIL;
+    }
+
+    char cat_file[bpos - 4];
+    int i;
+    for (i = 4; buffer[i] != ' ' && buffer[i] != '\0'; ++i){
+        cat_file[i - 4] = buffer[i];
+    }
+
+    cat_file[i - 4] = '\0';
+    char* save_dir = strcpy(save_dir, work_dir);
+    char* path_to_file = strcat(work_dir, cat_file);
+    int sig = SIG_STRT;
+
+    HANDLE fHandle = sdCreateFile(path_to_file, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+    if (fHandle != 0) {
+    	uint32_t bytesRead;
+    	if ((sdReadFile(fHandle, &buffer[0], 500, &bytesRead, 0) == true))  {
+    			buffer[bytesRead-1] = '\0';  ///insert null char
+    			printf("File Contents: %s", &buffer[0]);
+                sig = SIG_GOOD;
+    	}
+    	else{
+    		printf("CAT FAILED" );
+            sig = SIG_FAIL;
+    	}
+    }
+    sdCloseHandle(fHandle);
+    work_dir = strcpy(work_dir, save_dir);
+    return sig;
+}
+
+int run(){
+    if (buffer[3] != ' ' || buffer[4] == '\0')
+    {
+        printf("RUN - MISSING ARG\n");
+        return SIG_FAIL;
+    }
+
+    char run_file[bpos - 4];
+    int i;
+    for (i = 4; buffer[i] != ' ' && buffer[i] != '\0'; ++i)
+    {
+        run_file[i - 4] = buffer[i];
+    }
+
+    run_file[i - 4] = '\0';
+    char* path_to_file = strcat(work_dir, run_file);
+
+    memRegion app_allocation;
+    uint32_t stack_size;
+
+    int status = load_program(path_to_file, &app_allocation, &stack_size);
+
+    return SIG_GOOD;
+}
+
+int dump(){
+    return SIG_GOOD;
 }
