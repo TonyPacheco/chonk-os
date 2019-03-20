@@ -171,6 +171,8 @@ int sysinfo()
 
 int cd()
 {
+    //Can only cd to absolute path, no relative paths based on current work_dir
+    
     if(buffer[2] != ' ' || buffer[3] == '\0'){
         printf("CD - MISSING ARG\n");
         return SIG_FAIL;
@@ -182,11 +184,9 @@ int cd()
         new_path[i-3] = buffer[i];
     }
 
-    if(buffer[i-1] != '\\')
-        new_path[i-2] = '\\'; 
-
     new_path[i-3] = '\0';
-    strcat(work_dir, new_path);
+    strcpy(work_dir, new_path);
+
     return SIG_GOOD;
 }
 
