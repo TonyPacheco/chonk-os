@@ -15,15 +15,16 @@
 
 typedef struct{
     char *n[NUM_CMDS];
+    char *h[NUM_CMDS];
     int (*p[NUM_CMDS])(void);
 } cmd_map;
 
 #define BUFFER_MAX 500
 
-char buffer[BUFFER_MAX];
-int bpos;
-cmd_map cmds;
-char* work_dir;
+char buffer[BUFFER_MAX];    //User input buffer
+int bpos;                   //Current index in buffer
+cmd_map cmds;               //Maps commands to strings
+char* work_dir;             //Current working directory
 
 void trm_init(){
     bpos = 0;
@@ -38,6 +39,15 @@ void trm_init(){
     cmds.n[6] = "cat";
     cmds.n[7] = "run";
     cmds.n[8] = "dump";
+
+    cmds.h[1] = " - no argument , displays your systems information";
+    cmds.h[2] = "\t\t- arg NEWDIRCT, changes working directory to NEWDIRCT";
+    cmds.h[3] = "\t- no argument , exits from the shell";
+    cmds.h[4] = "\t- no argument , displays current working directory";
+    cmds.h[5] = "\t\t- no argument , displays a list of the files in the working directory";
+    cmds.h[6] = "\t- arg FILENAME, print the contents of FILENAME to the console";
+    cmds.h[7] = "\t- arg PROGNAME, runs PROGNAME and displays the result";
+    cmds.h[8] = "\t- arg FILENAME, dumps binary representation of FILENAME to console";
 
     cmds.p[0] = help;
     cmds.p[1] = sysinfo;
@@ -67,8 +77,8 @@ void trm_main(){
 
 int trm_capture(char ch){
     switch(ch){
-    case '\r':
-    case '\n':
+    case '\r':  //On capturing a new line, parse the buffer
+    case '\n':  //and attempt to run a command
     {
         int cmd_return_val = SIG_STRT;
         int cmd_index = trm_parse_buffer();
@@ -91,7 +101,7 @@ int trm_capture(char ch){
         buffer_backs();
     } break;
 
-    default:{             //simply add ch to the end of the buffer
+    default:{             //simply add char to the end of the buffer
         buffer_add_c(ch);
     }
     }
@@ -101,12 +111,17 @@ int trm_capture(char ch){
 int trm_parse_buffer() { //return index of command to call, or SIG_FAIL if not found
     char cm[bpos];
     int i = 0;
-    for (i = 0; buffer[i] != '\0' && buffer[i] != ' '; i++){
+    while (buffer[i] != '\0' && buffer[i] != ' '){
         cm[i] = buffer[i];
+        ++i;
     }
     for (int i = 0; i < NUM_CMDS; ++i)
         if (!strcmp(cm, cmds.n[i]))
             return i;
+
+    printf("Error: command `%s` not found.\n", cm);
+    printf("Use HELP for a list of valid commands.\n");
+
     return SIG_FAIL;
 }
 
@@ -186,7 +201,7 @@ int cd()
     return SIG_GOOD;
 }
 
-int here(){
+int here(){ 
     printf("%s\n", work_dir);
     return SIG_GOOD;
 }
@@ -198,7 +213,7 @@ int exit_sh(){
 
 int help(){
     for(int i = 1; i < NUM_CMDS; ++i){
-        printf("%s\n", cmds.n[i]);
+        printf("%s%s\n", cmds.n[i], cmds.h[i]);
     }
     return SIG_GOOD;
 }
@@ -249,7 +264,7 @@ int run(){
         if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true))
         {
             int (*fp)(void) = buffer_bin;
-            printf("App: '%s' returned with status: %d\n", path_to_file,fp());
+            printf("App: `%s` returned with status: %d\n", path_to_file,fp());
             sig = SIG_GOOD;
         }
         else
@@ -261,7 +276,7 @@ int run(){
     return sig;
 }
 
-int dump(){
+int dump() {
     if (buffer[4] != ' ' || buffer[5] == '\0') {
         printf("DUMP - MISSING ARG\n");
         return SIG_FAIL;
