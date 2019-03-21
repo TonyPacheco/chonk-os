@@ -133,11 +133,10 @@ int ls()
     FIND_DATA find;
     char *month[12] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
-    char *path[strlen(work_dir) + 4];
-    strcpy(path, work_dir);
-    strcat(path, "*.*");
+    char *dir[BUFFER_MAX];
+    sprintf(dir, "%s*.*", work_dir);
 
-    fh = sdFindFirstFile(path, &find); // Find first file
+    fh = sdFindFirstFile(dir, &find); // Find first file
     do
     {
         if (find.dwFileAttributes == FILE_ATTRIBUTE_DIRECTORY)
@@ -182,13 +181,7 @@ int cd()
     }
 
     char new_path[bpos-3];
-    int i;
-    for(i = 3; buffer[i] != ' ' && buffer[i] != '\0'; ++i){
-        new_path[i-3] = buffer[i];
-    }
-
-    new_path[i-3] = '\0';
-    strcpy(work_dir, new_path);
+    sprintf(work_dir, "%s", &buffer[3]);
 
     return SIG_GOOD;
 }
@@ -199,7 +192,7 @@ int here(){
 }
 
 int exit_sh(){
-    printf("<EXITING SealShell");
+    printf("<EXITING SealSh");
     return SIG_KILL;
 }
 
@@ -216,65 +209,67 @@ int cat(){
         return SIG_FAIL;
     }
 
-    char cat_file[bpos - 4];
-    int i;
-    for (i = 4; buffer[i] != ' ' && buffer[i] != '\0'; ++i){
-        cat_file[i - 4] = buffer[i];
-    }
+    char path_to_file[BUFFER_MAX];
+    sprintf(path_to_file, "%s%s", work_dir, &buffer[4]);
 
-    cat_file[i - 4] = '\0';
-    char* save_dir = strcpy(save_dir, work_dir);
-    char* path_to_file = strcat(work_dir, cat_file);
-    int sig = SIG_STRT;
+    int sig = SIG_FAIL;
 
     HANDLE fHandle = sdCreateFile(path_to_file, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
     if (fHandle != 0) {
     	uint32_t bytesRead;
-    	if ((sdReadFile(fHandle, &buffer[0], 500, &bytesRead, 0) == true))  {
-    			buffer[bytesRead-1] = '\0';  ///insert null char
-    			printf("File Contents: %s\n", &buffer[0]);
+        char* buffer_w;
+    	if ((sdReadFile(fHandle, &buffer_w[0], BUFFER_MAX, &bytesRead, 0) == true))  {
+    			buffer_w[bytesRead-1] = '\0';  ///insert null char
+    			printf("File Contents: %s\n", &buffer_w[0]);
                 sig = SIG_GOOD;
-    	}
-    	else{
-    		printf("CAT FAILED" );
-            sig = SIG_FAIL;
-    	}
-    } else {
-        printf("File not found: %s\n", path_to_file);
-        sig = SIG_FAIL;
-    }
+    	} else printf("CAT FAILED\n");
+    } else printf("File not found: %s\n", path_to_file);
+
     sdCloseHandle(fHandle);
-    work_dir = strcpy(work_dir, save_dir);
     return sig;
 }
 
 int run(){
-    if (buffer[3] != ' ' || buffer[4] == '\0')
-    {
+    if (buffer[3] != ' ' || buffer[4] == '\0'){
         printf("RUN - MISSING ARG\n");
         return SIG_FAIL;
     }
 
-    char run_file[bpos - 4];
-    int i;
-    for (i = 4; buffer[i] != ' ' && buffer[i] != '\0'; ++i)
-    {
-        run_file[i - 4] = buffer[i];
-    }
-
-    run_file[i - 4] = '\0';
-    char* save_dir = strcpy(save_dir, work_dir);
-    char* path_to_file = strcat(work_dir, run_file);
+    char path_to_file[BUFFER_MAX];
+    sprintf(path_to_file, "%s%s", work_dir, &buffer[4]);
 
     memRegion app_allocation;
     uint32_t stack_size;
 
     int status = load_program(path_to_file, &app_allocation, &stack_size);
 
-    work_dir = strcpy(work_dir, save_dir);
-    return SIG_GOOD;
+    return status;
 }
 
 int dump(){
-    return SIG_GOOD;
+    if (buffer[4] != ' ' || buffer[5] == '\0') {
+        printf("DUMP - MISSING ARG\n");
+        return SIG_FAIL;
+    }
+
+    char path_to_file[BUFFER_MAX];
+    sprintf(path_to_file, "%s%s", work_dir, &buffer[5]);
+
+    int sig = SIG_FAIL;
+
+    HANDLE fHandle = sdCreateFile(path_to_file, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+    if (fHandle != 0) {
+        uint32_t bytesRead;
+        unsigned char* buffer_bin;
+        int file_size = sdGetFileSize(fHandle, 0);
+        if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true)) {
+            printf("File contents: \n");
+            for(int i = 0; i < file_size; ++i)
+                printf("%02x\n", (buffer_bin[i] & 0xff));
+            sig = SIG_GOOD;
+        } else printf("DUMP FAILED\n");
+    } else printf("File not found: %s\n", path_to_file);
+
+    sdCloseHandle(fHandle);
+    return sig;
 }
