@@ -238,12 +238,27 @@ int run(){
     char path_to_file[BUFFER_MAX];
     sprintf(path_to_file, "%s%s", work_dir, &buffer[4]);
 
-    memRegion app_allocation;
-    uint32_t stack_size;
+    int sig = SIG_FAIL;
 
-    int status = load_program(path_to_file, &app_allocation, &stack_size);
+    HANDLE fHandle = sdCreateFile(path_to_file, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+    if (fHandle != 0)
+    {
+        uint32_t bytesRead;
+        unsigned char *buffer_bin;
+        int file_size = sdGetFileSize(fHandle, 0);
+        if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true))
+        {
+            int (*fp)(void) = buffer_bin;
+            printf("App: '%s' returned with status: %d\n", path_to_file,fp());
+            sig = SIG_GOOD;
+        }
+        else
+            printf("RUN FAILED\n");
+    }
+    else
+        printf("App not found: %s\n", path_to_file);
 
-    return status;
+    return sig;
 }
 
 int dump(){
