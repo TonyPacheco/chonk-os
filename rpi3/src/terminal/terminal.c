@@ -277,11 +277,20 @@ int dump(){
         uint32_t bytesRead;
         unsigned char* buffer_bin;
         int file_size = sdGetFileSize(fHandle, 0);
-        
+        uint32_t col = 0;
+        uint32_t row = 0;
         if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true)) {
             printf("File contents: \n");
-            for(int i = 0; i < file_size; ++i)
-                printf("%02x\n", (buffer_bin[i] & 0xff));
+            for (size_t i = 0; i < file_size; i++) {
+				if (col == 0) {
+					printf("%07x0:  ", row++);
+				}
+				printf("%02x ", buffer_bin[i] & 0xff);
+				if (++col >= 16) {
+					printf("\n");
+					col = 0;
+				}
+			}
             sig = SIG_GOOD;
         } else printf("DUMP FAILED\n");
     } else printf("File not found: %s\n", path_to_file);
