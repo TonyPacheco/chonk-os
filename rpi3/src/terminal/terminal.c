@@ -9,7 +9,7 @@
 #include "../hal/hal.h"
 #include "../loader/loader.h"
 
-#define NUM_CMDS 9
+#define NUM_CMDS 10
 #define WIDTH 640
 #define HEIGHT 480
 
@@ -39,6 +39,7 @@ void trm_init(){
     cmds.n[6] = "cat";
     cmds.n[7] = "run";
     cmds.n[8] = "dump";
+    cmds.n[9] = "clear";
 
     cmds.h[1] = " - no argument , displays your systems information";
     cmds.h[2] = "\t\t- arg NEWDIRCT, changes working directory to NEWDIRCT";
@@ -48,6 +49,7 @@ void trm_init(){
     cmds.h[6] = "\t- arg FILENAME, print the contents of FILENAME to the console";
     cmds.h[7] = "\t- arg PROGNAME, runs PROGNAME and displays the result";
     cmds.h[8] = "\t- arg FILENAME, dumps binary representation of FILENAME to console";
+    cmds.h[9] = "\t- no argument , clears the display of all text";
 
     cmds.p[0] = help;
     cmds.p[1] = sysinfo;
@@ -58,6 +60,7 @@ void trm_init(){
     cmds.p[6] = cat;
     cmds.p[7] = run;
     cmds.p[8] = dump;
+    cmds.p[9] = clear;
 
     trm_main();
 }
@@ -306,10 +309,16 @@ int dump() {
 					col = 0;
 				}
 			}
+            printf("\n");
             sig = SIG_GOOD;
         } else printf("DUMP FAILED\n");
     } else printf("File not found: %s\n", path_to_file);
 
     sdCloseHandle(fHandle);
     return sig;
+}
+
+int clear(){
+    ClearScreen();
+    return SIG_GOOD;
 }

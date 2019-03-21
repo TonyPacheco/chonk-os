@@ -14,3 +14,4 @@ int here(void);
 int cat (void);
 int run (void);
 int dump(void);
+int clear(void);

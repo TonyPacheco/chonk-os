@@ -665,6 +665,19 @@ void Embedded_Console_WriteChar(char Ch) {
 	}
 }
 
+void ClearScreen(){
+	console.cursor.x = 0;
+	console.cursor.y = 0;
+	console.curPos.x = 0;
+	console.curPos.y = 0;
+
+	for(int i = 0; i < 32; ++i)
+		printf("                                                                                      \n");
+
+	console.cursor.x = 0;
+	console.cursor.y = 1;
+}
+
 /*-WriteText-----------------------------------------------------------------
 Draws given string in BitFont Characters in the colour specified starting at
 (X,Y) on the screen. It just redirects each character write to WriteChar.
