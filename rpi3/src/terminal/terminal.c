@@ -165,7 +165,7 @@ int sysinfo()
     printf("OS: \t\t%s", "ChonkOS v1.1 Developer Edition 2019\n"); 
     printf("PROCESSOR: %1s", ""); displaySmartStart(&printf);
     printf("RESOLUTION: %3dx%d \n", WIDTH, HEIGHT); 
-    printf("CPU FREQ: %12u Hz\n", Buffer[4]);
+    printf("CPU FREQ: %12u Hz\n", Buffer[3]);
     printf("SHELL: %11s\n", "SealSh"); 
     printf("FONT: \t\t%s\n", "Monospace 8x16"); 
     return SIG_GOOD;
@@ -262,6 +262,7 @@ int dump(){
         uint32_t bytesRead;
         unsigned char* buffer_bin;
         int file_size = sdGetFileSize(fHandle, 0);
+        
         if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true)) {
             printf("File contents: \n");
             for(int i = 0; i < file_size; ++i)
