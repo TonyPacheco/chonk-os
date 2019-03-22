@@ -43,16 +43,17 @@ void trm_init(){
     cmds.n[9] = "clear";
     cmds.n[10]= "mini";
 
-    cmds.h[1] = " - no argument , displays your systems information";
-    cmds.h[2] = "\t\t- arg NEWDIRCT, changes working directory to NEWDIRCT";
-    cmds.h[3] = "\t- no argument , exits from the shell";
-    cmds.h[4] = "\t- no argument , displays current working directory";
-    cmds.h[5] = "\t\t- no argument , displays a list of the files in the working directory";
-    cmds.h[6] = "\t- arg FILENAME, print the contents of FILENAME to the console";
-    cmds.h[7] = "\t- arg PROGNAME, runs PROGNAME and displays the result";
-    cmds.h[8] = "\t- arg FILENAME, dumps binary representation of FILENAME to console";
-    cmds.h[9] = "\t- no argument , clears the display of all text";
-    cmds.h[10]= "\t- arg FILENAME, opens mini text editor, if FILENAME is given, opens it";
+    cmds.h[0] = "arg! = required, arg? = optional, arg0 = none";
+    cmds.h[1] = " - arg0, displays your systems information";
+    cmds.h[2] = "\t\t- arg!, changes working directory to arg";
+    cmds.h[3] = "\t- arg0, exits from the shell";
+    cmds.h[4] = "\t- arg0, displays current working directory";
+    cmds.h[5] = "\t\t- arg0, displays a list of the files in the working directory";
+    cmds.h[6] = "\t- arg!, print the contents of arg to the console";
+    cmds.h[7] = "\t- arg!, runs arg and displays the result";
+    cmds.h[8] = "\t- arg!, dumps binary representation of arg to console";
+    cmds.h[9] = "\t- arg0, clears the display of all text";
+    cmds.h[10]= "\t- arg?, opens mini text editor, if arg is given, opens it";
 
     cmds.p[0] = help;
     cmds.p[1] = sysinfo;
@@ -219,6 +220,7 @@ int exit_sh(){
 }
 
 int help(){
+    printf("\n%s\n\n", cmds.h[0]);
     for(int i = 1; i < NUM_CMDS; ++i){
         printf("%s%s\n", cmds.n[i], cmds.h[i]);
     }

@@ -10,6 +10,5 @@ void mini_back_sp();
 int mini_exit();
 void ctrl_output(char*);
 void ctrl_input(char*, char**);
-void mini_clear(void);
 int mini_new(void);
 int mini_open(void);
