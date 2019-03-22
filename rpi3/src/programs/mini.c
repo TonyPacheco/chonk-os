@@ -10,44 +10,54 @@
 #define CTRL_MODE 0
 
 
-uint8_t mode = EDIT_MODE;
-char* file = "temp";
-char* w_dir;
+uint8_t mode;
+char file[50];
+char w_dir[50];
 char buffer[MINI_BUFFER_MAX];
 int bpos = 0;
 
 int start_mini_new(char* dir){
-    mini_clear();
+    mini_init(dir, "temp");
     return mini_main();
 }
 
 int start_mini_file(char* dir, char* filename){
-    mini_clear();
-    sprintf(w_dir, "%s", dir);
+    mini_init(dir, filename);
     char path_to_file[50];
     sprintf(path_to_file, "%s%s", dir, filename);
+    if(mini_load(path_to_file) == SIG_FAIL){
+        mini_init(dir, "temp");
+        ctrl_output("Load failed!");
+    }
+    return mini_main();
+}
+
+int mini_init(char* dir, char* filename){
+    ClearScreen(0, 0);
+    printf("MINI - Text Editor\n ");
+    sprintf(w_dir, "%s", dir);
+    sprintf(file, "%s", filename);
+    mode = EDIT_MODE;
+    return SIG_GOOD;
+}
+
+int mini_load(char* path_to_file){
     ctrl_output(path_to_file);
     HANDLE handle = sdCreateFile(path_to_file, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
-    if (handle != 0)
-    {
+    if (handle != 0) {
         int file_size = sdGetFileSize(handle, 0);
         uint32_t bytesRead;
         char *buffer_w;
-        if ((sdReadFile(handle, &buffer_w[0], file_size, &bytesRead, 0) == true)){
+        if ((sdReadFile(handle, &buffer_w[0], file_size, &bytesRead, 0) == true)) {
             for (size_t i = 0; i < MINI_BUFFER_MAX; ++i) {
                 mini_capture(buffer_w[i]);
             }
         }
     } else {
-        ctrl_output("Load failed!");
+        return SIG_FAIL;
     }
     sdCloseHandle(handle);
-    return mini_main();
-}
-
-void mini_clear(){
-    ClearScreen(0, 0);
-    printf("MINI - Text Editor\n ");
+    return SIG_GOOD;
 }
 
 int mini_main(){
@@ -80,8 +90,11 @@ int mini_capture(char ch) {
         }
     } else { //Control mode
         if(ch == 's') {
-            mini_save();
-            return SIG_SAVE;
+            return mini_save();
+        } else if(ch == 'n') {
+            return mini_init(w_dir, "temp");
+        } else if (ch == 'o') {
+            return mini_open();
         } else if (ch == 'x') {
             return mini_exit();
         } else if (ch == 'i') {
@@ -115,19 +128,35 @@ int mini_exit(){
 
 void switch_mode(){
     mode ^= 1;
-    char* note = mode == EDIT_MODE ? "_EDIT" : "_CTRL";
+    char* note = mode == EDIT_MODE ? "#EDIT" : "#CTRL";
     ctrl_output(note);
+}
+
+int mini_open(){
+    char input[35];
+    ctrl_input("Filename:", &input);
+    char path_to_file[50];
+    sprintf(path_to_file, "%s%s", w_dir, input);
+    mini_init(w_dir, input);
+    if(mini_load(path_to_file) == SIG_FAIL){
+        mini_init(w_dir, "temp");
+        ctrl_output("Load failed!");
+        return SIG_FAIL;
+    }
+    return SIG_GOOD;
 }
 
 int mini_save() {
     if(!strcmp(file, "temp")){
         char input[35];
         ctrl_input("Filename:", &input);
-        sprintf(file, "%s%s", w_dir, input);
+        sprintf(file, "%s", input);
     }
-    ctrl_output("SAVED!");
-    HANDLE handle = sdCreateFile(file, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);
+    char path_to_file[50];
+    sprintf(path_to_file, "%s%s", w_dir, file);
+    HANDLE handle = sdCreateFile(path_to_file, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);
     sdCloseHandle(handle);
+    ctrl_output("SAVED!");
     return SIG_GOOD;
 }
 
@@ -150,6 +179,7 @@ void ctrl_input(char* prompt, char** field){
         c = hal_io_serial_getc(0);
         hal_io_serial_putc(0, c);
         buf[i++] = c;
+        buf[i] = '\0';
         char* out;
         sprintf(out, "%s%s", prompt, buf);
         ctrl_output(out);
