@@ -14,9 +14,9 @@
 #define HEIGHT 480
 
 typedef struct{
-    char *n[NUM_CMDS];
-    char *h[NUM_CMDS];
-    int (*p[NUM_CMDS])(void);
+    char *n[NUM_CMDS];        //Command name 
+    char *h[NUM_CMDS];        //Command help text
+    int (*p[NUM_CMDS])(void); //Pointer to command function
 } cmd_map;
 
 #define BUFFER_MAX 500
@@ -267,7 +267,9 @@ int run(){
         if ((sdReadFile(fHandle, &buffer_bin[0], file_size, &bytesRead, 0) == true))
         {
             int (*fp)(void) = buffer_bin;
-            printf("App: `%s` returned with status: %d\n", path_to_file,fp());
+            printf("Running `%s`: \n", path_to_file);
+            int status = fp();
+            printf("Program returned with status: %d\n", status);
             sig = SIG_GOOD;
         }
         else
