@@ -128,8 +128,7 @@ int mini_exit(){
 
 void switch_mode(){
     mode ^= 1;
-    char* note = mode == EDIT_MODE ? "#EDIT" : "#CTRL";
-    ctrl_output(note);
+    ctrl_output(mode == EDIT_MODE ? "#EDIT" : "#CTRL");
 }
 
 int mini_open(){
