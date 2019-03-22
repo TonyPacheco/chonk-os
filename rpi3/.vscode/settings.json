@@ -7,6 +7,7 @@
         "signal.h\u0000gnal.h": "c",
         "signal.h\u0000ignal.h": "c",
         "signal.h\u0000nal.h": "c",
-        "signal.h\u0000signal.h": "c"
+        "signal.h\u0000signal.h": "c",
+        "emb-stdio.h": "c"
     }
 }

@@ -665,17 +665,28 @@ void Embedded_Console_WriteChar(char Ch) {
 	}
 }
 
-void ClearScreen(){
-	console.cursor.x = 0;
-	console.cursor.y = 0;
-	console.curPos.x = 0;
-	console.curPos.y = 0;
+void ClearScreen(int x, int y){
+	MoveCursor(0, 0);
 
 	for(int i = 0; i < 32; ++i)
 		printf("                                                                                      \n");
 
-	console.cursor.x = 0;
-	console.cursor.y = 1;
+	MoveCursor(x, y);
+}
+
+void MoveCursor(int x, int y){
+	console.cursor.x = x;
+	console.cursor.y = y;
+	console.curPos.x = x;
+	console.curPos.y = y;
+}
+
+int GetCursorX(){
+	return console.cursor.x;
+}
+
+int GetCursorY(){
+	return console.cursor.y;
 }
 
 /*-WriteText-----------------------------------------------------------------

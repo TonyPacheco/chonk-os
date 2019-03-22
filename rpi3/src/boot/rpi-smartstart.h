@@ -57,7 +57,10 @@ extern "C" {									// Put extern C directive wrapper around
 /* you can make a UART or SCREEN version and direct output to that call */
 typedef int (*printhandler) (const char *fmt, ...);
 
-
+void ClearScreen(int, int);
+void MoveCursor(int, int);
+int GetCursorX(void);
+int GetCursorY(void);
 void SmartStartPutPixelRaw( printhandler, uint32_t, uint32_t);
 
 /***************************************************************************}

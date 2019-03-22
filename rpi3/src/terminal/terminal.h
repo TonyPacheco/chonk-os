@@ -15,3 +15,4 @@ int cat (void);
 int run (void);
 int dump(void);
 int clear(void);
+int mini(void);

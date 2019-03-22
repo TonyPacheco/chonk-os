@@ -6,10 +6,11 @@
 #include "../drivers/sdcard/SDCard.h"
 #include "../drivers/stdio/emb-stdio.h" 
 #include <stdarg.h>
-#include "../hal/hal.h"
 #include "../loader/loader.h"
+#include "../programs/mini.h"
+#include "../boot/rpi-smartstart.h"
 
-#define NUM_CMDS 10
+#define NUM_CMDS 11
 #define WIDTH 640
 #define HEIGHT 480
 
@@ -40,6 +41,7 @@ void trm_init(){
     cmds.n[7] = "run";
     cmds.n[8] = "dump";
     cmds.n[9] = "clear";
+    cmds.n[10]= "mini";
 
     cmds.h[1] = " - no argument , displays your systems information";
     cmds.h[2] = "\t\t- arg NEWDIRCT, changes working directory to NEWDIRCT";
@@ -50,6 +52,7 @@ void trm_init(){
     cmds.h[7] = "\t- arg PROGNAME, runs PROGNAME and displays the result";
     cmds.h[8] = "\t- arg FILENAME, dumps binary representation of FILENAME to console";
     cmds.h[9] = "\t- no argument , clears the display of all text";
+    cmds.h[10]= "\t- arg FILENAME, opens mini text editor, if FILENAME is given, opens it";
 
     cmds.p[0] = help;
     cmds.p[1] = sysinfo;
@@ -61,18 +64,19 @@ void trm_init(){
     cmds.p[7] = run;
     cmds.p[8] = dump;
     cmds.p[9] = clear;
+    cmds.p[10]= mini;
 
     trm_main();
 }
 
 void trm_main(){
     char c;
-    int s = SIG_GOOD;
+    int s = SIG_STRT;
     printf("%s\n\n>", "Welcome to CHONK OS");
     while (s != SIG_KILL)
     {
-        c = hal_io_serial_getc(SerialA);
-        hal_io_serial_putc(SerialA, c);
+        c = hal_io_serial_getc(0);
+        hal_io_serial_putc(0, c);
         printf("%c", c);
         s = trm_capture(c);
     }
@@ -238,7 +242,7 @@ int cat(){
         char* buffer_w;
     	if ((sdReadFile(fHandle, &buffer_w[0], BUFFER_MAX, &bytesRead, 0) == true))  {
     			buffer_w[bytesRead-1] = '\0';  ///insert null char
-    			printf("File Contents: %s\n", &buffer_w[0]);
+    			printf("File Contents:\n%s", &buffer_w[0]);
                 sig = SIG_GOOD;
     	} else printf("CAT FAILED\n");
     } else printf("File not found: %s\n", path_to_file);
@@ -321,6 +325,15 @@ int dump() {
 }
 
 int clear(){
-    ClearScreen();
+    ClearScreen(0, 0);
     return SIG_GOOD;
+}
+
+int mini(){
+    if (buffer[4] == ' '){
+        char file_name[BUFFER_MAX];
+        sprintf(file_name, "%s", &buffer[5]);
+        return start_mini_file(work_dir, file_name);
+    }
+    return start_mini_new(work_dir);
 }
