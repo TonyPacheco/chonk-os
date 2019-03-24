@@ -6,7 +6,6 @@
 #include "../drivers/sdcard/SDCard.h"
 #include "../drivers/stdio/emb-stdio.h" 
 #include <stdarg.h>
-#include "../loader/loader.h"
 #include "../programs/mini.h"
 #include "../boot/rpi-smartstart.h"
 
