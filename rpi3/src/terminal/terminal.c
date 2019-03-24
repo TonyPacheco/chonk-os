@@ -156,7 +156,7 @@ int ls()
     FIND_DATA find;
     char *month[12] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
-    char *dir[BUFFER_MAX];
+    char dir[BUFFER_MAX];
     sprintf(dir, "%s*.*", work_dir);
 
     fh = sdFindFirstFile(dir, &find); // Find first file

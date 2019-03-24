@@ -34,6 +34,8 @@ int start_mini_file(char* dir, char* filename){
 
 int mini_init(char* dir, char* filename){
     ClearScreen(0, 0);
+    for(int i = 0; i < MINI_BUFFER_MAX; ++i)
+        buffer[i] = '\0';
     printf("MINI - Text Editor\n ");
     sprintf(w_dir, "%s", dir);
     sprintf(file, "%s", filename);
@@ -49,7 +51,7 @@ int mini_load(char* path_to_file){
         uint32_t bytesRead;
         char *buffer_w;
         if ((sdReadFile(handle, &buffer_w[0], file_size, &bytesRead, 0) == true)) {
-            for (size_t i = 0; i < MINI_BUFFER_MAX; ++i) {
+            for (size_t i = 0; i < MINI_BUFFER_MAX && i < file_size; ++i) {
                 mini_capture(buffer_w[i]);
             }
         }
