@@ -1,5 +1,5 @@
 *.ps1
 *.bat
-rpi3/SDCard/SDCard.img
-rpi3/output
-rpi3/.vscode/
+SDCard/SDCard.img
+output
+.vscode/
